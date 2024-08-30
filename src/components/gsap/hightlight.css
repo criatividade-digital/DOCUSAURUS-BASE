@@ -1,0 +1,48 @@
+/*
+.dark-mode {
+  --bg-color-hsl: 0, 0%, 7%;
+  --bg-color: hsl(var(--bg-color-hsl));
+  --bg-color-translucent: hsla(var(--bg-color-hsl), 0.95);
+  --bg-color-highlight: hsl(238, 70%, 40%);
+  --color-text: hsl(0, 0%, 80%);
+  --color-text-highlight: hsl(0, 0%, 100%);
+}*/
+
+
+.text-highlight, .text-highlight-end  {
+  /*all: unset;*/
+  /*display: inline-block;*/ /* Ensure the padding is applied correctly */
+  padding: 0.05em 0.15em 0.15em 0.25em; /* Adjust the padding as needed to increase the background height */
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: color calc(2s / 4) cubic-bezier(0.25, 1, 0.5, 1),
+    background-color calc(2s / 4) cubic-bezier(0.25, 1, 0.5, 1),
+    background-size 2s cubic-bezier(0.25, 1, 0.5, 1);
+  background-image: linear-gradient( white 65%, hsla(54, 99%, 51%, 0.708) 35%);
+
+  /* Explicitly inherit font properties from parent */
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  font-variant: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-align: inherit;
+  text-transform: inherit;
+  color: inherit;
+
+  /* Browser prefixes */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-text-size-adjust: inherit;
+  -ms-text-size-adjust: inherit;
+  -webkit-font-kerning: inherit;
+  font-kerning: inherit;
+}
+
+.text-highlight.active, .text-highlight-end.active  {
+    color: hsl(192, 14%, 0%);
+    background-size: 100% 100%;
+}
+
