@@ -2,10 +2,11 @@ import React from 'react';
 import { useState } from "react";
 import { FcGoogle } from 'react-icons/fc'; // Ícone do Google
 import { FaMicrosoft } from 'react-icons/fa'; // Ícone da Microsoft
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
-import { GoogleAuthProvider, OAuthProvider } from 'firebase/auth';
+import { GoogleAuthProvider, EmailAuthProvider, OAuthProvider, signInWithPopup } from 'firebase/auth';
 
 import { useHistory } from '@docusaurus/router';
 import Layout from '@theme/Layout';
@@ -87,7 +88,7 @@ export default function login() {
   };
 
   return (
-    <Layout title="Login" description="Autenticação">
+    <Layout title="Hello" description="Hello React Page">
     <div>
       <div className="container">
         <div className="loginContainer">

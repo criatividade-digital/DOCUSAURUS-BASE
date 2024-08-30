@@ -9,6 +9,7 @@ import { firebaseConfig } from "../../config/firebase-config";
 import { Redirect, useLocation } from "@docusaurus/router";
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
+import { Login } from "../Login";
 import Loading from "../Loading";
 import {
   BASE,
@@ -34,8 +35,6 @@ export function AuthCheck({ children }) {
   });
 
   const from = useLocation().pathname;
-
-  console.log("AuthCheck:"+from+"->"+PROTECTED_PATHS.filter((x) => from.includes(x)).length);
   
   if (authLoading) return <Loading />;
 

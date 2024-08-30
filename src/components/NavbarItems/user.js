@@ -5,8 +5,9 @@ import { onAuthStateChanged } from "firebase/auth";
 
 /*import { fab } from '@fortawesome/free-brands-svg-icons'; // Import all brands icons.
 import { fas } from '@fortawesome/free-solid-svg-icons'; // Import all solid icons.*/
-//import { FaSignOutAlt } from 'react-icons/fa';
+import { FaSignOutAlt } from 'react-icons/fa';
 
+import { useThemeConfig } from "@docusaurus/theme-common";
 
 import {
   LOGIN_BUTTON,
@@ -24,9 +25,9 @@ const User = () => {
   const history = useHistory();
 
   useEffect(() => {
-    //onAuthStateChanged(firebase.auth(), (user) => {
-    //  setUser(user);
-    //});
+    onAuthStateChanged(firebase.auth(), (user) => {
+      setUser(user);
+    });
   });
 
   const handleLogout = () => {
@@ -54,9 +55,23 @@ const User = () => {
           {user.email}<a onClick={handleLogout} style={linkStyle}> <FaSignOutAlt  style={iconStyle} />&nbsp;</a>
         </div>
       ) : (
-        <b></b>
+        <spam></spam>
       )}
     </div>
   );
 };
 export default User;
+
+/* versão do return com a opção de logout
+return (
+    <div>
+      {user ? (
+        <div>
+          <p>{user.email}<button onClick={handleLogout}>Sair</button></p>
+        </div>
+      ) : (
+        <button onClick={handleLogin}>Logar</button>
+      )}
+    </div>
+  );
+*/
