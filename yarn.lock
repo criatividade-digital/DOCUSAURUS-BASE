@@ -1162,7 +1162,7 @@
     core-js-pure "^3.30.2"
     regenerator-runtime "^0.14.0"
 
-"@babel/runtime@^7.1.2", "@babel/runtime@^7.10.3", "@babel/runtime@^7.12.13", "@babel/runtime@^7.12.5", "@babel/runtime@^7.22.6", "@babel/runtime@^7.8.4":
+"@babel/runtime@^7.1.2", "@babel/runtime@^7.10.3", "@babel/runtime@^7.12.13", "@babel/runtime@^7.12.5", "@babel/runtime@^7.22.6", "@babel/runtime@^7.25.6", "@babel/runtime@^7.8.4":
   version "7.25.6"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.25.6.tgz#9afc3289f7184d8d7f98b099884c26317b9264d2"
   integrity sha512-VBj9MYyDb9tuLq7yzqjgzt6Q+IBQLrGZfdjOekyEirZPHxXWoTSGUTMrpsfi58Up73d13NfYLv8HT9vmznjzhQ==
@@ -2089,6 +2089,24 @@
   integrity sha512-foQZKJig7Ob0BMAYBfcJk8d77QtOe7Wo4ox7ff1lQYoNNAb6jwcY1ncdoy2e9wQZzvNy7ODZCYJkK8kzmcAnAg==
   dependencies:
     "@hapi/hoek" "^9.0.0"
+
+"@iframe-resizer/child@^5.3.0":
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/@iframe-resizer/child/-/child-5.3.0.tgz#e84979168d34fa9690b454fcabc7ec343cd295cc"
+  integrity sha512-grggU8UQ3+SziFOCJokHbVJsBA6lXjeZP5mFPB2US3CSQGlW61yKNffpMU1ej7O0UCh9FS3Yf7XP3L707ZB0UQ==
+
+"@iframe-resizer/core@5.3.0":
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/@iframe-resizer/core/-/core-5.3.0.tgz#bcba17b4271b8fb0ef3dbae8ec6a06902d8437da"
+  integrity sha512-6yJBzMIbVMZA0KDtuTweyE0YiiYpG9p2041WEIurtP6X2RL++tJLu8xqF28S0agKg1OGpBRrv3P6mGxsVMWoLg==
+
+"@iframe-resizer/react@^5.3.0":
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/@iframe-resizer/react/-/react-5.3.0.tgz#e2377a52914a9a3e75f158d82b5fe55e8d62de91"
+  integrity sha512-hk6nf2bzEqf1PmgOtglvA9TvJtdfbVKNZ/ksexvL/3VLEXK14fLmrORxx4Dd4EyKSpu7qj5ZIE5CO37NsdvYJg==
+  dependencies:
+    "@babel/runtime" "^7.25.6"
+    "@iframe-resizer/core" "5.3.0"
 
 "@jest/schemas@^29.6.3":
   version "29.6.3"
