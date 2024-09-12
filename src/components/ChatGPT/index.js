@@ -1,9 +1,17 @@
-import React, { useEffect, useRef, useState } from 'react';
 /*********************************************************
  * https://blog.apps.npr.org/pym.js/
  * https://github.com/davidjbradshaw/iframe-resizer
  * 
+    <script
+      src="../iframe-r-child.js"
+      type="text/javascript"
+      async
+    ></script>
  */
+import React, { useEffect, useRef, useState } from 'react';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import IframeResizer from '@iframe-resizer/react'
+
 const ChatGPT = ({ src, style = {}, ...props }) => {
   const iframeRef = useRef(null);
 
@@ -14,18 +22,11 @@ const ChatGPT = ({ src, style = {}, ...props }) => {
       if (iframe && iframe.contentWindow) {
         const script = iframe.contentWindow.document.createElement('script');
         script.textContent = `
-          function sendHeight() {
-            console.log('body:' + document.body.scrollHeight);
-            console.log('offsetHeight:' + document.body.offsetHeight);
-            console.log('documentelement:' + document.documentElement.scrollHeight);
-            document.body.widht = document.body.scrollHeight;
-            /*num = Math.floor(Math.random() * (100 - 1 + 1)) + 1;
-            console.log('sendheight: '+ document.readyState);
-            window.parent.postMessage(document.body.scrollHeight, window.location.origin);*/
-          }
-          window.addEventListener('load', sendHeight);
-          window.addEventListener('resize', sendHeight);
-          sendHeight(); // Initial height send
+            <script
+              src="{useBaseUrl('/html/iframe-r-child.umd.js"
+              type="text/javascript"
+              async
+            ></script>
         `;
         iframe.contentWindow.document.body.appendChild(script);
       }
@@ -36,18 +37,12 @@ const ChatGPT = ({ src, style = {}, ...props }) => {
   }, [src]);
 
   return (
-    <div
-      style={{ border: 'none',  display: 'block',  height: '100%',  ...style }}
-    >
-    <iframe
-      id = 'teste'
-      ref={iframeRef}
-      src={src}
-      width="100%"
-      style={{ border: 'none',  overflow: 'hidden', height: '100vh', ...style }}
-      {...props}
+    <IframeResizer
+      license="GPLv3"
+      src={useBaseUrl('/html/exemplo-curitiba/index.html')}
+      style={{ width: '100%',  height: '100vh' }}
+      waitForLoad
     />
-    </div>
   );
 };
 

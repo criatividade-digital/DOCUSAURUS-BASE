@@ -32,3 +32,6 @@ Com essa evolução, o usuário pode aproveitar o melhor dos dois mundos: a efic
 A chave para maximizar o uso do ChatGPT está em entender que ele não é uma caixa fechada de respostas prontas. Além de explorar e confrontar diferentes visões sobre variados temas, o usuário pode utilizá-lo como uma ferramenta de síntese, análise e comparação, mas isso exige uma postura ativa, fazendo perguntas complementares e aprofundando a investigação.
 
 O risco de se limitar a uma única resposta, sem explorar outras possibilidades ou questionar diferentes perspectivas, está em restringir a compreensão do tema. Ao solicitar alternativas, ampliar o questionamento e, quando disponível, utilizar ferramentas de pesquisa integradas, o ChatGPT se torna uma ferramenta poderosa não só para entender um conceito, mas também para examinar criticamente suas diferentes facetas, promovendo uma visão mais completa e informada.
+
+## Parabéns!
+Ao chegar até aqui, você já aprendeu a construir prompts mais complexos e está começando a moldar o ChatGPT para atender às suas necessidades específicas. Você não só explora as respostas geradas, mas também direciona o fluxo da conversa, tornando-a cada vez mais produtiva. Agora, você pode se considerar um verdadeiro "ChatGPT Construtor"! 🛠️🏗️
