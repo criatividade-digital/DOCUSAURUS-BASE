@@ -4,7 +4,8 @@
  * Achei outro que pode ser usado no Observable https://github.com/jamesleesaunders/d3-x3d
  ******/
 import React from 'react';
-import Plot from 'react-plotly.js';
+//import Plot from 'react-plotly.js';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 const Word2Vec3D = ({ words, vectors }) => {
   const data = [{
@@ -24,7 +25,10 @@ const Word2Vec3D = ({ words, vectors }) => {
   
   return (
     <center>
-      <Plot
+    <BrowserOnly fallback={<div>Carregando...</div>}>
+    {() => {
+      const Plot = require('react-plotly.js').default; 
+      return <Plot
         data={data}
         layout={{
           title: 'Word2Vec 3D Visualization',
@@ -38,6 +42,8 @@ const Word2Vec3D = ({ words, vectors }) => {
         }}
         config={config}
       />
+    }}
+    </BrowserOnly>
     </center>
   );
 };

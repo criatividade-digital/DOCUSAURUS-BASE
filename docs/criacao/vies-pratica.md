@@ -20,7 +20,7 @@ Essas projeções ajudam a entender por que o ChatGPT pode apresentar certas res
 
 Por exemplo, o ChatGPT não disponibiliza o resultado do seu modelo treinado, mas vou usar um modelo que foi treinado usando páginas internet e artigos escritos em português. 
 
-
+<Word2Vec3D words={wordsEstudo} vectors={vectorsEstudo} />
 
 
 
