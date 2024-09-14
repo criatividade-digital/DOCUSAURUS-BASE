@@ -31,13 +31,19 @@ const Word2Vec3D = ({ words, vectors }) => {
       return <Plot
         data={data}
         layout={{
-          title: 'Word2Vec 3D Visualization',
+          //title: 'Exemplo dois grupos de palavras',
           autosize: true,
           //height: 700, 
           scene: {
-            xaxis: { title: 'X-axis' },
-            yaxis: { title: 'Y-axis' },
-            zaxis: { title: 'Z-axis' }
+            xaxis: { title: 'X', range: [-3, 3] },
+            yaxis: { title: 'Y', range: [-3, 3] },
+            zaxis: { title: 'Z', range: [-3, 3] }
+          },
+          margin: {
+            l: 30, // left
+            r: 30, // right
+            b: 0, // bottom
+            t: 0  // top
           }
         }}
         config={config}

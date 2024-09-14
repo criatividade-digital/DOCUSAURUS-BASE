@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 ---
+import {vectorsFrutaAnimal, wordsFrutaAnimal} from '@site/src/components/3d/MatrizFrutaAnimal'
 import {vectorsEstudo, wordsEstudo} from '@site/src/components/3d/MatrixEstudo'
 import Word2Vec3D from '@site/src/components/3d/estudo'
 
@@ -13,24 +14,17 @@ Como expliquei na seção anterior o ChatGPT foi treinado com uma vasta quantida
 Nesse espaço, palavras que aparecem frequentemente em contextos semelhantes durante o treinamento acabam ficando próximas umas das outras. Por exemplo, se a palavra "ciência" aparece com frequência junto a termos como "pesquisa" e "experimento", essas palavras terão vetores mais próximos. Por outro lado, palavras que raramente aparecem juntas, como "ciência" e "fantasia", ficarão mais distantes nesse espaço.
 
 ## Como visualizar o viés
-Embora o espaço multidimensional em que o ChatGPT organiza as palavras seja complexo e impossível de visualizar diretamente, é possível simplificá-lo. Técnicas matemáticas podem converter esse espaço em algo que conseguimos enxergar, como um gráfico em 3D. Isso nos dá uma ideia de como as palavras e conceitos estão relacionados no modelo, embora seja uma simplificação.
+Embora seja impossível visualizar diretamente esse espaço complexo de muitas dimensões em que o ChatGPT organiza as palavras, podemos usar técnicas para simplificar e transformar esse mapa em algo mais fácil de entender, como um gráfico em 3D. Assim, conseguimos ver como certas palavras estão mais próximas ou distantes umas das outras, o que nos ajuda a entender como o modelo faz suas associações.
 
-Essas projeções ajudam a entender por que o ChatGPT pode apresentar certas respostas que parecem enviesadas. Se conceitos relacionados a um determinado grupo ou ideia estão mais próximos entre si no espaço vetorial, o modelo tenderá a gerar respostas com base nesses padrões, mesmo que eles não representem toda a diversidade de opiniões sobre um tema.
+Esse tipo de visualização pode nos dar pistas sobre por que o ChatGPT, às vezes, apresenta respostas que parecem enviesadas. Se palavras e conceitos relacionados a um grupo ou ideia específica estão muito próximos nesse "mapa", o modelo tende a usar essas relações quando gera respostas, refletindo padrões que ele aprendeu durante o treinamento.
 
+Por exemplo, no gráfico interativo que desenhei abaixo, usei um modelo de linguagem *open source* treinado em textos em português, já que o ChatGPT não disponibiliza seus dados de treinamento. Aqui, podemos ver como as palavras "cachorro", "cãozinho" e "cachorrinho" aparecem juntas em um espaço diferente de palavras como "melancia", "goiaba" e "melão". Isso nos mostra como o modelo separa conceitos de acordo com sua similaridade, o que pode nos ajudar a perceber possíveis vieses ou padrões na maneira como ele organiza a linguagem.
 
-Por exemplo, o ChatGPT não disponibiliza o resultado do seu modelo treinado, mas vou usar um modelo que foi treinado usando páginas internet e artigos escritos em português. 
+<Word2Vec3D words={wordsFrutaAnimal} vectors={vectorsFrutaAnimal} />
+
+## Viés nas profissões?
 
 <Word2Vec3D words={wordsEstudo} vectors={vectorsEstudo} />
-
-
-
-* Acho importante que você visualize o viés. 
-* O chatgpt armazena o que aprender ou seja as palavrsa e seus contexos em uma matriz multidimensional.
-* Neste espaço a proximidade ou distância entre palavras no espaço vetorial é definida por como elas aparecem nos contextos dos textos de treinamento.
-* A ideia central é que palavras que ocorrem em contextos semelhantes tendem a ter vetores mais próximos, enquanto palavras que raramente aparecem juntas ou em contextos semelhantes terão vetores mais distantes.
-* Devido as suas múltiplas dimensões não é possível visualizarmos isso.
-* Mas de um ponto de vista matemático podemos converter isso para um espaço 3d.
-* apesar de não ser absolutamente preciso, isso pode ajudar a visualizar o conhecimento que foi armazenado pelo ChatGPT.
 
 
 1. **A visualização do viés é importante.**
