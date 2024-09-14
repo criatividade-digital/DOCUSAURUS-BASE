@@ -2,6 +2,7 @@
 sidebar_position: 3
 ---
 import {vectorsEstudo, wordsEstudo} from '@site/src/components/3d/MatrixEstudo'
+import Word2Vec3D from '@site/src/components/3d/estudo'
 
 # Viés na prática
 O viés no ChatGPT acontece de forma natural devido à maneira como o modelo foi treinado. Para entender isso, vamos explorar como ele aprende e processa informações, e por que suas respostas podem, em alguns casos, refletir certos vieses.
