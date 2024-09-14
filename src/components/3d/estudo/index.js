@@ -1,3 +1,8 @@
+/**********************************
+ * Usando https://plotly.com/javascript/react/
+ * Documentação: https://github.com/plotly/react-plotly.js/blob/master/README.md
+ * Achei outro que pode ser usado no Observable https://github.com/jamesleesaunders/d3-x3d
+ ******/
 import React from 'react';
 import Plot from 'react-plotly.js';
 
@@ -12,19 +17,28 @@ const Word2Vec3D = ({ words, vectors }) => {
     marker: { size: 8, color: 'rgb(23, 190, 207)' }
   }];
 
+  const config = { 
+    responsive: true,
+    modeBarButtonsToRemove: ['resetCameraLastSave3d']
+   }; 
+  
   return (
-    <Plot
-      data={data}
-      layout={{
-        title: 'Word2Vec 3D Visualization',
-        autosize: true,
-        scene: {
-          xaxis: { title: 'X-axis' },
-          yaxis: { title: 'Y-axis' },
-          zaxis: { title: 'Z-axis' }
-        }
-      }}
-    />
+    <center>
+      <Plot
+        data={data}
+        layout={{
+          title: 'Word2Vec 3D Visualization',
+          autosize: true,
+          //height: 700, 
+          scene: {
+            xaxis: { title: 'X-axis' },
+            yaxis: { title: 'Y-axis' },
+            zaxis: { title: 'Z-axis' }
+          }
+        }}
+        config={config}
+      />
+    </center>
   );
 };
 

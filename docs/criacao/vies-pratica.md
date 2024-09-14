@@ -2,6 +2,7 @@
 sidebar_position: 3
 ---
 import Word2Vec3D from '@site/src/components/3d/estudo'
+import {vectorsEstudo, wordsEstudo} from '@site/src/components/3d/MatrixEstudo'
 
 # Viés na prática
 O viés no ChatGPT acontece de forma natural devido à maneira como o modelo foi treinado. Para entender isso, vamos explorar como ele aprende e processa informações, e por que suas respostas podem, em alguns casos, refletir certos vieses.
@@ -19,17 +20,11 @@ Essas projeções ajudam a entender por que o ChatGPT pode apresentar certas res
 
 Por exemplo, o ChatGPT não disponibiliza o resultado do seu modelo treinado, mas vou usar um modelo que foi treinado usando páginas internet e artigos escritos em português. 
 
+<Word2Vec3D words={wordsEstudo} vectors={vectorsEstudo} />
 
 https://github.com/jamesleesaunders/d3-x3d
 
 
-```javascript
-const vectors = [
-  [1.2, 0.5, 0.9],  // Valores reduzidos de t-SNE ou PCA para 'rei'
-  [0.8, 0.6, 0.7],  // Para 'rainha'
-  [1.0, 0.4, 0.6],  // Para 'homem'
-  [0.6, 0.5, 0.8]   // Para 'mulher'
-];
 
 Estou tentando este controle 3d para renderizar o wor2vec calculado pelo phyton
 
