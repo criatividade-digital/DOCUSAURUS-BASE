@@ -20,13 +20,8 @@ Essas projeções ajudam a entender por que o ChatGPT pode apresentar certas res
 
 Por exemplo, o ChatGPT não disponibiliza o resultado do seu modelo treinado, mas vou usar um modelo que foi treinado usando páginas internet e artigos escritos em português. 
 
-<Word2Vec3D words={wordsEstudo} vectors={vectorsEstudo} />
-
-https://github.com/jamesleesaunders/d3-x3d
 
 
-
-Estou tentando este controle 3d para renderizar o wor2vec calculado pelo phyton
 
 
 * Acho importante que você visualize o viés. 
