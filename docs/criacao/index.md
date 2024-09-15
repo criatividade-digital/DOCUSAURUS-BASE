@@ -14,3 +14,9 @@ Por mais poderoso que seja, o ChatGPT ainda tem suas limitações. Este guia foi
 Em outras palavras, em vez de simplesmente entregar "os peixes", este guia vai ensinar você a "pescar" no vasto oceano de possibilidades que o ChatGPT oferece.
 
 Siga comigo e descubra como dominar verdadeiramente essa ferramenta. Nos capítulos anteriores, mostrei apenas o "mapa"; agora, você começará a aprender a navegar! 🧭
+
+:::warning
+
+Neste capítulo, reutilizo alguns conteúdos do meu guia *Desmistificando a Inteligência Artificial*, onde explico o funcionamento da IA além do ChatGPT. Se você já conhece o guia, fique atento aos avisos que indicam o conteúdo repetido. Recomendo revisitar esses trechos para reforçar o conhecimento, mas, caso prefira, as marcações ajudarão a pular essas partes e economizar tempo.
+
+:::
