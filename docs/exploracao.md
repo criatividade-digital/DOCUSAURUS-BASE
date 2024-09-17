@@ -5,40 +5,47 @@ import ClassificarPrompt from '@site/src/components/ClassificarPrompt'
 import IconPrompt from '@theme/Icon/Arrow';
 
 # Exploração
-Você já tentou fazer uma pergunta a alguém e recebeu uma resposta confusa, que parecia não atender ao que você realmente queria saber? Com o ChatGPT, o princípio é o mesmo: um bom *prompt* gera uma boa resposta. Ou seja, a qualidade da informação que você recebe está diretamente relacionada à forma como você formula a pergunta. Vamos aprimorar essa habilidade juntos!
+Já aconteceu de você fazer uma pergunta a alguém e receber uma resposta que não correspondia exatamente ao que você desejava saber? Com o ChatGPT, o mesmo pode acontecer. A maneira como você formula sua pergunta impacta diretamente a qualidade da resposta que você receberá.
+
+Por isso, neste capítulo, convido você a aprimorar junto comigo sua habilidade de estruturar prompts que gerem boas respostas.
 
 ## O que define um bom *prompt*?
-Um bom prompt é claro, específico e direto. Ele oferece contexto suficiente para que o ChatGPT entenda exatamente o que você deseja. Embora essa definição seja precisa, ela pode não ser suficiente para responder à pergunta: "Como forneço o contexto adequado?" Para ajudá-lo na construção de *prompts* eficazes, sugiro uma estrutura que você pode usar sempre que for escrever um. Pense nela como um checklist que você pode consultar para garantir que seu *prompt* está bem formulado.
+Um bom *prompt* é claro, específico e direto. Ele fornece contexto suficiente para que o ChatGPT identifique exatamente o que você deseja.
+
+Parece uma boa definição, certo? Mas como saber, na prática, se o *prompt* que você escreveu realmente é claro, específico e direto? Essa foi a dúvida que tive quando comecei a usar o ChatGPT, e ela me levou a encontrar uma estrutura que facilitou muito o início da minha jornada com o ChatGPT.
+
+Agora, vou compartilhar essa estrutura com você.
 
 ## Estrutura de um *prompt* eficiente
 Para obter respostas mais precisas e relevantes do ChatGPT, é recomendável estruturar seu *prompt* com alguns elementos-chave. Embora um *prompt* não precise conter todos esses elementos, a inclusão de alguns pode melhorar significativamente a qualidade da resposta. Os principais elementos a considerar são:
+
 * <ClassificarPrompt tipo='persona'>Persona</ClassificarPrompt>: Define o "papel" que o ChatGPT deve assumir. Por exemplo, o ChatGPT pode atuar como especialista em tecnologia, professor, consultor de negócios, entre outros. Isso ajuda a moldar a perspectiva e o estilo da resposta.<br />
-* <ClassificarPrompt tipo='tarefa'>Tarefa</ClassificarPrompt>: specifica claramente o que você deseja que a IA faça. Exemplos incluem explicar um conceito, resumir um texto, fornecer sugestões ou propor soluções para um problema. Uma tarefa bem definida facilita a geração de uma resposta mais direta e útil.<br />
+* <ClassificarPrompt tipo='tarefa'>Tarefa</ClassificarPrompt>: Especifica claramente o que você deseja que a IA faça. Exemplos incluem explicar um conceito, resumir um texto, fornecer sugestões ou propor soluções para um problema. Uma tarefa bem definida facilita a geração de uma resposta mais direta e útil.<br />
 * <ClassificarPrompt tipo='contexto'>Contexto</ClassificarPrompt>:  Fornece informações adicionais que ajudam o ChatGPT a entender melhor o cenário ou o objetivo da pergunta. Isso pode incluir detalhes sobre o público-alvo, o propósito da resposta, ou quaisquer circunstâncias específicas relevantes. Um bom contexto melhora a precisão e a relevância da resposta.<br />
 * <ClassificarPrompt tipo='formato'>Formato</ClassificarPrompt>: Define como a resposta deve ser estruturada, incluindo o tipo de apresentação, como lista, parágrafos explicativos, ou tabela comparativa, e também a quantidade ou tamanho desejado, como o número de palavras ou a extensão de cada seção. Especificar o formato ajuda a obter uma resposta que se encaixe melhor nas suas necessidades.
 
-Lembre-se de que, ao elaborar um *prompt*, quanto mais claro e específico você for em relação a esses elementos, mais eficaz será a interação com o ChatGPT.
-
-:::warning
-
-O ChatGPT pode ajustar a extensão da resposta de acordo com uma solicitação específica, como limitar a resposta a um determinado número de palavras. No entanto, a precisão pode variar e o resultado pode não ser exatamente o número exato de palavras solicitado.
-
-:::
+Lembre-se de que, quanto mais claro e específico for seu *prompt*, melhor será a interação com o ChatGPT. Embora um *prompt* não precise incluir todos os elementos mencionados, a presença deles pode melhorar significativamente a qualidade da resposta.
 
 ## Exemplos de *prompts*
-Para tornar esse conceito mais prático, vamos analisar alguns exemplos. Ao longo do capítulo anterior, usamos vários *prompts*. Aqui, destacarei onde cada um dos elementos aparece, para você entender como eles funcionam na prática:
+Para tornar esse conceito mais prático, vamos analisar alguns exemplos. No capítulo anterior, utilizamos vários *prompts*. Agora, destacarei como cada um dos elementos aparece nesses exemplos.
 
 <IconPrompt style={{ verticalAlign: 'middle' }} /><ClassificarPrompt tipo='contexto'> Sou leigo em inteligência artificial</ClassificarPrompt> e gostaria de <ClassificarPrompt tipo='tarefa'>entender como o ChatGPT funciona</ClassificarPrompt>.
 * <ClassificarPrompt tipo='persona'>Persona</ClassificarPrompt>: Não está claramente definido. O prompt não especifica um papel ou ponto de vista para o ChatGPT.
 * <ClassificarPrompt tipo='tarefa'>Tarefa</ClassificarPrompt>: "Entender como o ChatGPT funciona." A tarefa é explicar o funcionamento do ChatGPT.
 * <ClassificarPrompt tipo='contexto'>Contexto</ClassificarPrompt>: "Sou leigo em inteligência artificial." Isso fornece contexto sobre o nível de conhecimento do usuário.
-* <ClassificarPrompt tipo='formato'>Formato</ClassificarPrompt>: Não está especificado. O formato da resposta (se deve ser uma explicação detalhada, resumo, etc.) não é * definido.
+* <ClassificarPrompt tipo='formato'>Formato</ClassificarPrompt>: Não está especificado. O formato da resposta (se deve ser uma explicação detalhada, resumo, etc.) não é foi definido.
 
 <IconPrompt style={{ verticalAlign: 'middle' }} /> <ClassificarPrompt tipo='contexto'>Sou leigo em inteligência artificial e tenho interesse em aprender</ClassificarPrompt> <ClassificarPrompt tipo='tarefa'>como o ChatGPT funciona. Pode explicar</ClassificarPrompt> de uma maneira que eu consiga entender, mesmo sem ter conhecimentos técnicos? <ClassificarPrompt tipo='formato'>Gostaria de uma explicação simples e concisa</ClassificarPrompt>.
 * <ClassificarPrompt tipo='persona'>Persona</ClassificarPrompt>: Não está explicitamente definida, mas o trecho "Pode explicar de uma maneira que eu consiga entender, mesmo sem ter conhecimentos técnicos?" orienta a IA a adotar um tom acessível e simples, adequado para um leigo.
 * <ClassificarPrompt tipo='tarefa'>Tarefa</ClassificarPrompt>: "Explicar como o ChatGPT funciona." A tarefa é fornecer uma explicação sobre o funcionamento do ChatGPT.
 * <ClassificarPrompt tipo='contexto'>Contexto</ClassificarPrompt>: "Sou leigo em inteligência artificial e tenho interesse em aprender." Isso indica que o usuário não tem conhecimento técnico prévio e está interessado em aprender.
 * <ClassificarPrompt tipo='formato'>Formato</ClassificarPrompt>: "Gostaria de uma explicação simples e concisa." Isso define que a resposta deve ser clara, direta e fácil de entender, sem detalhes técnicos complexos.
+
+:::tip
+
+O ChatGPT pode ajustar a extensão de suas respostas conforme solicitado, como ao limitar a resposta a um número específico de palavras. No entanto, a precisão pode variar, e o resultado nem sempre corresponderá exatamente ao número de palavras solicitado.
+
+:::
 
 <IconPrompt style={{ verticalAlign: 'middle' }} /> <ClassificarPrompt tipo='tarefa'>Explique detalhadamente o que é um prompt no ChatGPT</ClassificarPrompt>, <ClassificarPrompt tipo='formato'>usando linguagem simples e exemplos práticos</ClassificarPrompt> <ClassificarPrompt tipo='contexto'>para facilitar a compreensão de iniciantes</ClassificarPrompt>.
 * <ClassificarPrompt tipo='persona'>Persona</ClassificarPrompt>: Não está explicitamente definido no prompt. No entanto, implícito no pedido está o desejo de uma abordagem acessível e didática, voltada para iniciantes.
@@ -65,7 +72,7 @@ Para tornar esse conceito mais prático, vamos analisar alguns exemplos. Ao long
 * <ClassificarPrompt tipo='formato'>Formato</ClassificarPrompt>: "Estruture sua resposta em um formato de três parágrafos, cada um com foco em conceito, funcionamento e exemplos de uso prático." Isso define que a resposta deve ser organizada em três parágrafos distintos, abordando conceito, funcionamento e aplicações práticas dos LLMs.
 
 ## Colorindo os textos
-Antes de encerrar este capítulo, gostaria de fazer um comentário sobre os *prompts* e as classificações que apresentei. Identificar se um elemento do prompt pertence à Persona, Tarefa, Contexto ou Formato nem sempre é evidente. Portanto, se decidir adotar essa estruturação, tenha em mente que a classificação em si não deve ser o foco principal. O mais importante é fornecer informações claras e suficientes para que o ChatGPT compreenda sua solicitação e ofereça a melhor resposta possível.
+Antes de encerrar este capítulo, gostaria de fazer um comentário sobre os *prompts* e as classificações que apresentei. Identificar se um elemento do prompt pertence à Persona, Tarefa, Contexto ou Formato nem sempre é evidente. Portanto, se decidir adotar essa estruturação, tenha em mente que a classificação em si não deve ser o foco principal. O mais importante é fornecer informações claras e suficientes para que o ChatGPT compreenda sua solicitação e ofereça a melhor resposta possível. Pense nesses elementos como um *checklist* útil para avaliar se o seu *prompt* está bem estruturado.
 
 ## Parabéns
 Com este capítulo, você aprendeu uma estrutura útil para guiar a redação de seus próximos *prompts*. Ao seguir essa abordagem, você pode melhorar a clareza e a precisão das respostas geradas pelo ChatGPT. A partir de agora, você está promovido ao nível "Explorador do ChatGPT"!

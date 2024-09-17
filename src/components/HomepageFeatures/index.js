@@ -33,7 +33,7 @@ export default function HomepageFeatures() {
           <div className="row" style={divStyle}>
               <br />
           </div>
-          <b>imagem com o roteiro do guia</b>
+          <b><i>[Futura imagem com o roteiro do guia]</i></b>
         </center>
       </div>
     </section>
