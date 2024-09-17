@@ -32,14 +32,6 @@ Até agora, falei sobre a privacidade do ponto de vista da OpenAI. No entanto, l
  2. **Sair de todos os dispositivos**: Se tiver dúvidas sobre onde está logado, nas configurações, na aba "Segurança", há a opção "Sair de tudo", encerrando todas as sessões ativas.
  3. **Autenticação multifatorial (MFA)**: Para maior segurança, ative a autenticação multifatorial. Isso adiciona uma camada extra de proteção, exigindo não apenas seu login e senha, mas também um código gerado por um aplicativo de autenticação, como o [Google Authenticator](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2).
 
-## Gerenciador de privacidade
-Por fim a OpenAI oferece um site específico para gerenciar os seus dados armazenados no ChatGPT. Neste site você pode:
- * Download my data: Request a copy of your data.
- * Do not train on my content: Ask us to stop training on your content.
- * Delete my ChatGPT account: You can ask that we delete your personal data. 
- * ChatGPT Personal Data Removal Request: Remove your personal data from ChatGPT model outputs.
- * Outra necessidades: Other requests can be sent to dsar@openai.com.
-
 ## Gerenciamento de privacidade
 Por fim, a [OpenAI oferece um portal](https://privacy.openai.com/policies?modal=take-control) específico para você gerenciar os dados armazenados no ChatGPT. Nele, você pode:
 - ***Download my data***: Solicitar uma cópia dos seus dados.

@@ -65,9 +65,7 @@ Para tornar esse conceito mais prático, vamos analisar alguns exemplos. Ao long
 * <ClassificarPrompt tipo='formato'>Formato</ClassificarPrompt>: "Estruture sua resposta em um formato de três parágrafos, cada um com foco em conceito, funcionamento e exemplos de uso prático." Isso define que a resposta deve ser organizada em três parágrafos distintos, abordando conceito, funcionamento e aplicações práticas dos LLMs.
 
 ## Colorindo os textos
-Você pode ter observado minhas marcações nos exemplos anteriores e, talvez, discordado da forma como classifiquei elementos como Tarefa ou Contexto. A classificação em si não deve ser uma preocupação. O mais importante é fornecer informações claras e suficientes para que o ChatGPT entenda sua solicitação e entregue a melhor resposta possível.
-
-A estrutura sugerida é apenas um ponto de partida, uma ferramenta para ajudar a explorar as funcionalidades do ChatGPT. Ao longo deste guia, vou ajudar a desenvolver a habilidade de criar prompts de forma precisa e eficiente, ajustando e personalizando suas próprias estruturas conforme necessário, para tirar o máximo proveito das interações com o ChatGPT.
+Antes de encerrar este capítulo, gostaria de fazer um comentário sobre os *prompts* e as classificações que apresentei. Identificar se um elemento do prompt pertence à Persona, Tarefa, Contexto ou Formato nem sempre é evidente. Portanto, se decidir adotar essa estruturação, tenha em mente que a classificação em si não deve ser o foco principal. O mais importante é fornecer informações claras e suficientes para que o ChatGPT compreenda sua solicitação e ofereça a melhor resposta possível.
 
 ## Parabéns
 Com este capítulo, você aprendeu uma estrutura útil para guiar a redação de seus próximos *prompts*. Ao seguir essa abordagem, você pode melhorar a clareza e a precisão das respostas geradas pelo ChatGPT. A partir de agora, você está promovido ao nível "Explorador do ChatGPT"!

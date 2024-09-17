@@ -3,6 +3,7 @@ sidebar_position: 3
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import IframeResizer from '@iframe-resizer/react'
+import GerenciarMemoriaChatGPT from '@site/src/components/GerenciarMemoriaChatGPT'
 
 # Por que ChatGPT?
 O nome **ChatGPT** não foi escolhido por acaso. Ele reflete a forma como interagimos com essa ferramenta: por meio de uma **conversa**. Neste capítulo, vamos explorar em profundidade o significado do “chat” no nome e por que essa palavra é tão relevante para entender como o ChatGPT funciona.
@@ -43,6 +44,11 @@ Uma dica é começar uma nova conversa sempre que o tema mudar significativament
 :::
 
 Uma característica importante dessa memória é que ela pode ser **gerenciada pelo usuário**. Isso significa que você tem controle sobre quais informações o modelo deve "lembrar" ou "esquecer", ajustando o nível de personalização conforme suas preferências. Para garantir que o ChatGPT se mantenha relevante e alinhado às suas necessidades, é importante revisar periodicamente os itens armazenados na memória, mantendo apenas o que você considera essencial para o modelo "lembrar" em interações futuras.
+
+<GerenciarMemoriaChatGPT />
+<center>
+*Tela de configuração do ChatGPT versão web.*
+</center>
 
 ### Conclusão: A Essência da Conversa
 O "chat" no nome ChatGPT reflete não apenas a forma de interação, mas também o conceito de que as respostas não precisam ser estáticas ou definitivas. Assim como em uma conversa humana, a troca de informações é **flexível, dinâmica e adaptável**. A cada nova interação, o ChatGPT constrói um entendimento progressivo do contexto, refinando suas respostas de acordo com as informações fornecidas.
