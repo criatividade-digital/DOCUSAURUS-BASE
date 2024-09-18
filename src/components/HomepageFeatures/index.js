@@ -23,7 +23,7 @@ export default function HomepageFeatures() {
         {/* Adicionando o novo recurso "Alo mundo" diretamente */}
         <div className="row" >
             <p>Olá! Sou Parahuari Branco, especialista em tecnologia e educação, e dou as boas-vindas ao
-            <b>Desmistificando o ChatGPT: <i>guia essencial para uso do ChatGPT</i></b>. 
+            <b> Desmistificando o ChatGPT: <i>guia essencial para uso do ChatGPT</i></b>. 
             Meu objetivo com este guia é esclarecer de maneira objetiva e acessível o funcionamento do ChatGPT, 
             mostrando como você pode aproveitar ao máximo essa ferramenta de forma segura e responsável.
             </p>

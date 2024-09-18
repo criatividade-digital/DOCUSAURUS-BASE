@@ -40,13 +40,13 @@ Para tornar esse conceito mais prático, vamos analisar alguns exemplos. No cap�
 * <ClassificarPrompt tipo='tarefa'>Tarefa</ClassificarPrompt>: "Explicar como o ChatGPT funciona." A tarefa é fornecer uma explicação sobre o funcionamento do ChatGPT.
 * <ClassificarPrompt tipo='contexto'>Contexto</ClassificarPrompt>: "Sou leigo em inteligência artificial e tenho interesse em aprender." Isso indica que o usuário não tem conhecimento técnico prévio e está interessado em aprender.
 * <ClassificarPrompt tipo='formato'>Formato</ClassificarPrompt>: "Gostaria de uma explicação simples e concisa." Isso define que a resposta deve ser clara, direta e fácil de entender, sem detalhes técnicos complexos.
-
+<br />
 :::tip
 
 O ChatGPT pode ajustar a extensão de suas respostas conforme solicitado, como ao limitar a resposta a um número específico de palavras. No entanto, a precisão pode variar, e o resultado nem sempre corresponderá exatamente ao número de palavras solicitado.
 
 :::
-
+<br />
 <IconPrompt style={{ verticalAlign: 'middle' }} /> <ClassificarPrompt tipo='tarefa'>Explique detalhadamente o que é um prompt no ChatGPT</ClassificarPrompt>, <ClassificarPrompt tipo='formato'>usando linguagem simples e exemplos práticos</ClassificarPrompt> <ClassificarPrompt tipo='contexto'>para facilitar a compreensão de iniciantes</ClassificarPrompt>.
 * <ClassificarPrompt tipo='persona'>Persona</ClassificarPrompt>: Não está explicitamente definido no prompt. No entanto, implícito no pedido está o desejo de uma abordagem acessível e didática, voltada para iniciantes.
 * <ClassificarPrompt tipo='tarefa'>Tarefa</ClassificarPrompt>: "Explique detalhadamente o que é um prompt no ChatGPT." A tarefa é fornecer uma explicação detalhada sobre o conceito de prompt no ChatGPT.
