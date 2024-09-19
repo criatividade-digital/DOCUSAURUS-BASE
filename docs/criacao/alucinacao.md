@@ -22,7 +22,7 @@ No vídeo, uma estátua de bronze de um jogador de futebol está posicionada em 
 
 Na segunda pergunta, após receber orientações mais específicas, indicando que o atleta em questão é o maior artilheiro da história do clube, o ChatGPT <spam class="text-highlight">corrige sua resposta</spam> e identifica corretamente o jogador. Esse exemplo demonstra como fornecer informações contextuais relevantes pode ajudar o modelo a gerar respostas mais precisas.
 
-Alguns dias depois, repeti a mesma pergunta e o ChatGPT respondeu corretamente. Isso ilustra dois pontos: primeiro, que as ferramentas de IA são constantemente ajustadas com base nas interações dos usuários; e segundo, o <spam class="text-highlight">risco de confiarmos</spam> em respostas incorretas, devido à maneira convincente como os modelos de linguagem geram texto.
+Alguns dias depois, fiz a mesma pergunta e o ChatGPT respondeu corretamente. Isso ilustra dois pontos importantes: primeiro, as ferramentas de IA estão em constante aprimoramento, com ajustes nos algoritmos, atualizações dos dados de treinamento e incorporação de *feedback* dos usuários para corrigir erros e vieses. Segundo, há o <spam class="text-highlight">risco de acreditarmos em respostas incorretas</spam>, já que os modelos de linguagem geram texto de maneira bastante convincente.
 
 Neste caso de identificação incorreta do jogador que descrevi, o erro não teve consequências relevantes, resultando apenas em uma troca de mensagens no WhatsApp entre amigos, comentando a situação. No entanto, os casos da Air Canada e do escritório de advocacia Levidow, Levidow & Oberman, que veremos a seguir, mostram que erros em respostas de IA podem ter implicações muito mais sérias.
 
