@@ -26,7 +26,7 @@ A inteligência artificial do ChatGPT é baseada em uma arquitetura chamada *red
 Quando você faz uma pergunta, a rede neural não "entende" as palavras da maneira que os humanos entendem. Em vez disso, ela converte as palavras em vetores multidimensionais como expliquei na seção **[Viés na prática](vies-pratica.md)**. Esses vetores ajudam o ChatGPT a analisar o contexto da sua pergunta, identificando padrões e conexões entre as palavras. Dessa forma, <BuggyText text="o ChatGPT consegue prever as respostas mais prováveis com base no vasto conjunto de textos nos quais foi treinado." />. 
 <br /><br />Opa! A explicação ficou tão complicada que *deu um bug* no texto do guia... <FontAwesomeIcon icon={faFaceDizzy} /> 😵
 
-**Brincadeira!** Não é um *bug*, foi de propósito. Só queria chamar sua atenção! 🎯 Este capítulo foi longo, então preciso dar <spam class="text-highlight">PARABÉNS</spam> 🎉 por você ter chegado até aqui — especialmente se você não pulou a parte onde mergulhamos nos vetores. 🙂
+Brincadeira! Não é um *bug*, foi de propósito. Só queria chamar sua atenção! 🎯 Este capítulo foi longo, então preciso dar <spam class="text-highlight">PARABÉNS</spam> 🎉 por você ter chegado até aqui — especialmente se você não pulou a parte onde mergulhamos nos vetores. 🙂
 
 Agora, quero encerrar com uma metáfora que vai te ajudar a incorporar de vez essa <spam class="text-highlight">nova forma de pensar sobre o que é um prompt e como escrevê-lo</spam> de forma eficaz.
 
