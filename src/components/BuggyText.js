@@ -9,7 +9,7 @@ const BuggyText = ({ text }) => {
   const animateText = () => {
     let animatedText = '';
     for (let i = 0; i < text.length; i++) {
-      if (Math.random() < 0.1) { // 10% chance of a character being 'bugged'
+      if (Math.random() < 0.05) { // 10% chance of a character being 'bugged'
         animatedText += randomCharacter();
       } else {
         animatedText += text.charAt(i);

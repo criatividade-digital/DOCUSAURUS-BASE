@@ -6,15 +6,8 @@ import BuggyText from '@site/src/components/BuggyText'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFaceDizzy } from '@fortawesome/free-regular-svg-icons';
 
-# Uma nova visão
-<LigaHighlight/>
-No primeiro capítulo deste guia, pedi ao ChatGPT que explicasse o que é um prompt. Ele respondeu, entre outras coisas:
-
->*No contexto de IA e modelos de linguagem (como o ChatGPT), um "prompt" é o texto ou instrução fornecida ao modelo para gerar uma resposta. Por exemplo, se você perguntar "O que é um prompt?", a pergunta que você fez é o prompt que orienta a resposta gerada.*
-
-Agora que estamos chegando ao final deste capítulo, gostaria de apresentar uma nova perspectiva sobre o que é um *prompt* e como você pode construir um bom prompt de forma eficaz.
-
-## Arte, engenharia ou tentativa e erro
+# Arte ou engenharia?
+<LigaHighlight />
 Algumas pessoas dizem que criar bons prompts é uma arte, que requer sensibilidade para as nuances da linguagem e uma intuição apurada para prever o impacto das palavras. Outros veem esse processo como engenharia, onde cada detalhe é ajustado cuidadosamente para alcançar o melhor resultado. Há ainda quem encare como um exercício de tentativa e erro, em que cada falha ajuda a refinar a abordagem.
 
 Na verdade, construir prompts pode ser uma combinação de **arte**, **engenharia** e **tentativa e erro**, com cada aspecto desempenhando um papel importante:
@@ -28,14 +21,14 @@ Na verdade, construir prompts pode ser uma combinação de **arte**, **engenhari
 Portanto, criar bons prompts envolve uma mistura de criatividade (arte), conhecimento técnico (engenharia) e aperfeiçoamento constante (tentativa e erro).
 
 ## Explicando, complicando ou descomplicando?
-Quando falamos de inteligência artificial (IA) e modelos de linguagem como o ChatGPT, é fácil acabar nos perdendo no "tecniquês". Quer ver?
+A inteligência artificial do ChatGPT é baseada em uma arquitetura chamada *rede neural*, que se inspira de forma abstrata no funcionamento das redes de neurônios do cérebro humano. No caso do ChatGPT, essa rede neural usa uma arquitetura específica chamada *Transformer*, que é altamente eficiente em processar e gerar linguagem natural, graças à sua capacidade de lidar com grandes quantidades de dados e capturar relações complexas entre palavras.
 
-A IA do ChatGPT é baseada em uma arquitetura chamada *rede neural*, que se inspira de forma abstrata no funcionamento das redes de neurônios do cérebro humano. No caso do ChatGPT, essa rede neural usa uma arquitetura específica chamada *Transformer*, que é altamente eficiente em processar e gerar linguagem natural, graças à sua capacidade de lidar com grandes quantidades de dados e capturar relações complexas entre palavras.
-
-Quando você faz uma pergunta, a rede neural não "entende" as palavras da maneira que os humanos entendem. Em vez disso, ela converte as palavras em números, ou vetores multidimensionais como explicamos na seção **[Viés na prática](vies-pratica.md)**, que são representações matemáticas de seus significados e das relações entre elas. Esses vetores ajudam o ChatGPT a analisar o contexto da sua pergunta, identificando padrões e conexões entre as palavras. Dessa forma, o ChatGPT consegue prever as respostas mais prováveis com base no vasto conjunto <BuggyText text="de textos nos quais foi treinado." />. 
+Quando você faz uma pergunta, a rede neural não "entende" as palavras da maneira que os humanos entendem. Em vez disso, ela converte as palavras em vetores multidimensionais como expliquei na seção **[Viés na prática](vies-pratica.md)**. Esses vetores ajudam o ChatGPT a analisar o contexto da sua pergunta, identificando padrões e conexões entre as palavras. Dessa forma, <BuggyText text="o ChatGPT consegue prever as respostas mais prováveis com base no vasto conjunto de textos nos quais foi treinado." />. 
 <br /><br />Opa! A explicação ficou tão complicada que *deu um bug* no texto do guia... <FontAwesomeIcon icon={faFaceDizzy} /> 😵
 
-Brincadeira! Não é um *bug*, foi proposital. Quando falamos de IA, é fácil nos perdermos em um "tecniquês" que nem o computador consegue processar. 🙂  No guia *Desmistificando a IA* eu descomplico esse conceito de rede neural. Mas aqui, vou seguir um caminho diferente: usarei uma metáfora para ajudar desenvolver uma nova maneira de pensar o que é um *prompt* e como escrevê-lo bem.
+**Brincadeira!** Não é um *bug*, foi de propósito. Só queria chamar sua atenção! 🎯 Este capítulo foi longo, então preciso dar <spam class="text-highlight">PARABÉNS</spam> 🎉 por você ter chegado até aqui — especialmente se você não pulou a parte onde mergulhamos nos vetores. 🙂
+
+Agora, quero encerrar com uma metáfora que vai te ajudar a incorporar de vez essa <spam class="text-highlight">nova forma de pensar sobre o que é um prompt e como escrevê-lo</spam> de forma eficaz.
 
 ## O detetive ChatGPT
 Vamos imaginar uma situação mais divertida que o "tecniquês" para entender melhor o papel do prompt. Pense no ChatGPT como um habilidoso detetive à sua disposição, e você, como o investigador ou investigadora-chefe. A pergunta para a qual você busca uma resposta, ou o texto que deseja gerar, é como um mistério a ser desvendado. Você sabe que "a verdade está lá fora" (aludindo à série Arquivo X), mas não sabe exatamente como chegar até ela.
@@ -47,6 +40,6 @@ Quanto mais claras, estratégicas e precisa forem as pistas, mais fácil será p
 No final, o detetive (ChatGPT) monta o quebra-cabeça, mas o sucesso da investigação depende diretamente da qualidade das pistas fornecidas pelo investigador-chefe — você!
 
 # Ufa!
-Parabéns! Ao concluir este capítulo, você passou de "ChatGPT Construtor" para "ChatGPT Criador". Isso significa que você agora tem o conhecimento necessário para usar o ChatGPT de forma mais consciente, eficiente e criativa. Você entendeu como o ChatGPT funciona, reconheceu seus limites, como viés e alucinações, e aprendeu a lidar com eles de maneira crítica.
+Novamente, PARABÉNS! Ao concluir este capítulo, você passou de "ChatGPT Construtor" para "ChatGPT Criador". Isso significa que você agora tem o conhecimento necessário para usar o ChatGPT de forma mais consciente, eficiente e criativa. Você entendeu como o ChatGPT funciona, reconheceu seus limites, como viés e alucinações, e aprendeu a lidar com eles de maneira crítica.
 
 Como "ChatGPT Criador", você está pronto para ir além, formulando perguntas mais específicas, desafiando respostas e aproveitando ao máximo essa poderosa ferramenta. Continue explorando, testando e inovando — agora com muito mais confiança e entendimento!
