@@ -48,7 +48,7 @@ Vou usar uma palavra ambígua para demonstrar como podemos guiar o modelo de lin
 ![palavras manga, comprida, listrada, caqui e goiaba com destaque ao vetor da palavra manga](grafico-vetor-manga.png)
 </center>
 
-Se eu disser apenas "manga", sem mais contexto, o modelo de linguagem não saberá se estou falando da fruta ou da parte de uma roupa. A palavra sozinha não oferece um direcionamento claro. No entanto, se eu adicionar palavras como "roupa" (linha azul) ou "fruta" (linha vermelha), isso orienta o modelo, ajudando a reduzir a ambiguidade e apontando para o contexto desejado.
+Se eu disser apenas "manga", sem mais contexto, o modelo de linguagem não saberá se estou falando da fruta ou da parte de uma roupa. A palavra sozinha não oferece um direcionamento claro. No entanto, se eu adicionar palavras como "roupa" (linha **<spam style={{color: 'blue'}}>azul</spam>**) ou "fruta" (linha **<spam style={{color: 'red'}}>vermelha</spam>**), isso orienta o modelo, ajudando a reduzir a ambiguidade e apontando para o contexto desejado.
 
 <center>
 ![palavras manga, comprida, listrada, caqui e goiaba com destaque dois vetores tentendo as frutas e outra a roupas](grafico-2vetores-manga.png)

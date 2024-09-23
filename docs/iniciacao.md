@@ -68,6 +68,9 @@ E, se quiser uma explicação voltada a um público específico, tente:
 ```url wordWrap link='https://chatgpt.com/share/541ec93b-24b2-45d5-b29c-89dc94421655'
 Você é um pesquisador de IA explicando para uma equipe de líderes empresariais o que são Large Language Models. Sua tarefa é detalhar o funcionamento desses modelos, mencionando os avanços que possibilitaram seu desenvolvimento e suas aplicações no mundo corporativo. Estruture sua resposta em um formato de três parágrafos, cada um com foco em conceito, funcionamento e exemplos de uso prático.
 ```
+:::danger[Uso Consciente]
+O ChatGPT é uma ferramenta poderosa, mas seu uso indevido pode trazer consequências. Antes de utilizá-lo em atividades profissionais, consulte as políticas de sua organização, que muitas vezes possuem diretrizes específicas para ferramentas de inteligência artificial como o ChatGPT.
+:::
 
 ## Conclusão da Iniciação
 Neste capítulo, você descobriu como usar o próprio ChatGPT para explorar novos conceitos, como Prompt e LLM. Essa abordagem prática e interativa é uma excelente forma de aprendizado, mas é importante lembrar que, às vezes, o ChatGPT pode cometer erros ou fornecer informações desatualizadas. No capítulo **[Criação](./criacao/)**, veremos como superar esses desafios e aproveitar o ChatGPT de maneira ainda mais eficaz.
