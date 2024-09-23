@@ -13,8 +13,10 @@ Isso não significa que o ChatGPT tenha uma "opinião" própria ou que esteja in
 
 Além disso, nem todos os assuntos foram abordados com a mesma profundidade ou frequência nos dados de treinamento. Para alguns tópicos, o ChatGPT teve acesso a muitas informações e perspectivas variadas, enquanto para outros, os dados foram mais limitados. Isso faz com que, em certos casos, ele possa não oferecer respostas tão completas ou diversificadas.
 
-:::warning
 O ChatGPT passa por esforços contínuos para minimizar o viés. Isso inclui a curadoria dos dados de treinamento, o uso de técnicas avançadas de ajuste e a revisão constante do desempenho do modelo. Esses esforços visam tornar as respostas mais justas e equilibradas, mas é importante lembrar que nenhum modelo de IA é completamente isento de viés.
+
+:::danger[Uso Consciente]
+O ChatGPT é uma ferramenta poderosa, mas não substitui a pesquisa crítica. Use as respostas como ponto de partida e complemente seu conhecimento com fontes acadêmicas, notícias confiáveis e outras ferramentas de pesquisa.
 :::
 
 Em resumo, o ChatGPT é uma poderosa ferramenta de processamento de linguagem natural, mas suas respostas são limitadas pelos dados com os quais foi treinado. Embora ele ofereça uma vasta gama de informações, é essencial reconhecer que ele reflete as vozes mais predominantes da internet. Isso pode introduzir algum viés em suas respostas. Portanto, use o ChatGPT com senso crítico e sempre confronte suas respostas com outras fontes, buscando diferentes perspectivas.
