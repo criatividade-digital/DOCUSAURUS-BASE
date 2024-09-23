@@ -33,11 +33,13 @@ Escolha uma das abas abaixo para visualizar o gráfico na versão estática ou i
 <Tabs>
   <TabItem value="estatica" label="Estática" default>
    <center>
+   <div id='FrutaAnimal'>
     ![Grafico apresentando grupos de palavras em seu espaço vetorial](grafico-frutas-animais.png)
+   </div>
    </center>
   </TabItem>
   <TabItem value="interativo" label="Interativo">
-    <Word2Vec3D words={wordsFrutaAnimal} vectors={vectorsFrutaAnimal} />
+    <Word2Vec3D divRef='FrutaAnimal' words={wordsFrutaAnimal} vectors={vectorsFrutaAnimal} />
   </TabItem>
 </Tabs>
 
@@ -59,11 +61,13 @@ Escolha uma das abas abaixo para visualizar o gráfico na versão estática ou i
 <Tabs>
   <TabItem value="estatica" label="Estática" default>
    <center>
+    <div id='Profissoes'>
     ![Grafico apresentando grupos de palavras em seu espaço vetorial](grafico-profissoes.png)
+    </div>
    </center>
   </TabItem>
   <TabItem value="interativo" label="Interativo">
-    <Word2Vec3D words={wordsProfissoes} vectors={vectorsProfissoes} />
+    <Word2Vec3D divRef='Profissoes' words={wordsProfissoes} vectors={vectorsProfissoes} />
   </TabItem>
 </Tabs>
 
