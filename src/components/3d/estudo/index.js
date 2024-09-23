@@ -93,3 +93,31 @@ const Word2Vec3D = ({ divRef, words, vectors }) => {
 };
 
 export default Word2Vec3D;
+
+/******************************
+ Será que esta configuração funciona para redimensionar o chart no lugar do workaround do div que fiz?
+ O gemini gerou este código mas eu não testei
+   const layout = {
+    // Your plot layout here
+    responsive: true, // Adjust plot size to fit the container
+    autosize: true, // Allow the plot to automatically resize
+  };
+
+  const config = {
+    responsive: true, // Adjust plot size to fit the container
+    displayModeBar: false, // Hide the default mode bar
+    scrollZoom: true, // Enable scroll zoom on desktop
+    doubleClickZoom: false, // Disable double-click zoom
+    touchZoom: true, // Enable pinch-to-zoom on touch devices
+  };
+
+  return (
+    <Plot
+      data={data}
+      layout={layout}
+      config={config}
+    />
+  );
+};
+ 
+ */
