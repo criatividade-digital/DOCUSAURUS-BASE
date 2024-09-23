@@ -58,6 +58,7 @@ const Word2Vec3D = ({ divRef, words, vectors }) => {
 
   const config = { 
     responsive: true,
+    touchZoom: true,
     modeBarButtonsToRemove: ['resetCameraLastSave3d']
    }; 
   
