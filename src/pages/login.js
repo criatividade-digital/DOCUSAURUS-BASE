@@ -32,6 +32,7 @@ export default function login() {
         return;
 
       await firebase.auth().signInWithPopup(provider);
+
       // ... handle successful sign-in (e.g., redirect or show success message) ...
       history.push(pagRedirecionamento);
     } catch (error) {

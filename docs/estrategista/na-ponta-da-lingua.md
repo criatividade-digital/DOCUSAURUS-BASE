@@ -31,7 +31,7 @@ Vou retomar o exemplo de revisão de texto. Como definir as palavras essenciais 
 Liste todos os itens que definem as características de um bom texto. Gere a lista mais completa possível.
 ```
 
-:::aviso
+:::warning
 Lembre-se: ao clicar no ícone <IconExternalLink />  &nbsp;acima, você poderá ver a resposta que recebi do ChatGPT, incluindo uma pergunta adicional que fiz para tornar a lista ainda mais completa.
 :::
 

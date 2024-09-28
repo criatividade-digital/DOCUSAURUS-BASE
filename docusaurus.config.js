@@ -10,6 +10,15 @@ import rehypeKatex from 'rehype-katex';
 
 const isLocal = process.env.NODE_ENV === 'development';
 
+function jsDateToExcelDate(jsDate) {
+  const excelEpoch = new Date(1899, 11, 31);
+  
+  // Calculate the difference in days
+  let excelDate = Math.floor((jsDate - excelEpoch) / (24 * 60 * 60 * 1000));
+
+  return excelDate;
+}
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Desmistificando o ChatGPT',
@@ -26,6 +35,11 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'criatividade-digital', // Usually your GitHub org/user name.
   projectName: 'ChatGPT', // Usually your repo name.
+
+  customFields: {
+    lastBuild: jsDateToExcelDate(new Date()), // Armazena o número Excel da data atual
+    bookCode: 'GPT',
+  },
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -172,7 +186,7 @@ const config = {
             ],
           },
         ],*/
-        copyright: `Copyright © ${new Date().getFullYear()} CRIATIVIDADE.digital, Editora eTrix.`,
+        copyright: `Copyright © ${new Date().getFullYear()} CRIATIVIDADE.digital, Editora eTrix.<br /> <small>Build: ${new Date()}</small>`,
       },
       prism: {
         theme: prismThemes.github,
