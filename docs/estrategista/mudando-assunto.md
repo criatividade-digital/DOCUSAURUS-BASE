@@ -1,8 +1,6 @@
 ---
 sidebar_position: 3
 ---
-import IconExternalLink from '@theme/Icon/ExternalLink'
-
 # Novo assunto? Nova conversa!
 Quando falei sobre a estrutura conversacional do ChatGPT, expliquei que ele mantém o [contexto da conversa](../construcao/porqueChatGPT#o-contexto-da-conversa) para proporcionar respostas mais coerentes. Relembrando:
 
