@@ -15,6 +15,10 @@ A OpenAI, desenvolvedora do ChatGPT, **não utiliza o conteúdo de ofertas empre
 
 As opções de controle variam conforme o plano. Usuários que não estão conectados podem apenas optar pelo controle de uso de dados para treinamento, enquanto aqueles logados têm mais opções, como exportar seus dados ou excluir a conta que acessa o ChatGPT.
 
+:::info
+PRIVACIDADE: Samsung "dá um puxão de orelha" nos usuários do ChatGPT. [Saiba mais sobre a história e o que podemos aprender com esse caso](https://criatividade.digital/blog/samsung/).
+:::
+
 ### Desativando o uso de dados para treinamento
 Nas "Configurações" do ChatGPT, procure a seção "Controlar dados". Lá, você pode ativar ou desativar a opção "Melhore o modelo para todos", que controla o uso de seus dados para aprimorar o modelo.
 
