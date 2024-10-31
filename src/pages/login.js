@@ -34,6 +34,7 @@ export default function login() {
   const urlParams = new URLSearchParams(window.location.search);
   const baseUrl =  useBaseUrl('/');
   let pagRedirecionamento =  urlParams.has('p') ? urlParams.get('p') : baseUrl;
+  const pagValidaLink = `${window.location.origin}${useBaseUrl('/loginlink')}`;
 
   const handleSignIn = async (p) => {
     try {
@@ -44,10 +45,11 @@ export default function login() {
           provider = new OAuthProvider('microsoft.com');
       } else if (p==='email') {
           const actionCodeSettings = {
-            url: 'http://localhost:3000/ChatGPT/loginlink', // URL de redirecionamento após o login
+            url: pagValidaLink, // URL de redirecionamento após o login
             handleCodeInApp: true // Informa ao Firebase que o link será aberto no app
           };
           console.log(emailFornecido);
+          console.log(actionCodeSettings.url);
           firebase.auth().useDeviceLanguage();
           firebase.auth().sendSignInLinkToEmail(emailFornecido, actionCodeSettings)
             .then(() => {
