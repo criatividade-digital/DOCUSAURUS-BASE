@@ -57,6 +57,11 @@
   color: white;
 }
 
+.emailButton {
+  background-color: #9f2a2a;
+  color: white;
+}
+
 .googleIcon {
   background-color: white;
   border-radius: 50%;

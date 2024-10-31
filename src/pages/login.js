@@ -1,21 +1,35 @@
 import React from 'react';
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { FcGoogle } from 'react-icons/fc'; // Ícone do Google
 import { FaMicrosoft } from 'react-icons/fa'; // Ícone da Microsoft
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FaEnvelope } from 'react-icons/fa'; // Ícone de envelope de e-mail
+import { FaPaperPlane } from 'react-icons/fa'; // Ícone de mensagem sendo enviada
+
 
 import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
-import { GoogleAuthProvider, EmailAuthProvider, OAuthProvider, signInWithPopup } from 'firebase/auth';
+import { GoogleAuthProvider, OAuthProvider, signInWithPopup } from 'firebase/auth';
 
 import { useHistory } from '@docusaurus/router';
 import Layout from '@theme/Layout';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import "./login.module.css"; 
+//import "./login.module.css"; Está carregando um css no módulo que usa este componente de Login
 
 
 export default function login() {
   const [errorMessage, setErrorMessage] = useState(null);
+  const [emailMessage, setEmailMessage] = useState(null);
+  const [showEmailInput, setShowEmailInput] = useState(false);
+  const [emailFornecido, setEmailFornecido] = useState('');
+  const emailInputRef = useRef(null);
+
+  // Adicionando useEffect para monitorar showEmailInput
+  useEffect(() => {
+    if (showEmailInput && emailInputRef.current) {
+      emailInputRef.current.focus(); // Define o foco no campo de e-mail quando é exibido
+    }
+  }, [showEmailInput]); // Dependência adicionada aqui
+
   const history = useHistory();
   const urlParams = new URLSearchParams(window.location.search);
   const baseUrl =  useBaseUrl('/');
@@ -28,7 +42,46 @@ export default function login() {
           provider = new GoogleAuthProvider()
       } else if (p==='Microsoft') {
           provider = new OAuthProvider('microsoft.com');
-      } else 
+      } else if (p==='email') {
+          const actionCodeSettings = {
+            url: 'http://localhost:3000/ChatGPT/loginlink', // URL de redirecionamento após o login
+            handleCodeInApp: true // Informa ao Firebase que o link será aberto no app
+          };
+          console.log(emailFornecido);
+          firebase.auth().useDeviceLanguage();
+          firebase.auth().sendSignInLinkToEmail(emailFornecido, actionCodeSettings)
+            .then(() => {
+              // Salva o e-mail para recuperação posterior
+              window.localStorage.setItem('emailForSignIn', emailFornecido);
+              console.log('Link de autenticação enviado!');
+              let message = 'O link para acessar o Guia foi enviado para o e-mail '+ emailFornecido +'.'
+              alert (message);
+              message = message + ' Por favor, verifique sua caixa de entrada (ou a pasta de spam) e siga as instruções para concluir seu acesso!'
+              setEmailMessage(message);
+
+            })
+            .catch((error) => {
+              console.log("Sign-in error:", error.email, error);
+              let message;
+              switch (error.code) {
+                case 'auth/admin-restricted-operation':
+                  /*Não existe o usuário*/
+                  message = 'Não foi encontrada uma licença de acesso ao guia associada ao e-mail ' + emailFornecido + '.'; //tentei imprimir o email mas na documentação fala que por questões de segurança neste caso o e-mail utilizado não é informado.
+                  break;
+                case 'auth/missing-email':
+                  message = 'Digite o e-mail para envio do link de acesso ao guia.'
+                  break;
+                case 'auth/invalid-email':
+                  message = 'Não foi encontrada uma licença de acesso ao guia associada ao e-mail ' + emailFornecido + '. Verifique se ele foi digitado corretamente.';
+                  break;
+                default:
+                  message = error.code + ':' + error.message;
+              }
+              setErrorMessage(message);
+            });
+          return;
+          
+      } else
         return;
 
       await firebase.auth().signInWithPopup(provider);
@@ -97,14 +150,41 @@ export default function login() {
           <br />
           <h2 className="title">Escolha a forma de login que você usou ao liberar o acesso ao guia:</h2>
           </center>
-          <button onClick={() => handleSignIn('Google')} className="button googleButton">
-            <FcGoogle className="googleIcon" /> Login com Google
-          </button>
-          <button onClick={() => handleSignIn('Microsoft')} className="button microsoftButton">
-            <FaMicrosoft className="microsoftIcon" /> Login com Microsoft
-          </button>
+          {!showEmailInput && (
+            <>
+              <button onClick={() => handleSignIn('Google')} className="button googleButton">
+                <FcGoogle className="googleIcon" /> Login com Google
+              </button>
+              <button onClick={() => handleSignIn('Microsoft')} className="button microsoftButton">
+                <FaMicrosoft className="microsoftIcon" /> Login com Microsoft
+              </button>
+            </>
+          )}
+
+          {!showEmailInput ? (
+              <button onClick={() => setShowEmailInput(true)} className="button emailButton">
+                <FaEnvelope className="emailIcon"/> Login com email
+              </button>
+            ) : (
+              <>
+                <center>
+                <input
+                  type="email"
+                  placeholder="Digite seu e-mail"
+                  onChange={(e) => {setEmailFornecido(e.target.value); }}
+                  className="emailInput"
+                  ref={emailInputRef}          // Associa a referência ao campo de entrada
+                />
+                </center>
+                <button onClick={() => handleSignIn('email')} className="button emailButton">
+                  <FaPaperPlane className="emailIcon" />Enviar link de acesso
+                </button>
+              </>
+            )}
+
           <center>
           {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
+          {emailMessage && <p style={{ color: 'green' }}>{emailMessage}</p>}
           </center>
         </div>
       </div>
