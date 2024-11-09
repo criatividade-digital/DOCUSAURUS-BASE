@@ -8,7 +8,7 @@ import { FaPaperPlane } from 'react-icons/fa'; // Ícone de mensagem sendo envia
 
 import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
-import { GoogleAuthProvider, OAuthProvider, signInWithPopup } from 'firebase/auth';
+import { GoogleAuthProvider, OAuthProvider } from 'firebase/auth';
 
 import { useHistory } from '@docusaurus/router';
 import Layout from '@theme/Layout';
@@ -46,7 +46,7 @@ export default function login() {
       } else if (p==='email') {
           const actionCodeSettings = {
             url: pagValidaLink, // URL de redirecionamento após o login
-            handleCodeInApp: false // Informa ao Firebase que o link será aberto no app
+            handleCodeInApp: true // Informa ao Firebase que o link será aberto no app
           };
           console.log(emailFornecido);
           console.log(actionCodeSettings.url);
