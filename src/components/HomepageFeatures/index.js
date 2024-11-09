@@ -27,6 +27,11 @@ export default function HomepageFeatures() {
             Meu objetivo com este guia é esclarecer de maneira objetiva e acessível o funcionamento do ChatGPT, 
             mostrando como você pode aproveitar ao máximo essa ferramenta de forma segura e responsável.
             </p>
+            <p>            
+            <center>
+                <b><a href="docs/apresentacao">Clique aqui para iniciar o guia.</a></b>
+            </center>
+            </p>            
 
         </div>
         <center>
