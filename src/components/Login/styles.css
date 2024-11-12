@@ -52,6 +52,11 @@
   color: white;
 }
 
+.codeButton {
+  background-color: #db7c29;
+  color: white;
+}
+
 .emailInput {
   width: 100%;                    /* Ajusta a largura ao contêiner */
   max-width: 400px;               /* Limita a largura */

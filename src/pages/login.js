@@ -4,11 +4,12 @@ import { FcGoogle } from 'react-icons/fc'; // Ícone do Google
 import { FaMicrosoft } from 'react-icons/fa'; // Ícone da Microsoft
 import { FaEnvelope } from 'react-icons/fa'; // Ícone de envelope de e-mail
 import { FaPaperPlane } from 'react-icons/fa'; // Ícone de mensagem sendo enviada
+import { FaUnlockAlt } from 'react-icons/fa';
 
 
 import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
-import { GoogleAuthProvider, OAuthProvider } from 'firebase/auth';
+import { GoogleAuthProvider, OAuthProvider, signInWithEmailAndPassword } from 'firebase/auth';
 
 import { useHistory } from '@docusaurus/router';
 import Layout from '@theme/Layout';
@@ -20,15 +21,21 @@ export default function login() {
   const [errorMessage, setErrorMessage] = useState(null);
   const [emailMessage, setEmailMessage] = useState(null);
   const [showEmailInput, setShowEmailInput] = useState(false);
+  const [showSpecialCode, setShowSpecialCode] = useState(false);
   const [emailFornecido, setEmailFornecido] = useState('');
+  const [codeFornecido, setCodigoFornecido] = useState('');
   const emailInputRef = useRef(null);
+  const specialCodeInputRef = useRef(null);
 
   // Adicionando useEffect para monitorar showEmailInput
   useEffect(() => {
     if (showEmailInput && emailInputRef.current) {
       emailInputRef.current.focus(); // Define o foco no campo de e-mail quando é exibido
     }
-  }, [showEmailInput]); // Dependência adicionada aqui
+    else if (showSpecialCode && specialCodeInputRef.current) {
+      specialCodeInputRef.current.focus(); // Define o foco no campo de e-mail quando é exibido
+    }
+  }, [showEmailInput, showSpecialCode]); // Dependência adicionada aqui
 
   const history = useHistory();
   const urlParams = new URLSearchParams(window.location.search);
@@ -43,6 +50,28 @@ export default function login() {
           provider = new GoogleAuthProvider()
       } else if (p==='Microsoft') {
           provider = new OAuthProvider('microsoft.com');
+      } else if (p==='codigo') {
+          let code = codeFornecido.trim();
+          console.log('código fornecido:', code);
+          if (code==='503-12') {
+            try {
+              // Realizar o login com Firebase Authentication
+              await signInWithEmailAndPassword(firebase.auth(), 'avaliar@criatividade.digital', 'acesso');
+              console.log("Login via código realizado com sucesso!");
+              history.push(pagRedirecionamento);
+              return;
+            } catch (error) {
+              console.log('Código fornecido inexistente');
+              let message = "O código de acesso informado não foi encontrado. Verifique se digitou corretamente e tente novamente."
+              setErrorMessage(message);
+              return;
+            }
+          } else {
+            console.log('Código fornecido inexistente');
+            let message = "O código de acesso informado não foi encontrado. Verifique se digitou corretamente e tente novamente."
+            setErrorMessage(message);
+            return;
+          }
       } else if (p==='email') {
           const actionCodeSettings = {
             url: pagValidaLink, // URL de redirecionamento após o login
@@ -164,7 +193,7 @@ export default function login() {
           )}
 
           {!showEmailInput ? (
-              <button onClick={() => setShowEmailInput(true)} className="button emailButton">
+              <button onClick={() => {setShowEmailInput(true); setShowSpecialCode(false);}} className="button emailButton">
                 <FaEnvelope className="emailIcon"/> Login com email
               </button>
             ) : (
@@ -182,7 +211,30 @@ export default function login() {
                   <FaPaperPlane className="emailIcon" />Enviar link de acesso
                 </button>
               </>
-            )}
+            )
+          }
+
+          {!showSpecialCode ? (
+              <button onClick={() => {setShowSpecialCode(true); setShowEmailInput(false);}} className="button codeButton">
+                <FaUnlockAlt className="emailIcon"/> Usar código de acesso
+              </button>
+            ) : (
+              <>
+                <center>
+                <input
+                  type="codigo"
+                  placeholder="Digite o código de acesso"
+                  onChange={(e) => {setCodigoFornecido(e.target.value); }}
+                  className="emailInput"
+                  ref={specialCodeInputRef}          // Associa a referência ao campo de entrada
+                />
+                </center>
+                <button onClick={() => handleSignIn('codigo')} className="button emailButton">
+                  <FaPaperPlane className="emailIcon" />Enviar código de acesso
+                </button>
+              </>
+            )
+          }
 
           <center>
           {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
