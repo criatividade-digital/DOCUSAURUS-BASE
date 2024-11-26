@@ -32,5 +32,5 @@ Realizei uma conversa prática com o ChatGPT para demonstrar essa ideia. No link
 
 [Link: **exemplo de revisão de texto e verificação do que o ChatGPT lembra das instruções desta tarefa.**](https://chatgpt.com/share/671513e6-c7cc-8003-9b63-8dc17c9ff244)
 
-## Resumo da Ópera
+## Conclusão
 A janela de contexto é como a memória de curto prazo do ChatGPT. Ela segue a conversa até certo ponto, mas em diálogos longos ou muito complexos, alguns detalhes antigos podem se perder. Para evitar isso, forneça resumos frequentes ou reitere pontos-chave ao longo da conversa. Dessa forma, você garante que o modelo continue a gerar respostas relevantes e conectadas ao contexto inicial.

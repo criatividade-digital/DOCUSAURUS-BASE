@@ -35,7 +35,7 @@ Veja um exemplo usando o caso da produção de mangas no México. Logo após a r
 ```url wordWrap link='https://chatgpt.com/share/66ec746a-4c20-8003-9676-3ec44654fa28'
 Avalie a acuracidade da minha pergunta. Depois avalie a acuracidade da sua resposta.
 ```
-Talvez você não consiga reproduzir exatamente este caso quando estiver lendo este texto. O motivo disso foi discutido anteriormente, quando falei sobre o fenômeno de [alucinação](http://localhost:3000/ChatGPT/docs/criacao/alucinacao):
+Talvez você não consiga reproduzir exatamente este caso quando estiver lendo este texto. O motivo disso foi discutido anteriormente, quando falei sobre o fenômeno de [alucinação](../criacao/alucinacao):
 
 >*...as ferramentas de IA estão em constante aprimoramento, com ajustes nos algoritmos, atualizações dos dados de treinamento e incorporação de feedback dos usuários para corrigir erros e vieses. Segundo, há o risco de acreditarmos em respostas incorretas, já que os modelos de linguagem geram texto de maneira bastante convincente.*
 

@@ -35,12 +35,12 @@ Para produzir o documento, o advogado responsável pelo caso contra a Avianca ut
 
 O resultado foi que ninguém – nem os advogados da companhia aérea, nem o próprio juiz – conseguiu encontrar as decisões ou citações mencionadas no documento. O juiz considerou a situação 'sem precedentes' e ordenou uma audiência para avaliar possíveis sanções contra o advogado. Na audiência, advogados e escritórios foram multados em US$ 5.000 por apresentar <spam class="text-highlight">citações falsas em um documento judicial</spam>.
 
-# O risco da alucinação
+## O risco da alucinação
 Uma alucinação ocorre quando o ChatGPT gera uma resposta que parece plausível, mas está incorreta ou foi inventada.
 
 O termo 'alucinação' é utilizado porque, assim como uma alucinação em seres humanos envolve a percepção de algo que não está presente na realidade, uma alucinação em modelos de linguagem refere-se à geração de informações sem fundamento real, que podem parecer convincentes e reais.
 
-# Por que a ferramenta alucina?
+## Por que a ferramenta alucina?
 Ferramentas baseadas em IA, como o ChatGPT, funcionam prevendo as probabilidades de sequências de palavras. Cada palavra gerada é escolhida <spam class="text-highlight">com base nas probabilidades</spam> calculadas a partir do texto atual. Quando o modelo faz uma previsão incorreta ou improvável, isso pode resultar em uma 'alucinação', ou seja, uma resposta que não é factualmente correta.
 
 <BoasVindasChatGPT />
