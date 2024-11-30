@@ -1,9 +1,10 @@
 ---
-sidebar_position: 2
+sidebar_position: 4
 ---
 
 # Cadeia de Raciocínio
-A resposta gerada por um modelo de linguagem como o ChatGPT depende essencialmente de dois fatores: os dados em que foi treinado e os *prompts* utilizados para direcionar sua operação. A Cadeia de Raciocínio (*Chain of Thought*, ou CoT) é uma técnica avançada de *prompting* que transforma a interação com modelos de linguagem como o ChatGPT. Em vez de buscar respostas diretas, esta abordagem incentiva o modelo a revelar seu processo "mental", detalhando cada etapa do raciocínio antes de chegar a uma conclusão.
+A resposta gerada por um modelo de linguagem — base do funcionamento do ChatGPT — depende essencialmente de dois fatores: os dados em que foi treinado e a maneira como os *prompts* são estruturados para orientar sua operação. Uma técnica de estruturação de *prompting* muito interessante é comumente chamada de Cadeia de Raciocínio (*Chain of Thought*, ou CoT), uma abordagem avançada que transforma a interação com o modelo. Em vez de buscar respostas diretas, essa técnica incentiva o modelo a revelar seu processo "mental", detalhando cada etapa do raciocínio antes de chegar a uma conclusão.
+
 
 Por meio de um *prompt* baseado em CoT, o ChatGPT é guiado a adotar um processo estruturado e detalhado, que vai além de simplesmente fornecer uma resposta final. Esse processo inclui:
 
