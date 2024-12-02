@@ -1,11 +1,24 @@
 ---
 sidebar_position: 3
 ---
-# Meu amigo ChatGPT
+# Só sei que nada sei
+Se você já assistiu a uma palestra ou explorou um guia de introdução à inteligência artificial, provavelmente já ouviu falar do artigo escrito por pesquisadores da OpenAI, a organização responsável pelo ChatGPT. Embora esse artigo não aborde diretamente o tema de prompts, ele traz uma reflexão impactante logo na introdução: *“Modelos de linguagem tornaram-se mais capazes e amplamente utilizados, mas ainda não compreendemos como eles funcionam.”*
 
-**precisa acrescentar aqui de que entender isso é entender como o chatgpt funciona por dentro. é claro que até por força do habito pode se usar palavras desnecessárias, agradecimentos, etc. mas em alguns momentos você pode experimentar usar apenas as palavras mais importantes. citar a pesquisa que diz que ser educado pode obter melhores respostas mas que isso foi testado por um cara que não conseguiu chegar a uma conclusão da diferença de ser simpático dizer obrigado, etc.**
+![Artigo - nós não entendemos](we-do-not-understand.png))
 
-Quando usamos o ChatGPT, a experiência pode ser tão fluida e interativa que muitas vezes nos esquecemos: não estamos falando com uma pessoa, mas sim com um modelo de linguagem avançado. Essa naturalidade leva muitos usuários a escreverem como se estivessem conversando com um amigo — e isso não é algo errado. No entanto, entender como o modelo processa as informações pode ajudar você a otimizar suas interações e obter respostas ainda melhores.  
+Por isso neste guia [escrevi](../criacao/nova-visao):
+>...*construir prompts pode ser uma combinação de arte, engenharia e tentativa e erro, com cada aspecto desempenhando um papel importante...*
+
+Nesse contexto, construir prompts é uma mistura de arte, engenharia e tentativa e erro, em que cada aspecto desempenha um papel crucial no processo. A complexidade da rede neural por trás de um modelo de linguagem com mais de 175 bilhões de parâmetros ajustáveis torna praticamente impossível, pelo menos até hoje, compreender completamente as relações armazenadas nessa estrutura massiva.
+
+Por isso, o estudo e a experimentação sobre como criar os melhores prompts têm se tornado uma prática comum. Algumas abordagens, inclusive, chegam a ser bastante criativas — como oferecer uma "gorjeta" no prompt ou até incluir uma ameaça, na tentativa de obter melhores respostas ([veja aqui, em inglês](https://minimaxir.com/2024/02/chatgpt-tips-analysis/)). Embora essas experiências sejam anedóticas, outras investigações sistemáticas analisam o impacto do uso das palavras nas respostas dos modelos, como o estudo que analisou the Influence of Prompt Politeness on LLM Performance. Isso mesmo: incluir um "por favor" ou uma expressão educada no prompt pode melhorar a qualidade da resposta (veja aqui, em inglês). O estudo observed that impolite prompts often result in poor performance, but overly polite language does not guarantee better outcomes. 
+
+Uma possibilidade para em alguns cenários a polidez do prompt enfluenciar a resposta pode estar  ao textos usados no treinamento onde a linguagem formal e respeitosa apareça com mais frequência vinculada a interações de alta qualidade. Mas, como a frase contida na introdução do artigo da OpenIA *"...ainda não compreendemos como eles funcionam."*
+
+Mas o meu objetivo maior com este texto é outro. Quando usamos o ChatGPT, a experiência é tão natural e interativa que muitas vezes nos esquecemos de uma verdade fundamental: não estamos conversando com uma pessoa, mas sim com um modelo de linguagem avançado. Essa fluidez faz com que muitos usuários escrevam como se estivessem dialogando com um amigo — e isso não está errado. Inclusive, já discutimos essa abordagem na estratégia "Adote o Papel de Mentor".
+
+## Para um bom entendedor...
+Mas para se tornar um mestre no uso do ChatGPT, é essencial compreender como as suas respostas são sensíveis as palavras que utilizamos no prompt. Assim como a "polidez" em alguns casos possa gerar uma resposta um pouco melhor. Por outro lado é possível obter respostas muito boas usando apenas as palavras mais relevantes.Palavras-chave bem escolhidas podem ser suficientes para que o modelo entenda e atenda às suas necessidades. Entender essa dinâmica é fundamental para que você consiga chegar a maestria no uso do ChatGPT.
 
 ## O ChatGPT e as Palavras-Chave  
 Embora frases completas e detalhadas sejam úteis, o ChatGPT também responde muito bem a prompts curtos baseados em palavras-chave. Isso acontece porque ele processa o texto com base nos padrões e significados que essas palavras carregam. Por exemplo, ao invés de digitar:  
@@ -15,28 +28,20 @@ você pode simplesmente escrever:
 
 Ambos os formatos funcionarão, mas isso ilustra como o mais importante nos prompts são as palavras que levam o modelo a chegar na resposta desejada como comentei na seção [arte ou engenharia](../criacao/nova-visao#o-detetive-chatgpt).  
 
-### Quando usar frases completas?  
-Apesar de palavras-chave funcionarem bem para pedidos simples, frases completas são valiosas em contextos mais complexos ou quando você precisa de respostas muito específicas. Por exemplo:  
-- **Palavras-chave:** "História IA" — Resultado: Um resumo geral da história da inteligência artificial.  
-- **Frase completa:** "Explique a história da inteligência artificial focando nos avanços após 2000." — Resultado: Um texto detalhado e focado exatamente no período desejado.  
-
-Seja qual for a abordagem, o mais importante é garantir que o modelo tenha informações suficientes para entender o que você quer.  
-
-### Não é sobre "etiqueta", é sobre eficácia  
-Não se preocupe com "ser educado" ou usar saudações formais. O ChatGPT não é uma pessoa e não "se sente" de nenhuma forma. Frases como *"Por favor"*, *"Obrigada"* ou *"Oi, tudo bem?"* não são necessárias para que ele funcione bem. Claro, se isso faz parte do seu estilo ou ajuda você a estruturar melhor seus pensamentos, pode continuar usando. Apenas lembre-se: elas não influenciam diretamente a qualidade da resposta.  
-
-### Simplifique e Experimente  
+## Simplifique e Experimente  
 Como um "mestre do GPT", seu objetivo é descobrir como estruturar seus prompts da maneira mais eficiente. Aqui estão algumas práticas que você pode adotar:  
 - **Use palavras-chave:** Perfeito para solicitações diretas ou amplas.  
 - **Inclua contexto quando necessário:** Se o pedido é específico, forneça detalhes relevantes.  
 - **Teste diferentes formatos:** Às vezes, uma reformulação simples transforma uma resposta.  
 
 Por exemplo:  
-1. "Receitas jantar fáceis rápidas" — Solicitação rápida e direta.  
-2. "Sugira receitas para um jantar rápido usando poucos ingredientes e explicações simples." — Mais detalhado e direcionado.  
+1. *Resumo relatório vendas principais tendências*.  
+1. *Dicas otimização SEO blog artigos*.  
+1. *Etapas planejamento projeto exemplo prático.*
+1. *Modelo e-mail profissional apresentação empresa.*
 
-### Aproveitando o Melhor dos Dois Mundos  
-Você pode alternar entre palavras-chave e frases completas dependendo da situação. Essa flexibilidade é uma das maiores vantagens do ChatGPT. Quando você se sentir mais confiante, perceberá que é como uma conversa com um amigo, mas com um amigo que entende muito bem comandos claros e objetivos.  
+## Não é sobre "etiqueta", é sobre eficácia  
+No dia a dia você pode ser "econômico" na sua interação com o ChatGPT. O seu prompt pode se ater ao essencial. Mas claro, se escrever frases completas ajuda você a estruturar melhor seus pensamentos, pode continuar usando. Apenas lembre-se: o próprio chatgpt vai analisar o seu prompt e considerar o que ele identifica como mais relevante, e que por sinal, consegue fazer isso muito bem. Eu mesmo me pego usando palavras como "obrigado" ou "por favor" nos meus prompts. Mas um prompt focado em palavras chaves pode ajudar deixar claro para o modelo o que realmente interessa para você.
 
-No final das contas, o ChatGPT está aqui para ajudá-lo. Seja com palavras curtas ou mensagens mais elaboradas, a chave é experimentar, ajustar e encontrar o estilo que funciona melhor para você. Afinal, você já não é mais um iniciante — você é agora um mestre do GPT!
+Seja qual for a abordagem, o mais importante é garantir que o modelo tenha informações suficientes para entender o que você quer.  
 
