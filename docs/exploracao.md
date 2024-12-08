@@ -79,6 +79,10 @@ O ChatGPT pode ajustar a extensão de suas respostas conforme solicitado, como a
 * <ClassificarPrompt tipo='contexto'>Contexto</ClassificarPrompt>: "Para uma equipe de líderes empresariais." Isso indica que o público-alvo são líderes empresariais, o que sugere a necessidade de uma explicação que, embora técnica, deve ser relevante e aplicável ao mundo dos negócios.
 * <ClassificarPrompt tipo='formato'>Formato</ClassificarPrompt>: "Estruture sua resposta em um formato de três parágrafos, cada um com foco em conceito, funcionamento e exemplos de uso prático." Isso define que a resposta deve ser organizada em três parágrafos distintos, abordando conceito, funcionamento e aplicações práticas dos LLMs.
 
+<center>
+![Resumo capítulo Iniciação](./exploracao-prompt.svg)
+</center>
+
 ## Colorindo os textos
 Antes de encerrar este capítulo, gostaria de fazer um comentário sobre os *prompts* e as classificações que apresentei. Identificar se um elemento do prompt pertence à Persona, Tarefa, Contexto ou Formato nem sempre é evidente. Portanto, se decidir adotar essa estruturação, tenha em mente que a classificação em si não deve ser o foco principal. O mais importante é fornecer informações claras e suficientes para que o ChatGPT compreenda sua solicitação e ofereça a melhor resposta possível. Pense nesses elementos como um *checklist* útil para avaliar se o seu *prompt* está bem estruturado.
 
