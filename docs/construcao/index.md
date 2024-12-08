@@ -13,4 +13,4 @@ Em seguida, "Por que ChatGPT?" mergulha na essência do nome da ferramenta, expl
 
 Por fim, "Respostas prontas" oferece um alerta importante sobre o uso passivo de respostas sintetizadas. Vamos discutir como a exploração ativa, a solicitação de perspectivas alternativas e o questionamento contínuo podem levar a uma compreensão mais profunda e completa dos assuntos abordados. Aqui, você verá como o ChatGPT pode ser usado para expandir seu pensamento crítico e fomentar diálogos mais ricos e significativos.
 
-Neste capítulo forneço uma visão abrangente sobre como maximizar o uso do ChatGPT, não apenas como uma ferramenta de resposta, mas como um verdadeiro parceiro de conversação.
+Neste capítulo forneço uma visão abrangente sobre como maximizar o uso do ChatGPT, não apenas como uma ferramenta de resposta, mas como um verdadeiro parceiro de trabalho.

@@ -16,6 +16,10 @@ Parece uma boa definição, certo? Mas como saber, na prática, se o *prompt* qu
 
 Agora, vou compartilhar essa estrutura com você.
 
+<center>
+![Resumo capítulo Iniciação](./exploracao-resumo.svg)
+</center>
+
 ## Estrutura de um *prompt* eficiente
 Para obter respostas mais precisas e relevantes do ChatGPT, é recomendável estruturar seu *prompt* com alguns elementos-chave. Embora um *prompt* não precise conter todos esses elementos, a inclusão de alguns pode melhorar significativamente a qualidade da resposta. Os principais elementos a considerar são:
 
@@ -25,6 +29,10 @@ Para obter respostas mais precisas e relevantes do ChatGPT, é recomendável est
 * <ClassificarPrompt tipo='formato'>Formato</ClassificarPrompt>: Define como a resposta deve ser estruturada, incluindo o tipo de apresentação, como lista, parágrafos explicativos, ou tabela comparativa, e também a quantidade ou tamanho desejado, como o número de palavras ou a extensão de cada seção. Especificar o formato ajuda a obter uma resposta que se encaixe melhor nas suas necessidades.
 
 Lembre-se de que, quanto mais claro e específico for seu *prompt*, melhor será a interação com o ChatGPT. Embora um *prompt* não precise incluir todos os elementos mencionados, a presença deles pode melhorar significativamente a qualidade da resposta.
+
+<center>
+![Resumo capítulo Iniciação](./exploracao-prompt-eficiente.svg)
+</center>
 
 ## Exemplos de *prompts*
 Para tornar esse conceito mais prático, vamos analisar alguns exemplos. No capítulo anterior, utilizamos vários *prompts*. Agora, destacarei como cada um dos elementos aparece nesses exemplos.
@@ -75,4 +83,10 @@ O ChatGPT pode ajustar a extensão de suas respostas conforme solicitado, como a
 Antes de encerrar este capítulo, gostaria de fazer um comentário sobre os *prompts* e as classificações que apresentei. Identificar se um elemento do prompt pertence à Persona, Tarefa, Contexto ou Formato nem sempre é evidente. Portanto, se decidir adotar essa estruturação, tenha em mente que a classificação em si não deve ser o foco principal. O mais importante é fornecer informações claras e suficientes para que o ChatGPT compreenda sua solicitação e ofereça a melhor resposta possível. Pense nesses elementos como um *checklist* útil para avaliar se o seu *prompt* está bem estruturado.
 
 ## Parabéns
-Com este capítulo, você aprendeu uma estrutura útil para guiar a redação de seus próximos *prompts*. Ao seguir essa abordagem, você pode melhorar a clareza e a precisão das respostas geradas pelo ChatGPT. A partir de agora, você está promovido ao nível "Explorador do ChatGPT"!
+Com este capítulo, você aprendeu uma estrutura útil para guiar a redação de seus próximos *prompts*. Ao seguir essa abordagem, você pode melhorar a clareza e a precisão das respostas geradas pelo ChatGPT. 
+
+<center>
+![Resumo capítulo Iniciação](./exploracao-resumo-itens.svg)
+</center>
+
+A partir de agora, você está promovido ao nível "Explorador do ChatGPT"!

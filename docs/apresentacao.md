@@ -1,8 +1,18 @@
 ---
 sidebar_position: 1
 ---
+import LigaHighlight from '@site/src/components/gsap/highlight'
+
 # Apresentação
-Bem-vindo ao guia que vai transformar a maneira como você interage com a inteligência artificial! Cada capítulo é uma conquista, marcada por um *badge* que simboliza seu progresso e habilidades adquiridas. Prepare-se para uma jornada de aprendizado prática e instigante que o levará do básico à maestria. Vamos explorar os capítulos:
+<LigaHighlight />
+Bem-vindo ao guia que vai transformar sua interação com a inteligência artificial!
+Estruturei este material para que cada capítulo represente uma conquista, marcada por um *badge* que simboliza seu progresso e as habilidades adquiridas ao longo do caminho.
+
+A proposta é oferecer uma experiência prática e envolvente, que começa no básico e o leva à maestria. Estou aqui para acompanhá-lo passo a passo nessa jornada instigante e cheia de descobertas.
+
+Se você prefere ter uma visão geral do que vai aprender, siga comigo e confira a apresentação de cada capítulo a seguir.👇 Caso contrário, <spam class="text-highlight">pode ir direto</spam> ao [Capítulo 'Curioso' clicando aqui](./curioso.md).
+
+![Escada mostrando a ordem dos badges até o final do guia](./apresentacao-escada.svg)
 
 ## **0. Curioso**
 Todo começo merece ser celebrado, e o Capítulo Curioso é o ponto de partida da sua jornada. Aqui, você é incentivado a dar o primeiro passo prático: criar sua conta no ChatGPT. Ao final, você conquista o Badge Curioso, reconhecendo sua iniciativa e curiosidade em desbravar o mundo do ChatGPT!
