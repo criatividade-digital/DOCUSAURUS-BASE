@@ -41,6 +41,10 @@ Utilizando seu conhecimento sobre a criação de prompts eficazes, elabore um pr
 **O que achou da resposta?**  
 Lembre-se de que comparei o ChatGPT a um **oráculo**, não a um **adivinho** 😉. O *prompt* acima pode não gerar exatamente o texto que você precisa, mas é um excelente ponto de partida. Aproveite a estrutura e as ideias, refinando o seu *prompt* até que ele atenda completamente às suas necessidades.
 
+<center>
+![Resumo capítulo Iniciação](./oraculo-estrategia.svg)
+</center>
+
 Se, mesmo com o exemplo gerado pelo ChatGPT, você ainda não se sentir confortável em elaborar um *prompt* completo, minha dica é usar uma abordagem mais direta. O *prompt* pode não ter as nuances de um texto mais elaborado, mas ainda assim costuma ser bastante efetivo. A pergunta pode apresentar cada elemento de forma clara e separada, especificando exatamente o que você deseja em termos de persona, tarefa, contexto e formato. Veja isso em ação no exemplo abaixo:
 
 ```url wordWrap link='https://chatgpt.com/share/c01d6e87-b6cc-4d4f-9399-8299e130975d'
@@ -53,7 +57,7 @@ Formato: Lista explicando os riscos. Para cada item, inclua uma metáfora simple
 
 Essa abordagem não só facilita a criação do *prompt*, como também aumenta as chances de obter uma resposta mais focada e alinhada com o que você deseja, sem precisar gastar tempo estruturando um texto mais extenso, que pode introduzir ambiguidades.
 
-:::warning
+:::tip
 
 Quando construímos prompts muito longos ou complexos, corremos o risco de introduzir ambiguidades e inconsistências. Isso ocorre porque um texto extenso pode incluir várias ideias ou detalhes que podem não estar claramente relacionados.
 
