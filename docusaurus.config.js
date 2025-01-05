@@ -125,9 +125,13 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'guiaSidebar',
             position: 'left',
-            label: 'Conteúdo',
+            label: 'Guia',
+          },
+          {
+            type: 'custom-Curso',
+            position: 'left',
           },
           {
             type: 'custom-Login', 

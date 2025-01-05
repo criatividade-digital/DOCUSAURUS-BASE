@@ -7,8 +7,6 @@ import 'react-tooltip/dist/react-tooltip.css';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import { FaSignOutAlt } from 'react-icons/fa';
-import { useThemeConfig } from "@docusaurus/theme-common";
-
 import {
   LOGIN_BUTTON,
   LOGIN_PATH,
@@ -162,7 +160,7 @@ const User = () => {
           </a>
         </div>
       ) : (
-        <span></span>
+        <spam></spam>
       )}
     </div>
   );
