@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { DiffEditor, useMonaco } from '@monaco-editor/react';
+import './Diferenca.css'; // Import the CSS file
 
 const CodeDiffViewer = () => {
-  const [originalCode, setOriginalCode] = useState(`Oi tudo bem`);
-  const [modifiedCode, setModifiedCode] = useState(`oi tudo bem`);
+  const [originalCode, setOriginalCode] = useState('');
+  const [modifiedCode, setModifiedCode] = useState('');
   const monaco = useMonaco();
 
   useEffect(() => {
@@ -25,20 +26,22 @@ const CodeDiffViewer = () => {
   }, [monaco]);
 
   return (
-    <div>
+    <div className="diff-container">
       <textarea
         value={originalCode}
         onChange={(e) => setOriginalCode(e.target.value)}
-        placeholder="Original Code"
+        placeholder="Texto original"
         rows="10"
         cols="50"
+        className="diff-textarea"
       />
       <textarea
         value={modifiedCode}
         onChange={(e) => setModifiedCode(e.target.value)}
-        placeholder="Modified Code"
+        placeholder="Texto alterado"
         rows="10"
         cols="50"
+        className="diff-textarea"
       />
       <DiffEditor
         height="40vh"

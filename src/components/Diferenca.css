@@ -1,0 +1,26 @@
+.diff-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+}
+.diff-textarea {
+  flex: 1 1 50% !important;; 
+  box-sizing: border-box;
+  width: 100%;
+}
+/* retirei porque por algum motivo que não achei não funcionou para colocar os textareas lado a lado 
+.diff-textarea {
+  flex: 1 1 50% !important;; 
+  box-sizing: border-box;
+  width: 50%;
+}
+
+@media (max-width: 600px) {
+  .diff-textarea {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+}
+
+*/

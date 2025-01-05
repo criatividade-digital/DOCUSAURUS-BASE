@@ -37,28 +37,15 @@ const PromptLinkedin = () => {
 
   const turndownService = new TurndownService();
 
-  const correcaoGramatical = '<li>Correção gramatical: ortografia correta, gramática precisa, pontuação adequada, uso adequado de conectivos e sintaxe correta.</li>';
-  const fluidezECoesao = '<li>Fluidez e coesão: melhorar a clareza, coesão e ritmo, garantindo transições lógicas entre os parágrafos.</li>';
-  const riquesa = '<li>Riqueza de linguagem: substituir palavras repetidas por sinônimos mais adequados, introduzir variação no uso de adjetivos, verbos e advérbios para enriquecer o texto.</li>';
-  const clarezaEObjetividade = '<li>Clareza e objetividade: o texto deve ser direto, objetivo e conciso sem rodeios ou informações supérfluas eliminando ambiguidades, evitando jargões desnecessários e palavras difíceis para que o propósito e a mensagem sejam facilmente compreendidos.</li>'
-  const estruturaPost = `
-  <li>Estrutura do post:</li>
-  <ul>
-    <li><span class="highlight-text orange">Abertura impactante:</span> Comece com uma pergunta provocativa para despertar curiosidade.</li>
-    <li><span class="highlight-text orange">Resumo rápido:</span> Destaque o principal aprendizado do artigo em 2 frases.</li>
-    <li><span class="highlight-text orange">Formatação estratégica:</span>
-      <ul>
-        <li>Parágrafos curtos para facilitar a leitura.</li>
-        <li>Use emojis para destacar pontos importantes.</li>
-        <li>Palavras em negrito para atrair a atenção.</li>
-      </ul>
-    </li>
-  </ul>
-`;
+  const correcaoGramatical = '<li><span class="highlight-text lightgreen">Correção gramatical:</span> ortografia correta, gramática precisa, pontuação adequada, uso adequado de conectivos e sintaxe correta.</li>';
+  const fluidezECoesao = '<li><span class="highlight-text D8BFD8">Fluidez e coesão:</span> melhorar a clareza, coesão e ritmo, garantindo transições lógicas entre os parágrafos.</li>';
+  const riquesa = '<li><span class="highlight-text orange">Riqueza de linguagem:</span> substituir palavras repetidas por sinônimos mais adequados, introduzir variação no uso de adjetivos, verbos e advérbios para enriquecer o texto.</li>';
+  const clarezaEObjetividade = '<li><span class="highlight-text lightblue">Clareza e objetividade:</span> o texto deve ser direto, objetivo e conciso sem rodeios ou informações supérfluas eliminando ambiguidades, evitando jargões desnecessários e palavras difíceis para que o propósito e a mensagem sejam facilmente compreendidos.</li>'
 
   const promptText = `
   Assuma o papel de um revisor experiente e revise o texto a seguir, priorizando os seguintes aspectos:<br />
   ${selectedTexts.join('')}
+  ---<br />
   [coloque seu texto aqui]
   `;
 
@@ -67,8 +54,7 @@ const PromptLinkedin = () => {
       <CheckBox checkedColor='lightgreen' label='Correção Gramatical.' onChange={() => handleCheckboxChange(correcaoGramatical)} />
       <CheckBox checkedColor='#D8BFD8' label='Fluidez e coesão.' onChange={() => handleCheckboxChange(fluidezECoesao)} />
       <CheckBox checkedColor='orange' label='Riqueza de linguagem.' onChange={() => handleCheckboxChange(riquesa)} />
-      <CheckBox checkedColor='red' label='Clareza e objetividade.' onChange={() => handleCheckboxChange(clarezaEObjetividade)} />
-      <CheckBox checkedColor='lightblue' label='<i>Hashtags.</i>' onChange={() => handleCheckboxChange(hashtags)} />
+      <CheckBox checkedColor='lightblue' label='Clareza e objetividade.' onChange={() => handleCheckboxChange(clarezaEObjetividade)} />
 
       <div style={{ position: 'relative', marginTop: '10px' }}>
         <div id='prompt' style={{ background: '#f5f5f5', padding: '10px', borderRadius: '5px', overflowX: 'auto' }}>
