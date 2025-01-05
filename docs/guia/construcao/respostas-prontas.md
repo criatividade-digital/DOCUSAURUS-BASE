@@ -24,7 +24,13 @@ Mesmo que você não tenha pedido por visões alternativas logo de início, a ca
 Por exemplo, se você perguntou sobre hábitos saudáveis e recebeu uma resposta sobre os benefícios de uma prática específica, pode imediatamente questionar: “Existem visões contrárias a essa?” ou “Quais são as críticas a essa prática?”. Assim, o ChatGPT não se limita a uma única linha de pensamento, mas amplia a discussão, trazendo abordagens variadas e, por vezes, conflitantes.
 
 ### O futuro: integração com ferramentas de pesquisa
-Assistentes de IA como o ChatGPT estão em constante evolução para oferecer ainda mais funcionalidades. Atualmente, algumas versões já integram ferramentas de pesquisa na web, permitindo que o chatbot acesse informações atualizadas diretamente da internet. Essa capacidade de consultar fontes em tempo real melhora a qualidade e a diversidade das respostas, tornando o ChatGPT uma ferramenta que vai além da simples síntese de informações pré-existentes.
+Assistentes de IA, como o ChatGPT, estão em constante evolução para oferecer funcionalidades cada vez mais avançadas. Atualmente, mesmo na versão gratuita, o ChatGPT já incorpora a capacidade de realizar buscas na web, permitindo o acesso a informações atualizadas diretamente da internet. Essa funcionalidade de consulta em tempo real aprimora tanto a qualidade quanto a variedade das respostas, transformando o ChatGPT em uma ferramenta que transcende a mera síntese de informações pré-existentes.
+
+:::info
+
+Dependendo do conteúdo do seu *prompt*, o ChatGPT pode optar por utilizar a funcionalidade de busca na *web* como parte do processamento da sua solicitação. No entanto, se você desejar garantir que a resposta inclua uma pesquisa na *web*, basta ativar manualmente a ferramenta "**Buscar na web**", representada pelo ícone de um "globo", antes de enviar o comando.
+
+:::
 
 Com essa evolução, o usuário pode usufruir do melhor dos dois mundos: respostas rápidas e bem estruturadas, combinadas com a possibilidade de acessar fontes externas e garantir que múltiplas perspectivas sejam incluídas no processo.
 
