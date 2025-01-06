@@ -20,7 +20,7 @@ PRIVACIDADE: Samsung "dá um puxão de orelha" nos usuários do ChatGPT. [Saiba 
 :::
 
 ### Desativando o uso de dados para treinamento
-Nas "Configurações" do ChatGPT, procure a seção "Controlar dados". Lá, você pode ativar ou desativar a opção "Melhore o modelo para todos", que controla o uso de seus dados para aprimorar o modelo.
+Nas "Configurações" do ChatGPT, procure a seção "Controlar dados". Lá, você pode ativar ou desativar a opção "Melhorar o modelo para todo o mundo", que controla o uso de seus dados para aprimorar o modelo.
 
 ### Controlando o histórico de conversas
 Originalmente, havia uma opção para desativar o armazenamento automático de conversas. Atualmente, se você não quiser que um diálogo seja salvo, pode usar a opção "Chat temporário", disponível no topo da página da versão web ou no menu "..." do aplicativo. 
