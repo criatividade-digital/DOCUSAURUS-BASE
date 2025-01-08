@@ -2,8 +2,11 @@
 sidebar_position: 2
 ---
 import IconCopy from '@theme/Icon/Copy'
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import '../apresentacao.css';
 
 # Primeiros exemplos
+  <img src={useBaseUrl("/img/docs/curso/typing.png")} alt="Bem-vindo ao curso" title="Imagem de exemplo" class="float-right" />
 Observe o diálogo realizado com o ChatGPT apresentado abaixo e sinta-se à vontade para reproduzir a interação. Para facilitar, use o ícone <IconCopy style={{ width: '14', height: '14' }} /> para copiar a pergunta e colá-la diretamente no ChatGPT. Basta passar o mouse sobre a pergunta ou clicar nela para acessar esse recurso. Se preferir, [clique aqui](https://chatgpt.com/share/67785a73-48dc-8003-99f2-f9d0ef29c8fa) para ver o resultado completo desta interação. 
 
 ```

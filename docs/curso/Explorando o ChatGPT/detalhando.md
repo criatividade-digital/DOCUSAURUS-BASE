@@ -2,8 +2,11 @@
 sidebar_position: 3
 ---
 import PromptLinkedin from '@site/src/components/prompt/PromptLinkedin';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import '../apresentacao.css';
 
 # Detalhando a tarefa
+  <img src={useBaseUrl("/img/docs/curso/post-linkedin.png")} alt="Bem-vindo ao curso" title="Imagem de exemplo" class="float-right" />
 No primeiro conjunto de exemplos de *prompts*, fornecemos apenas uma quantidade básica de detalhes para que o ChatGPT realizasse a tarefa. Quanto menos detalhes incluirmos, mais liberdade a ferramenta terá para gerar os resultados. No entanto, assim como podemos criar comandos mais "genéricos", também é possível detalhar melhor as instruções para obter resultados mais alinhados às nossas expectativas.  
 
 Clique nas opções abaixo para ver como o *prompt* é ajustado conforme as escolhas de direcionamento para a tarefa de geração do post são feitas.  

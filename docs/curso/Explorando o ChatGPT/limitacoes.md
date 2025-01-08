@@ -1,8 +1,11 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 ---
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import '../apresentacao.css';
 
 # Desafios e limitações  
+  <img src={useBaseUrl("/img/docs/curso/robo_limitacao.png")} alt="Bem-vindo ao curso" title="Imagem de exemplo" class="float-right" />
 Vamos retornar ao artigo [*Quando a Máquina Aprendeu a Falar a Nossa Língua?*](https://criatividade.digital/blog/maquina-falar-nossa-lingua/) para explorar as limitações e os desafios enfrentados no uso atual do ChatGPT.  
 
 Novamente, utilizarei um *prompt* para isso. Contudo, desta vez, como destacado na seção [Detalhando a tarefa](./detalhando), não incluí o link, mas sim o texto do artigo. Quero destacar, porém, que o texto apresentado no *prompt* abaixo não contém a íntegra do artigo, apenas uma indicação resumida, para facilitar a sua leitura.  
@@ -45,4 +48,7 @@ No mais, concordo com as sugestões presentes na resposta do ChatGPT ao *prompt*
 1. Verifique a política de uso do ChatGPT adotada na sua organização.
 1. Desative o uso de dados para treinamento: "Configurações" | "Controlar dados" | desativar a opção "Melhorar o modelo para todo o mundo".
 
-
+## Limitações versão gratuita
+Aproveitando o tema "limitações", é importante destacar os pontos a serem observados caso você utilize a versão gratuita ChatGPT:
+* O envio de anexos e a geração de imagens apresentam limitações significativas, incluindo um número reduzido de interações diárias.
+* A quota de uso gratuito para as funcionalidades de análise e geração de texto é mais generosa. Diferentemente das opções de imagens e anexos, que deixam de funcionar completamente ao atingir o limite, a geração de texto permanece disponível. Contudo, nessa situação, o modelo utilizado passa a ser uma versão chamada de "míni". Essa versão simplificada oferece respostas adequadas, mas com menor capacidade de interpretar nuances da linguagem, compreender contextos complexos e produzir textos mais longos, coerentes e criativos. 
