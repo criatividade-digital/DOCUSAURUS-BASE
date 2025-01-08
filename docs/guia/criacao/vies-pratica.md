@@ -20,13 +20,11 @@ Embora não seja possível visualizar diretamente esse espaço complexo de vári
 
 Essas visualizações nos ajudam a entender por que o ChatGPT, às vezes, oferece respostas enviesadas. Se palavras e conceitos relacionados a um grupo ou ideia específica estão muito próximos nesse "mapa", o modelo tende a usar essas relações ao gerar respostas, refletindo os padrões que aprendeu durante o treinamento.
 
-Por exemplo, no gráfico que desenhei abaixo, usei um modelo de linguagem **open source** treinado em textos em português, já que o ChatGPT não disponibiliza seus dados de treinamento. Aqui, podemos ver como as palavras "cachorro", "cãozinho" e "cachorrinho" aparecem juntas em um espaço diferente de palavras como "melancia", "goiaba" e "melão". Isso nos mostra como o modelo separa conceitos de acordo com sua similaridade, o que pode nos ajudar a perceber possíveis vieses ou padrões na maneira como ele organiza a linguagem.
-
-Por exemplo, no gráfico que desenhei abaixo, usei um modelo de linguagem *open source* treinado em textos em português, já que os dados de treinamento do ChatGPT não são disponibilizados. Nele, podemos ver como as palavras "cachorro", "cãozinho" e "cachorrinho" aparecem próximas, em um espaço separado de palavras como "melancia", "goiaba" e "melão". Isso nos mostra como o modelo organiza os conceitos de acordo com suas similaridades.
+Por exemplo, no gráfico que desenhei abaixo, usei um modelo de linguagem *open source* treinado em textos em português. Como os dados de treinamento do ChatGPT não são disponibilizados, usei este modelo para demonstrar como palavras semanticamente relacionadas, como 'cachorro', 'cãozinho' e 'cachorrinho', tendem a se agrupar em um espaço vetorial. Por outro lado, palavras como 'melancia', 'goiaba' e 'melão' aparecem em outro grupo, refletindo a organização conceitual do modelo com base nas coocorrências observadas nos dados de treinamento.
 
 :::info
 
-Para capturar as relações semânticas entre as palavras, [modelo que usei](https://github.com/rdenadai/WordEmbeddingPortugues/) no exemplo as representa em um espaço de 300 dimensões. No entanto, para facilitar a visualização, reduzi essas dimensões para 3. Em vez de mostrar os vetores completos, com direção e magnitude, optei por representar apenas seus pontos finais no espaço tridimensional.
+Para capturar as relações semânticas entre as palavras, o [modelo que usei](https://github.com/rdenadai/WordEmbeddingPortugues/) no exemplo as representa em um espaço de 300 dimensões. No entanto, para facilitar a visualização, reduzi essas dimensões para 3. Em vez de mostrar os vetores completos, com direção e magnitude, optei por representar apenas seus pontos finais no espaço tridimensional.
 
 :::
 Escolha uma das abas abaixo para visualizar o gráfico na versão estática ou interativa.
