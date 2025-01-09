@@ -60,6 +60,17 @@ const config = {
         systemvars: true,
       },
     ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'curso',
+        path: 'docs-curso',
+        routeBasePath: 'curso',
+        sidebarPath: './sidebarsb.js',
+        remarkPlugins: [remarkMath],
+        rehypePlugins: [rehypeKatex],
+      },
+    ],
   ],
   presets: [
     [
@@ -67,9 +78,12 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          id: 'guia',
           sidebarPath: './sidebars.js',
+          path: 'docs',
+          routeBasePath: 'docs',
           remarkPlugins: [remarkMath],
-          rehypePlugins: [rehypeKatex]
+          rehypePlugins: [rehypeKatex],
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           //editUrl:
@@ -123,12 +137,22 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          {
+          /*{
             type: 'docSidebar',
-            sidebarId: 'guiaSidebar',
+            docsPluginId: 'guia',
             position: 'left',
             label: 'Guia',
+          },*/
+          {
+          label: 'Guia',
+          to: '/docs/apresentacao/', // Path to the version 1.0 docs
+          position: 'left',
           },
+          {
+            label: 'Curso',
+            to: '/curso/apresentacao/', // Path to the version 1.0 docs
+            position: 'left',
+            },          
           {
             type: 'custom-Curso',
             position: 'left',

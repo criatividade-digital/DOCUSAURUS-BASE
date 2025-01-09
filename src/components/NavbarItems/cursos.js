@@ -77,11 +77,12 @@ const Curso = () => {
 
 
   return (
-    checkCursoHabilitado() ? (
+    <></>
+    /*checkCursoHabilitado() ? (
       <div>
         <a className="navbar__item navbar__link" href={cursoUrl}>Curso</a>
       </div>
-    ) : null
+    ) : null */
   );
 };
 

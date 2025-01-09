@@ -23,7 +23,7 @@ Assuma o papel de um revisor experiente e revise os textos presentes na imagem a
 ```
 
 :::warning
-Fique atento, pois devido à grande variedade de tipos de fontes disponíveis, é possível que a fonte escolhida para a diagramação do texto não seja reconhecida pelo ChatGPT. Portanto, antes de colocar seu prompt em "produção", teste se o ChatGPT consegue identificar as fontes utilizadas pela sua organização.
+Fique atento, pois devido à grande variedade de tipos de fontes disponíveis, é possível que a fonte escolhida para a diagramação do texto não seja reconhecida pelo ChatGPT. Portanto, antes de colocar seu *prompt* em "produção", teste se o ChatGPT consegue identificar as fontes utilizadas pela sua organização.
 :::
 
 Seja nos impressos do século passado ou em posts para redes sociais, as "gralhas" continuam aparecendo. Felizmente, com ferramentas como o ChatGPT, é possível revisar textos em imagens e eliminar esses erros antes da publicação.
@@ -31,7 +31,7 @@ Seja nos impressos do século passado ou em posts para redes sociais, as "gralha
 ## Gerar imagens
 Iniciei este texto mostrando o uso do ChatGPT para revisão de imagens, algo que considero bastante útil, mas que ainda é pouco explorado nas empresas. O uso mais popular, no entanto, é a geração de imagens. 
 
-O pedido para a geração da imagem é feito por meio de um prompt, que pode variar em complexidade, desde instruções simples até detalhes mais elaborados, dependendo do nível de direcionamento que você deseja aplicar à criação.
+O pedido para a geração da imagem é feito por meio de um *prompt*, que pode variar em complexidade, desde instruções simples até detalhes mais elaborados, dependendo do nível de direcionamento que você deseja aplicar à criação.
 
 Agora, você vai entender por que os textos deste curso são ilustrados com essas imagens "fofas". E lá vou eu aqui novamente... Antes de prosseguirmos, você sabe o que significa *kawaii*?
 
@@ -48,7 +48,7 @@ Mulher digitando teclado notebook. 3D. Paper-toy. Kawaii.
 ```
 Além de especificar os elementos principais da imagem — um laptop no primeiro caso e uma mulher no segundo —, a IA do gerador de imagens compreendeu que o estilo desejado deveria combinar a estética de paper toy (brinquedos de papel criados por meio de dobraduras) com a suavidade e a delicadeza do estilo *kawaii*, resultando em uma composição tridimensional.
 
-Se você estiver atento ao que foi apresentado neste material,poderá notar que há diferenças entre o link que exibe o prompt e as imagens geradas e as versões que incluí aqui. O que fiz foi utilizar o resultado gerado pelo ChatGPT e editá-lo no Photoshop. Essa é minha dica valiosa para quem possui habilidade em edição de imagens.
+Se você estiver atento ao que foi apresentado neste material,poderá notar que há diferenças entre o link que exibe o *prompt* e as imagens geradas e as versões que incluí aqui. O que fiz foi utilizar o resultado gerado pelo ChatGPT e editá-lo no Photoshop. Essa é minha dica valiosa para quem possui habilidade em edição de imagens.
 
 <center>
 ![Imagem sendo alterada](./editao-imagem.png)
