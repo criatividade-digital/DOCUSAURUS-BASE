@@ -1,0 +1,42 @@
+import sys
+from colorama import init, Fore, Style
+init(autoreset=True)
+
+def substituir_texto(file_path, search_text, replace_text):
+    try:
+        with open(file_path, 'r', encoding='utf-8') as file:
+            content = file.read()
+        
+        # Verifica se o texto de busca está presente no conteúdo original
+        if search_text in content:
+            print(f"Texto '{search_text}' encontrado no arquivo.")
+        else:
+            print(Fore.RED + f"Texto '{search_text}' não encontrado no arquivo.")
+        
+        # Substitui o texto
+        new_content = content.replace(search_text, replace_text)
+        
+        # Verifica se a substituição foi realizada
+        if new_content != content:
+            print(f"Texto '{search_text}' substituído por '{replace_text}'.")
+        else:
+            print(f"Texto '{search_text}' não foi substituído.")
+        
+        # Grava o novo conteúdo de volta no arquivo
+        with open(file_path, 'w', encoding='utf-8') as file:
+            file.write(new_content)
+        
+        print("Processo de substituição concluído.")
+    except FileNotFoundError:
+        print(f"Arquivo não encontrado: {file_path}")
+    except Exception as e:
+        print(f"Ocorreu um erro: {e}")
+
+if __name__ == "__main__":
+    if len(sys.argv) != 4:
+        print("Uso: python gerar_docs_curso_troca_texto.py <file_path> <search_text> <replace_text>")
+    else:
+        file_path = sys.argv[1]
+        search_text = sys.argv[2]
+        replace_text = sys.argv[3]
+        substituir_texto(file_path, search_text, replace_text)

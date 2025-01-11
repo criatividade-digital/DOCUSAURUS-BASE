@@ -5,10 +5,10 @@ import IconExternalLink from '@theme/Icon/ExternalLink'
 import IconCopy from '@theme/Icon/Copy'
 import LigaHighlight from '@site/src/components/gsap/highlight'
 
-# Iniciação
+# Vocabulário
 <LigaHighlight />
 
-<span class="text-highlight">Parabéns por sua curiosidade</span> em aprender a usar o ChatGPT! Seu interesse já mostra que você está pronto para explorar todas as possibilidades que essa ferramenta pode oferecer. Neste capítulo, chamado de *iniciação*, guiarei você por uma introdução aos conceitos fundamentais que ajudarão a utilizar o ChatGPT de forma mais eficiente.
+
 
 Quando lidamos com novas tecnologias, <span class="text-highlight">é importante começar com definições básicas</span> que servem como o alicerce para o restante da jornada. No caso do ChatGPT, <span class="text-highlight">três termos são essenciais:</span> **ChatGPT**, ***Prompt*** e **LLM** (*Large Language Models*).
 
@@ -79,11 +79,9 @@ Você é um pesquisador de IA explicando para uma equipe de líderes empresariai
 O ChatGPT é uma ferramenta poderosa, mas seu uso indevido pode trazer consequências. Antes de utilizá-lo em atividades profissionais, consulte as políticas de sua organização, que muitas vezes possuem diretrizes específicas para ferramentas de inteligência artificial como o ChatGPT.
 :::
 
-## Conclusão da Iniciação
-Neste capítulo, você descobriu <span class="text-highlight">como usar o próprio ChatGPT para explorar novos conceitos</span>, como Prompt e LLM. Essa abordagem prática e interativa é uma excelente forma de aprendizado, mas é importante lembrar que, às vezes, o ChatGPT pode cometer erros ou fornecer informações desatualizadas. No capítulo **[Criação](./criacao/)**, veremos como superar esses desafios e aproveitar o ChatGPT de maneira ainda mais eficaz.
+Nesta seção, você descobriu <span class="text-highlight">como usar o próprio ChatGPT para explorar novos conceitos</span>, como Prompt e LLM. Essa abordagem prática e interativa é uma excelente forma de aprendizado, mas é importante lembrar que, às vezes, o ChatGPT pode cometer erros ou fornecer informações desatualizadas. 
 
 <center>
 ![Resumo capítulo Iniciação](./iniciacao-resumo-itens.svg)
 </center>
 
-Por enquanto, <span class="text-highlight">parabéns</span> por concluir essa etapa inicial! 🎉 Você já pode se considerar oficialmente um "Iniciante no ChatGPT". Que tal continuar essa jornada?

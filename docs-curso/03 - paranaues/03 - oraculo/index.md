@@ -1,13 +1,19 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 import IconExternalLink from '@theme/Icon/ExternalLink'
+import LigaHighlight from '@site/src/components/gsap/highlight'
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import './apresentacao.css';
 
 # O Oráculo
-Como vimos no capítulo anterior, a chave para obter as melhores respostas do ChatGPT é aprender a formular boas perguntas, ou *prompts*. Pense no ChatGPT como um *chef* de cozinha: quanto mais detalhadas e específicas forem as suas instruções sobre o prato que você deseja, maior será a chance de ele preparar algo que atenda ao seu gosto. E tenho uma boa notícia: você não precisa elaborar esses *prompts* sozinho. O ChatGPT pode ser um ótimo parceiro, ajudando você a melhorar suas perguntas com base nos parâmetros que ele já conhece.
+<LigaHighlight />
+<img src={useBaseUrl("/img/docs/curso/cheff.png")} alt="Bem-vindo ao curso" title="Imagem de exemplo" class="float-right" />
+ 
+Como vimos anteriormente, a chave para obter as melhores respostas do ChatGPT é aprender a formular boas perguntas, ou *prompts*. Pense no ChatGPT como um *chef* de cozinha: quanto mais detalhadas e específicas forem as suas instruções sobre o prato que você deseja, maior será a chance de ele preparar algo que atenda ao seu gosto. <span class="text-highlight">E tenho uma boa notícia:</span> você não precisa elaborar esses *prompts* sozinho. O ChatGPT pode ser um ótimo parceiro, ajudando você a melhorar suas perguntas com base nos parâmetros que ele já conhece.
 
 ## ChatGPT como auxiliar na construção de *prompts*
-Se no capítulo anterior pedimos ao ChatGPT para explicar conceitos como LLM e *prompt*, por que não contar com ele também para criar nossos próprios *prompts*? Pode parecer curioso à primeira vista, mas o ChatGPT pode oferecer orientações valiosas para ajudar você a estruturar suas perguntas de forma mais eficiente e precisa.
+Se nos conteúdos anteriores pedimos ao ChatGPT para explicar conceitos como LLM e *prompt*, por que não contar com ele também para criar nossos próprios *prompts*? Pode parecer curioso à primeira vista, mas o ChatGPT pode oferecer orientações valiosas para ajudar você a estruturar suas perguntas de forma mais eficiente e precisa.
 
 ## O Oráculo moderno
 Assim como os oráculos da antiguidade ajudavam a decifrar os mistérios da vida, o ChatGPT pode ser visto como um "oráculo digital", pronto para nos auxiliar a navegar pelos desafios e dúvidas do mundo contemporâneo. Com prática e paciência, você pode transformar suas interações com esse "oráculo virtual" em uma fonte rica de inspiração, conhecimento e soluções criativas.
@@ -15,7 +21,7 @@ Assim como os oráculos da antiguidade ajudavam a decifrar os mistérios da vida
 Então, se tiver dúvidas sobre como formular o próximo *prompt*, peça ajuda ao próprio ChatGPT. Ele pode refinar suas perguntas, tornando-as mais claras, eficazes e detalhadas.
 
 ## Como o ChatGPT pode ajudar
-Suponha que você queira entender os riscos de usar o ChatGPT, mas não sabe como estruturar a pergunta. Veja abaixo um exemplo de *prompt* que você poderia usar. Ele mostra que é possível pedir ao ChatGPT para criar um *prompt* por você, incorporando os principais elementos discutidos no capítulo anterior: **Persona**, **Tarefa**, **Contexto** e **Formato**.
+Suponha que você queira entender os riscos de usar o ChatGPT, mas não sabe como estruturar a pergunta. Abaixo, apresento um exemplo de *prompt* que você poderia utilizar. Ele demonstra como é possível pedir ao ChatGPT para criar um *prompt* personalizado, incorporando os principais elementos que mencionei como dicas para um bom *prompt*: **Persona**, **Tarefa**, **Contexto** e **Formato**."
 
 ```url wordWrap link='https://chatgpt.com/share/c59614b7-ac88-4fb0-82c6-5fd386a2f8c4'
 Utilizando seu conhecimento sobre a criação de prompts eficazes, elabore um prompt que pergunte ao ChatGPT sobre os riscos associados ao seu uso. O prompt deve incluir persona, tarefa, contexto e formato.
