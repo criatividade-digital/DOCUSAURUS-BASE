@@ -29,7 +29,7 @@ export default function HomepageFeatures() {
             </p>
             <p>            
             <center>
-                <b><a href="docs/apresentacao">Clique aqui para iniciar o guia.</a></b>
+                <b><a href="guia/apresentacao">Clique aqui para iniciar o guia.</a></b>
             </center>
             </p>            
 

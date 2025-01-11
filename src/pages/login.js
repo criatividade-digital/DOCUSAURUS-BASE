@@ -15,6 +15,10 @@ import { useHistory } from '@docusaurus/router';
 import Layout from '@theme/Layout';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 //import "./login.module.css"; Está carregando um css no módulo que usa este componente de Login
+import { userData, useUserContext } from '../context';
+import { fetchAndCacheUserBookData } from '../cache.dados.usuario';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+
 
 
 export default function login() {
@@ -26,6 +30,9 @@ export default function login() {
   const [codeFornecido, setCodigoFornecido] = useState('');
   const emailInputRef = useRef(null);
   const specialCodeInputRef = useRef(null);
+  const { userData, setUserData } = useUserContext();
+    const { siteConfig } = useDocusaurusContext();
+  
 
   // Adicionando useEffect para monitorar showEmailInput
   useEffect(() => {
@@ -36,6 +43,34 @@ export default function login() {
       specialCodeInputRef.current.focus(); // Define o foco no campo de e-mail quando é exibido
     }
   }, [showEmailInput, showSpecialCode]); // Dependência adicionada aqui
+
+  const updateUserData = async () => {
+    console.log('Atualizando dados do usuário...');
+    const user = firebase.auth().currentUser;
+    const token = await user.getIdToken();
+    try {
+      setUserData((prev) => ({
+        ...prev,
+        id: 'loading data...', 
+        fetching: true,
+      }));
+    } catch (error) {
+      console.error('Erro setUserData:', error);
+    }
+    const result = await fetchAndCacheUserBookData(siteConfig.customFields.bookCode, token, user.uid);
+
+    try {
+      setUserData((prev) => ({
+        ...prev,
+        id: user.uid, 
+        result: result,
+        fetching: false,
+      }));
+    } catch (error) {
+      console.error('Erro setUserData:', error);
+    }
+    console.log('Dados do usuário atualizados:', userData);
+  };
 
   const history = useHistory();
   const urlParams = new URLSearchParams(window.location.search);
@@ -58,6 +93,7 @@ export default function login() {
               // Realizar o login com Firebase Authentication
               await signInWithEmailAndPassword(firebase.auth(), 'avaliar@criatividade.digital', 'acesso');
               console.log("Login via código realizado com sucesso!");
+              await updateUserData();
               history.push(pagRedirecionamento);
               return;
             } catch (error) {
@@ -118,7 +154,10 @@ export default function login() {
       await firebase.auth().signInWithPopup(provider);
 
       // ... handle successful sign-in (e.g., redirect or show success message) ...
+      await updateUserData();
+
       history.push(pagRedirecionamento);
+
     } catch (error) {
         console.log("Sign-in error:", error.email, error);
 

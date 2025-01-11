@@ -13,6 +13,8 @@ import {
   LOGOUT_BUTTON,
   LOGOUT_PATH,
 } from "@site/src/utils/constants";
+import { userData, useUserContext } from '../../context';
+import {  loadUserBookDataCache } from '../../cache.dados.usuario';
 
 const User = () => {
   const [user, setUser] = useState(null);
@@ -20,6 +22,8 @@ const User = () => {
   const [tooltipContent, setTooltipContent] = useState("Carregando infos da licença...");
   const { siteConfig } = useDocusaurusContext();
   const [cancelaLogin, setCancelaLogin] = useState(null);
+  const { userData, setUserData } = useUserContext();
+  
 
   const location = useLocation();
   const history = useHistory();
@@ -35,6 +39,33 @@ const User = () => {
           // Force token refresh to get the latest claims
           const idTokenResult = await user.getIdTokenResult(true); // Get the full token result
           const customClaims = idTokenResult.claims;
+
+          //se ainda não tem ID, atualiza o contexto
+          if ((!userData.fetching) || //Verifica se foi acionado o processo de carga dos dados do servidor (tem que aguardar terminar o processo)
+              (userData.id !== user.uid)) //Verifica se houve algum problema de sync no processo de login em que o ID no contexto é diferente do ID atual
+          {
+            console.log('USER ID === NULL');
+            const result = await loadUserBookDataCache(siteConfig.customFields.bookCode, user.uid);
+
+            if (result === null) {
+              console.log('No cache data found');
+              setUserData((prev) => ({
+                ...prev,
+                id: user.uid,
+                modulos: [],
+              }));
+            }
+            else {
+              setUserData((prev) => ({
+                ...prev,
+                id: user.uid,
+                modulos: result.modulos,
+              }));
+            }
+          } else { 
+
+          }
+
           setExpiry(""); // Initialize expiry
           let cancelaLoginReason = ''; // Rename to avoid confusion with state variable
           console.log(customClaims);
@@ -120,6 +151,11 @@ const User = () => {
   }, [cancelaLogin]); // Runs only when cancelaLogin changes
 
   const handleLogout = async () => {
+    //atualiza o contexto indicando que usuário está deslogado
+    setUserData((prev) => ({
+      ...prev,
+      id: 'Logged out',
+    }));
     await signOut(firebase.auth()); // Logs out the user
     setUser(null); // Clears the user state
     history.push(`${LOGOUT_PATH}?p=${encodeURIComponent(location.pathname)}`); // Redirects
@@ -160,7 +196,7 @@ const User = () => {
           </a>
         </div>
       ) : (
-        <spam></spam>
+        <span></span>
       )}
     </div>
   );

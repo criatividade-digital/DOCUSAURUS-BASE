@@ -3,8 +3,18 @@ import { getAuth } from "firebase/auth"; // Importações modulares
 import { getFunctions, httpsCallable } from "firebase/functions";
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import { fetchAndCacheUserBookData, getUserBookData } from './cache.dados.usuario';
-  
+import { fetchAndCacheUserBookData, getUserBookData } from '../cache.dados.usuario';
+ 
+
+/*-----------------------------------------------------
+
+ESTE CÓDIGO AQUI ESTÁ DESATUALIZADO.
+CASO FOR IMPLEMENTAR O BOTÃO DE RECARREGAR DADOS TEM QUE SER FEITO
+USANDO O FETCH E O USERCONTEXT
+
+
+
+--------------------------------------------------------*/
 const ReloadCacheBtn = () => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);

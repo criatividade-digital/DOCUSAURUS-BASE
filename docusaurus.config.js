@@ -66,7 +66,7 @@ const config = {
         id: 'curso',
         path: 'docs-curso',
         routeBasePath: 'curso',
-        sidebarPath: './sidebarsb.js',
+        sidebarPath: './sidebarsCurso.js',
         remarkPlugins: [remarkMath],
         rehypePlugins: [rehypeKatex],
       },
@@ -79,9 +79,9 @@ const config = {
       ({
         docs: {
           id: 'guia',
-          sidebarPath: './sidebars.js',
-          path: 'docs',
-          routeBasePath: 'docs',
+          sidebarPath: './sidebarGuia.js',
+          path: 'docs-guia',
+          routeBasePath: 'guia',
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
           // Please change this to your repo.
@@ -145,24 +145,20 @@ const config = {
           },*/
           {
           label: 'Guia',
-          to: '/docs/apresentacao/', // Path to the version 1.0 docs
+          to: '/guia/apresentacao/', // Path to the version 1.0 docs
           position: 'left',
           },
           {
-            label: 'Curso',
+            label: 'Curso Explorador',
             to: '/curso/apresentacao/', // Path to the version 1.0 docs
             position: 'left',
             },          
-          {
-            type: 'custom-Curso',
-            position: 'left',
-          },
           {
             type: 'custom-Login', 
             position: "right",
             itemProp: 44,
             anotherProp: "xyz"
-        }, 
+          }, 
           /*{to: '/blog', label: 'Blog', position: 'left'},*/
           //{
           //  href: 'https://github.com/facebook/docusaurus',

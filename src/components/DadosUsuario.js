@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { getAuth } from "firebase/auth"; // Importações modulares
 import { getFunctions, httpsCallable } from "firebase/functions";
-import { fetchAndCacheUserBookData, getUserBookData } from './cache.dados.usuario';
+import { fetchAndCacheUserBookData, getUserBookData } from '../cache.dados.usuario';
 
 const DadosUsuario = ({ bookCode }) => {
   const [data, setData] = useState(null);

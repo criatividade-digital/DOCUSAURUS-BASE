@@ -47,7 +47,7 @@ Imagine que sua equipe precisa enviar e-mails com frequência para clientes ou p
 > - Se houver menção a datas, elas devem ser coerentes entre si. Todas as referências a datas de eventos, prazos ou promoções devem estar sincronizadas em todo o e-mail.
 > - O rodapé contém informações da empresa: nome, endereço, telefone e e-mail.
 
-Como exemplo prático, usei este *template* de *prompt* para revisar um e-mail de *follow-up* de uma reunião. [Confira o resultado neste link](https://chatgpt.com/share/67181784-eaec-8003-9549-23a10e413f2f).<spam data-tooltip-id="my-tooltip" data-tooltip-content="Modelo de e-mail apresentado pela Appointlet."> *</spam>
+Como exemplo prático, usei este *template* de *prompt* para revisar um e-mail de *follow-up* de uma reunião. [Confira o resultado neste link](https://chatgpt.com/share/67181784-eaec-8003-9549-23a10e413f2f).<span data-tooltip-id="my-tooltip" data-tooltip-content="Modelo de e-mail apresentado pela Appointlet."> *</span>
 
 Embora o ChatGPT não possa substituir um processo formal de *compliance*, ele pode ajudar a revisar documentos e apontar possíveis problemas com base em padrões predefinidos. Nesse contexto, a própria pessoa que está escrevendo o documento pode usar o *template* como uma ferramenta de apoio, submetendo seus textos para verificar se estão em conformidade com os critérios estabelecidos pela organização.
 

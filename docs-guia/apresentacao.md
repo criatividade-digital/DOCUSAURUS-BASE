@@ -10,7 +10,7 @@ Estruturei este material para que cada capítulo represente uma conquista, marca
 
 A proposta é oferecer uma experiência prática e envolvente, que começa no básico e o leva à maestria. Estou aqui para acompanhá-lo passo a passo nessa jornada instigante e cheia de descobertas.
 
-Se você prefere ter uma visão geral do que vai aprender, siga comigo e confira a apresentação de cada capítulo a seguir.👇 Caso contrário, <spam class="text-highlight">pode ir direto</spam> ao [Capítulo 'Curioso' clicando aqui](./curioso.md).
+Se você prefere ter uma visão geral do que vai aprender, siga comigo e confira a apresentação de cada capítulo a seguir.👇 Caso contrário, <span class="text-highlight">pode ir direto</span> ao [Capítulo 'Curioso' clicando aqui](./curioso.md).
 
 ![Escada mostrando a ordem dos badges até o final do guia](./apresentacao-escada.svg)
 

@@ -8,7 +8,7 @@ import { firebaseConfig } from "../../config/firebase-config";
 
 import { Redirect, useLocation } from "@docusaurus/router";
 import useBaseUrl from '@docusaurus/useBaseUrl';
-
+import { userData, useUserContext } from '../../context';
 import { Login } from "../Login";
 import Loading from "../Loading";
 import {
@@ -18,6 +18,7 @@ import {
   PROTECTED_PATHS,
 } from "../../utils/constants";
 
+
 firebase.initializeApp(firebaseConfig);
 
 export const auth = getAuth();
@@ -26,6 +27,8 @@ export function AuthCheck({ children }) {
   const [user, setUser] = useState(null);
   const [authLoading, setAuthLoading] = useState(true);
   const baseURL = useBaseUrl('/');
+  const { userData } = useUserContext();
+  
 
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
@@ -36,7 +39,8 @@ export function AuthCheck({ children }) {
 
   const from = useLocation().pathname;
   
-  if (authLoading) return <Loading />;
+  if (authLoading || userData.fetching) return <Loading />;
+  //console.log("Fetching: ", userData.fetching);
 
   if (user?.email) {
     if (from === LOGOUT_PATH) {

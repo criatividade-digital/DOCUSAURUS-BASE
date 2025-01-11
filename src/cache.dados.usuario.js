@@ -26,13 +26,13 @@ export async function fetchAndCacheUserBookData(bookCode, token, uid) {
   }
 }
 
-// Função principal
+// 
 export async function getUserBookData(bookCode, token, uid) {
   const cacheKey = `userBookData_${uid}_${bookCode}`;
   const cachedData = localStorage.getItem(cacheKey);
 
   if (cachedData) {
-    console.log('Retrieved cached data:', cachedData);
+    console.log('Retrieved cached data (getUserBookData):', cachedData);
     try {
       return JSON.parse(cachedData); // Retorna os dados do cache
     } catch (error) {
@@ -44,4 +44,19 @@ export async function getUserBookData(bookCode, token, uid) {
   return fetchAndCacheUserBookData(bookCode, token, uid);
 }
 
+export async function loadUserBookDataCache(bookCode, uid) {
+  const cacheKey = `userBookData_${uid}_${bookCode}`;
+  const cachedData = localStorage.getItem(cacheKey);
+
+  if (cachedData) {
+    console.log('Retrieved cached data (loadUserBookDataCache):', cachedData);
+    try {
+      return JSON.parse(cachedData); // Retorna os dados do cache
+    } catch (error) {
+      console.error('Error parsing cached data:', error);
+    }
+  }
+  return null;
+
+}
 

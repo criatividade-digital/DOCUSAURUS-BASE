@@ -1,7 +1,6 @@
 ---
 sidebar_position: 1
 ---
-import ReloadCacheBtn from '@site/src/components/ReloadCacheBtn';
 import LigaHighlight from '@site/src/components/gsap/highlight'
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import './apresentacao.css';
@@ -18,5 +17,3 @@ Mas antes, permita-me perguntar:
 
 Para entender como isso é possível, convido você a ler o artigo [*Quando a Máquina Aprendeu a Falar a Nossa Língua?*](https://criatividade.digital/blog/maquina-falar-nossa-lingua/) antes de iniciar o curso.
 
-
-<ReloadCacheBtn />
