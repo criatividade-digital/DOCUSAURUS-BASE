@@ -39,4 +39,22 @@ ren ".\docs-curso\03 - paranaues\03 - oraculo\oraculo.md" "index.md"
 rem Altera posição no sidebar
 C:\ProgramData\miniconda3\python gerar-docs-curso-troca-texto.py ".\docs-curso\03 - paranaues\03 - oraculo\index.md" "sidebar_position: 2" "sidebar_position: 3"
 
+rem **** Por que ChatGPT ****
+copy ".\docs-guia\construcao\porqueChatGPT.md" ".\docs-curso\03 - paranaues\"
+rem Altera posição no sidebar
+C:\ProgramData\miniconda3\python gerar-docs-curso-troca-texto.py ".\docs-curso\03 - paranaues\porqueChatGPT.md" "sidebar_position: 3" "sidebar_position: 4"
 
+rem **** Desmistificando o ChatGPT ****
+copy ".\docs-guia\criacao\desmistificando.md" ".\docs-curso\03 - paranaues\04 - desafios\"
+rem Altera posição no sidebar
+C:\ProgramData\miniconda3\python gerar-docs-curso-troca-texto.py ".\docs-curso\03 - paranaues\04 - desafios\desmistificando.md" "sidebar_position: 2" "sidebar_position: 1"
+
+rem **** Alucinações ****
+copy ".\docs-guia\criacao\alucinacao.md" ".\docs-curso\03 - paranaues\04 - desafios\"
+rem Altera posição no sidebar
+C:\ProgramData\miniconda3\python gerar-docs-curso-troca-texto.py ".\docs-curso\03 - paranaues\04 - desafios\alucinacao.md" "sidebar_position: 6" "sidebar_position: 2"
+
+rem **** Viés ****
+copy ".\docs-guia\criacao\vies.md" ".\docs-curso\03 - paranaues\04 - desafios\"
+rem Altera posição no sidebar
+C:\ProgramData\miniconda3\python gerar-docs-curso-troca-texto.py ".\docs-curso\03 - paranaues\04 - desafios\vies.md" "sidebar_position: 3" "sidebar_position: 3"
