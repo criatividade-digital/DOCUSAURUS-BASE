@@ -21,7 +21,7 @@ export async function fetchAndCacheUserBookData(bookCode, token, uid) {
 
     return data;
   } catch (error) {
-    console.error('Error fetching and caching user book data:', error);
+    console.error('Erro fetching and caching user book data:', error);
     throw error;
   }
 }

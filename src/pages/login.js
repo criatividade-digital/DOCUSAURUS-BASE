@@ -31,7 +31,7 @@ export default function login() {
   const emailInputRef = useRef(null);
   const specialCodeInputRef = useRef(null);
   const { userData, setUserData } = useUserContext();
-    const { siteConfig } = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   
 
   // Adicionando useEffect para monitorar showEmailInput
@@ -44,6 +44,7 @@ export default function login() {
     }
   }, [showEmailInput, showSpecialCode]); // Dependência adicionada aqui
 
+  //Esta função também está copiada em loginlink.js
   const updateUserData = async () => {
     console.log('Atualizando dados do usuário...');
     const user = firebase.auth().currentUser;
@@ -57,9 +58,8 @@ export default function login() {
     } catch (error) {
       console.error('Erro setUserData:', error);
     }
-    const result = await fetchAndCacheUserBookData(siteConfig.customFields.bookCode, token, user.uid);
-
     try {
+      const result = await fetchAndCacheUserBookData(siteConfig.customFields.bookCode, token, user.uid);
       setUserData((prev) => ({
         ...prev,
         id: user.uid, 
@@ -68,6 +68,10 @@ export default function login() {
       }));
     } catch (error) {
       console.error('Erro setUserData:', error);
+      setUserData((prev) => ({ //se deu erro retira o loading da tela
+        ...prev,
+        fetching: false,
+      }));
     }
     console.log('Dados do usuário atualizados:', userData);
   };
@@ -125,7 +129,6 @@ export default function login() {
               alert (message);
               message = message + ' Por favor, verifique sua caixa de entrada (ou a pasta de spam) e siga as instruções para concluir seu acesso!'
               setEmailMessage(message);
-
             })
             .catch((error) => {
               console.log("Sign-in error:", error.email, error);

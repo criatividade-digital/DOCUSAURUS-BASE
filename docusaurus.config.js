@@ -167,6 +167,10 @@ const config = {
           //},
         ],
       },
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: true,
+      },
       footer: {
         style: 'dark',
         /*links: [

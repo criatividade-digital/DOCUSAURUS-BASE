@@ -12,11 +12,11 @@ const CustomNavbarItem = (props) => {
   const { label, type } = props;
   const { userData } = useUserContext();
 
-  console.log(userData);
+  //console.log(userData);
   //sempre exibe o custom login
   if (type === "custom-Login") return <OriginalNavbarItem {...props} />;
 
-  console.log(mapping[label]);
+  //console.log(mapping[label]);
   if (userData.uid === null) return null;
 
   //Se o usuário não está logado, não exibe nada
