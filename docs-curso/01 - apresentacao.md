@@ -8,6 +8,30 @@ import CardSwiper from '@site/src/components/slides';
 
 # Apresentação do curso
 <LigaHighlight />
+
+export const cardsData = [
+  {
+    title: "Bem-vindo!",
+    description: "Nosso foco: otimizar processos e fluxos de trabalho usando o ChatGPT",
+    backgroundColor: "#ff7675"
+  },
+  {
+    title: "Card Two",
+    description: "This is the second card's content",
+    backgroundColor: "#74b9ff"
+  },
+  {
+    title: "Card Three",
+    description: "This is the third card's content",
+    backgroundColor: "#55efc4"
+  },
+  {
+    title: "Card Four",
+    description: "This is the fourth card's content",
+    backgroundColor: "#a29bfe"
+  },
+];
+
 Bem-vindo a este minicurso sobre o uso do ChatGPT! 
   <img src={useBaseUrl("/img/docs/curso/lapttop_chatgpt.png")} alt="Bem-vindo ao curso" title="Imagem de exemplo" class="float-right" />
   Aqui, você aprenderá como ele pode ser usado para <span class="text-highlight">otimizar processos e fluxos de trabalho,</span> transformando seu dia a dia.
@@ -18,4 +42,4 @@ Mas antes, permita-me perguntar:
 
 Para entender como isso é possível, convido você a ler o artigo [*Quando a Máquina Aprendeu a Falar a Nossa Língua?*](https://criatividade.digital/blog/maquina-falar-nossa-lingua/) antes de iniciar o curso.
 
-<CardSwiper />
+<CardSwiper cards={cardsData} />

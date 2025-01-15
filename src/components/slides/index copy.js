@@ -53,7 +53,6 @@ const styles = {
   },
   content: {
     textAlign: 'center',
-    width: '100%',
   }
 };
 
@@ -69,71 +68,17 @@ const MinimizeIcon = () => (
   </svg>
 );
 
-// Dynamic text styles based on screen size and mode
-const getTextStyles = (isFullScreen) => {
-  const baseStyles = {
-    title: {
-      marginBottom: '1rem',
-      transition: 'font-size 0.3s ease',
-    },
-    description: {
-      transition: 'font-size 0.3s ease',
-    }
-  };
-
-  // Normal mode (non-fullscreen) styles
-  if (!isFullScreen) {
-    return {
-      title: {
-        ...baseStyles.title,
-        fontSize: 'clamp(1.25rem, 4vw, 1.5rem)',
-      },
-      description: {
-        ...baseStyles.description,
-        fontSize: 'clamp(0.875rem, 3vw, 1rem)',
-      }
-    };
-  }
-
-  // Fullscreen mode styles with responsive sizes
-  return {
-    title: {
-      ...baseStyles.title,
-      fontSize: 'clamp(1.5rem, 5vw, 3rem)',
-      '@media (max-width: 768px)': {
-        fontSize: 'clamp(1.25rem, 4vw, 2rem)',
-      },
-    },
-    description: {
-      ...baseStyles.description,
-      fontSize: 'clamp(1rem, 3vw, 1.5rem)',
-      '@media (max-width: 768px)': {
-        fontSize: 'clamp(0.875rem, 2.5vw, 1.25rem)',
-      },
-    }
-  };
-};
-
-// ... FullscreenIcon and MinimizeIcon components remain the same ...
+// Define the type for a card (optional - if using TypeScript)
+/*
+interface Card {
+  title: string;
+  description: string;
+  backgroundColor: string;
+}
+*/
 
 const ToggleableCardSwiper = ({ cards }) => {
   const [isFullScreen, setIsFullScreen] = useState(false);
-  const [windowSize, setWindowSize] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight
-  });
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowSize({
-        width: window.innerWidth,
-        height: window.innerHeight
-      });
-    };
-
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
 
   const toggleFullScreen = () => {
     setIsFullScreen(!isFullScreen);
@@ -149,8 +94,6 @@ const ToggleableCardSwiper = ({ cards }) => {
     document.addEventListener('keydown', handleKeyPress);
     return () => document.removeEventListener('keydown', handleKeyPress);
   }, [isFullScreen]);
-
-  const textStyles = getTextStyles(isFullScreen);
 
   return (
     <div style={isFullScreen ? styles.fullScreenWrapper : styles.normalWrapper}>
@@ -186,22 +129,8 @@ const ToggleableCardSwiper = ({ cards }) => {
               }}
             >
               <div style={styles.content}>
-                <h2 
-                  style={{
-                    ...textStyles.title,
-                    wordBreak: 'break-word'
-                  }}
-                >
-                  {card.title}
-                </h2>
-                <p 
-                  style={{
-                    ...textStyles.description,
-                    wordBreak: 'break-word'
-                  }}
-                >
-                  {card.description}
-                </p>
+                <h2 style={{ marginBottom: '1rem' }}>{card.title}</h2>
+                <p>{card.description}</p>
               </div>
             </div>
           </SwiperSlide>
