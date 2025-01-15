@@ -8,7 +8,6 @@ import CardSwiper from '@site/src/components/slides';
 
 # Apresentação do curso
 <LigaHighlight />
-
 export const cardsData = [
   {
     title: "Bem-vindo!",
@@ -16,8 +15,8 @@ export const cardsData = [
     backgroundColor: "#ff7675"
   },
   {
-    title: "Card Two",
-    description: "This is the second card's content",
+    title: "Você sabia que a forma como você se comunica com a tecnologia pode ser a chave para transformar tarefas que levam horas em minutos?",
+    description: "Leitura do artigo <a href='https://criatividade.digital/blog/maquina-falar-nossa-lingua/'>Quando a Máquina Aprendeu a Falar a Nossa Língua?</a>",
     backgroundColor: "#74b9ff"
   },
   {
@@ -32,6 +31,13 @@ export const cardsData = [
   },
 ];
 
+<details>
+<summary>
+Cartões
+</summary>
+<CardSwiper cards={cardsData} />
+</details>
+
 Bem-vindo a este minicurso sobre o uso do ChatGPT! 
   <img src={useBaseUrl("/img/docs/curso/lapttop_chatgpt.png")} alt="Bem-vindo ao curso" title="Imagem de exemplo" class="float-right" />
   Aqui, você aprenderá como ele pode ser usado para <span class="text-highlight">otimizar processos e fluxos de trabalho,</span> transformando seu dia a dia.
@@ -41,5 +47,3 @@ Mas antes, permita-me perguntar:
 *Você sabia que a forma como você se comunica com a tecnologia pode ser a chave para transformar tarefas que levam horas em minutos?* 
 
 Para entender como isso é possível, convido você a ler o artigo [*Quando a Máquina Aprendeu a Falar a Nossa Língua?*](https://criatividade.digital/blog/maquina-falar-nossa-lingua/) antes de iniciar o curso.
-
-<CardSwiper cards={cardsData} />

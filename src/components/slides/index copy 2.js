@@ -3,9 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-cards';
 import { EffectCards } from 'swiper/modules';
-import './index.css';
 
-// Define the styles object
 const styles = {
   normalWrapper: {
     maxWidth: '300px',
@@ -21,6 +19,41 @@ const styles = {
     left: 0,
     backgroundColor: '#000',
     zIndex: 1000,
+  },
+  container: {
+    width: '100%',
+    height: '100%',
+  },
+  card: {
+    width: '100%',
+    height: '100%',
+    backgroundColor: '#fff',
+    borderRadius: '8px',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: '20px',
+  },
+  toggleButton: {
+    position: 'absolute',
+    top: '20px',
+    right: '20px',
+    zIndex: 1001,
+    padding: '8px 16px',
+    backgroundColor: 'rgba(255, 255, 255, 0.8)',
+    border: 'none',
+    borderRadius: '4px',
+    cursor: 'pointer',
+    display: 'flex',
+    alignItems: 'center',
+    gap: '6px',
+    fontSize: '14px',
+    transition: 'background-color 0.3s',
+  },
+  content: {
+    textAlign: 'center',
+    width: '100%',
   }
 };
 
@@ -123,8 +156,8 @@ const ToggleableCardSwiper = ({ cards }) => {
     <div style={isFullScreen ? styles.fullScreenWrapper : styles.normalWrapper}>
       <button 
         onClick={toggleFullScreen} 
-        className="toggle-button"
         style={{
+          ...styles.toggleButton,
           backgroundColor: isFullScreen ? 'rgba(255, 255, 255, 0.8)' : '#fff',
         }}
       >
@@ -135,7 +168,8 @@ const ToggleableCardSwiper = ({ cards }) => {
         effect={'cards'}
         grabCursor={true}
         modules={[EffectCards]}
-        className="swiper-container"
+        className="mySwiper"
+        style={styles.container}
         cardsEffect={{
           slideShadows: false,
           perSlideRotate: 4,
@@ -145,13 +179,13 @@ const ToggleableCardSwiper = ({ cards }) => {
         {cards.map((card, index) => (
           <SwiperSlide key={index}>
             <div 
-              className="card"
               style={{
+                ...styles.card,
                 backgroundColor: card.backgroundColor,
                 color: '#fff'
               }}
             >
-              <div className="content">
+              <div style={styles.content}>
                 <h2 
                   style={{
                     ...textStyles.title,
@@ -160,13 +194,14 @@ const ToggleableCardSwiper = ({ cards }) => {
                 >
                   {card.title}
                 </h2>
-                <div 
+                <p 
                   style={{
                     ...textStyles.description,
                     wordBreak: 'break-word'
                   }}
-                  dangerouslySetInnerHTML={{ __html: card.description }}
-                />
+                >
+                <div dangerouslySetInnerHTML={{ __html: card.description }} />
+                </p>
               </div>
             </div>
           </SwiperSlide>
