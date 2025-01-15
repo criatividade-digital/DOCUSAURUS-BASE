@@ -5,11 +5,11 @@ import PropTypes from 'prop-types';
 import CardSwiper from '@site/src/components/slides';
 
 // You might want to add PropTypes for better type checking
-const CueCards = ({ cardsData, title = "Cartões de apoio" }) => {
+const CueCards = ({ cardsData, title = "Cartões de apoio." }) => {
   return (
     <details>
       <summary>
-        <FontAwesomeIcon icon={faPersonChalkboard} /> <i>{title}</i> <br /><br />
+         <i>{title}</i> <FontAwesomeIcon icon={faPersonChalkboard} /><br /><br />
       </summary>
       <CardSwiper cards={cardsData} />
     </details>

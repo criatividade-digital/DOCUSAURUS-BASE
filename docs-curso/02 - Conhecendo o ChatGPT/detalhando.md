@@ -3,11 +3,51 @@ sidebar_position: 3
 ---
 import PromptLinkedin from '@site/src/components/prompt/PromptLinkedin';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import CueCards from '@site/src/components/slides/CueCards';
+import LigaHighlight from '@site/src/components/gsap/highlight'
 import '../apresentacao.css';
 
 # Detalhando a tarefa
+<LigaHighlight />
+export const cardsData = [
+  {
+    title: "<i>Prompt</i>",
+    description: "<p><b>Menos detalhes:</b> mais liberdade na geração de texto pelo ChatGPT.<p/><p><b>Mais detalhes</b>: direciona a geração de texto pelo ChatGPT.</p> ",
+    backgroundColor: "#55efc4"
+  },
+  {
+    title: "Exemplos",
+    description: "<p><b>Menos:</b> Crie um post para o LinkedIn.</p><p><b>Mais:</b> Crie um post para o LinkedIn. Comece com uma pergunta provocativa para despertar a curiosidade. Destaque o principal aprendizado do artigo em 2 frases...</p>",
+    backgroundColor: "#74b9ff"
+  },
+  {
+    title: "Gerador de <i>post</i> para LinkedIn",
+    description: "Confira o gerador de <i>prompts</i> para LinkedIn detalhando: público alvo, tom e abordagem, estrutura, <i>call to action</i> e <i>hashtags.</i>",
+    backgroundColor: "#0984e3"
+  },
+  {
+    title: "Indo além do gerador",
+    description: 
+    `<div style="text-align: center;">
+      <p>O gerador mostra algumas das milhares de possibilidades...</p>
+      <ul style="display: inline-block; text-align: left; margin: 0 auto;">
+        <li>Abertura impactante:
+          <ol>
+            <li>Comece com uma pergunta provocativa.</li>
+            <li>Apresente um dado intrigante ou estatística.</li>
+            <li>Conte uma micro-história pessoal ou profissional.</li>
+          </ol>
+        </li>
+      </ul>
+    </div>`
+    ,
+    backgroundColor: "#a29bfe"
+  },
+];
+
+<CueCards cardsData={cardsData} />
   <img src={useBaseUrl("/img/docs/curso/post-linkedin.png")} alt="Bem-vindo ao curso" title="Imagem de exemplo" class="float-right" />
-No primeiro conjunto de exemplos de *prompts*, forneci apenas uma quantidade básica de detalhes para que o ChatGPT realizasse a tarefa. Quanto menos detalhes incluirmos, mais liberdade a ferramenta terá para gerar os resultados. No entanto, assim como podemos criar comandos mais "genéricos", também é possível detalhar melhor as instruções para obter resultados mais alinhados às nossas expectativas.  
+No primeiro conjunto de exemplos de *prompts*, forneci apenas uma quantidade básica de detalhes para que o ChatGPT realizasse a tarefa. Quanto <span class="text-highlight">menos detalhes incluirmos,</span> mais liberdade a ferramenta terá para gerar os resultados. No entanto, assim como podemos criar comandos mais "genéricos", também é possível detalhar melhor as instruções para obter resultados mais alinhados às nossas expectativas.  
 
 Selecione uma ou mais opções abaixo para visualizar como o *prompt* é ajustado com base nas suas escolhas, direcionando a tarefa de geração do *post* no LinkedIn.  
 

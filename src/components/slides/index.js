@@ -159,7 +159,7 @@ const ToggleableCardSwiper = ({ cards }) => {
                     wordBreak: 'break-word'
                   }}
                 >
-                  {card.title}
+                  <div dangerouslySetInnerHTML={{ __html: card.title }} />
                 </h2>
                 <div 
                   style={{

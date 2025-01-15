@@ -5,10 +5,6 @@ import LigaHighlight from '@site/src/components/gsap/highlight'
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import './apresentacao.css';
 import CueCards from '@site/src/components/slides/CueCards';
-import CardSwiper from '@site/src/components/slides';
-import IconExternalLink from '@theme/Icon/Success';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPersonChalkboard } from '@fortawesome/free-solid-svg-icons';
 
 # Apresentação do curso
 <LigaHighlight />
@@ -20,18 +16,8 @@ export const cardsData = [
   },
   {
     title: "Você sabia que a forma como você se comunica com a tecnologia pode ser a chave para transformar tarefas que levam horas em minutos?",
-    description: "Leitura do artigo <a href='https://criatividade.digital/blog/maquina-falar-nossa-lingua/'>Quando a Máquina Aprendeu a Falar a Nossa Língua?</a>",
+    description: "Leitura do artigo <a href='https://criatividade.digital/blog/maquina-falar-nossa-lingua/' target='_blank'>Quando a Máquina Aprendeu a Falar a Nossa Língua?</a>",
     backgroundColor: "#74b9ff"
-  },
-  {
-    title: "Card Three",
-    description: "This is the third card's content",
-    backgroundColor: "#55efc4"
-  },
-  {
-    title: "Card Four",
-    description: "This is the fourth card's content",
-    backgroundColor: "#a29bfe"
   },
 ];
 
