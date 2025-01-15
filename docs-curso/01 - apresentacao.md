@@ -4,6 +4,7 @@ sidebar_position: 1
 import LigaHighlight from '@site/src/components/gsap/highlight'
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import './apresentacao.css';
+import CardSwiper from '@site/src/components/slides';
 
 # Apresentação do curso
 <LigaHighlight />
@@ -16,3 +17,5 @@ Mas antes, permita-me perguntar:
 *Você sabia que a forma como você se comunica com a tecnologia pode ser a chave para transformar tarefas que levam horas em minutos?* 
 
 Para entender como isso é possível, convido você a ler o artigo [*Quando a Máquina Aprendeu a Falar a Nossa Língua?*](https://criatividade.digital/blog/maquina-falar-nossa-lingua/) antes de iniciar o curso.
+
+<CardSwiper />
