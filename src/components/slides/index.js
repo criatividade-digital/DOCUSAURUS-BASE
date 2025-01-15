@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-cards';
 import { EffectCards } from 'swiper/modules';
+import PropTypes from 'prop-types'; 
 import './index.css';
 
 // Define the styles object
@@ -174,6 +175,16 @@ const ToggleableCardSwiper = ({ cards }) => {
       </Swiper>
     </div>
   );
+};
+
+ToggleableCardSwiper.propTypes = {
+  cards: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+      backgroundColor: PropTypes.string.isRequired,
+    })
+  ).isRequired,
 };
 
 export default ToggleableCardSwiper;

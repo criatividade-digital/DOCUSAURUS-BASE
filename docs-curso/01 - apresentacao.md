@@ -4,7 +4,11 @@ sidebar_position: 1
 import LigaHighlight from '@site/src/components/gsap/highlight'
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import './apresentacao.css';
+import CueCards from '@site/src/components/slides/CueCards';
 import CardSwiper from '@site/src/components/slides';
+import IconExternalLink from '@theme/Icon/Success';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPersonChalkboard } from '@fortawesome/free-solid-svg-icons';
 
 # Apresentação do curso
 <LigaHighlight />
@@ -31,12 +35,7 @@ export const cardsData = [
   },
 ];
 
-<details>
-<summary>
-Cartões
-</summary>
-<CardSwiper cards={cardsData} />
-</details>
+<CueCards cardsData={cardsData} />
 
 Bem-vindo a este minicurso sobre o uso do ChatGPT! 
   <img src={useBaseUrl("/img/docs/curso/lapttop_chatgpt.png")} alt="Bem-vindo ao curso" title="Imagem de exemplo" class="float-right" />
