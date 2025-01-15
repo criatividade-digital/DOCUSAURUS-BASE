@@ -1,62 +1,164 @@
-import React from 'react';
-// Import Swiper React components
+import React, { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-cards';
-
-// Import required modules
 import { EffectCards } from 'swiper/modules';
 
-// You might want to add these styles to your CSS file
+//import './ToggleableCardSwiper.css';
+
 const styles = {
+  // Normal mode styles
+  normalWrapper: {
+    maxWidth: '300px',
+    height: '400px',
+    margin: '20px auto',
+    position: 'relative',
+  },
+  // Full screen mode styles
+  fullScreenWrapper: {
+    width: '100vw',
+    height: '100vh',
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    backgroundColor: '#000',
+    zIndex: 1000,
+  },
   container: {
-    maxWidth: '700px',
-    margin: '0 auto',
-    padding: '20px',
+    width: '100%',
+    height: '100%',
   },
   card: {
+    width: '100%',
+    height: '100%',
     backgroundColor: '#fff',
     borderRadius: '8px',
-    padding: '20px',
-    boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
-    minHeight: '300px',
     display: 'flex',
+    flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    fontSize: '24px',
-    color: '#333',
+    padding: '20px',
+  },
+  toggleButton: {
+    position: 'absolute',
+    top: '20px',
+    right: '20px',
+    zIndex: 1001,
+    padding: '8px 16px',
+    backgroundColor: 'rgba(255, 255, 255, 0.8)',
+    border: 'none',
+    borderRadius: '4px',
+    cursor: 'pointer',
+    display: 'flex',
+    alignItems: 'center',
+    gap: '6px',
+    fontSize: '14px',
+    transition: 'background-color 0.3s',
+  },
+  content: {
+    textAlign: 'center',
   }
 };
 
-const CardSwiper = () => {
+// SVG icons for the toggle button
+const FullscreenIcon = () => (
+  <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+    <path d="M1.5 1h4v1.5h-2.5v2.5h-1.5v-4zm13 0v4h-1.5v-2.5h-2.5v-1.5h4zm-13 13v-4h1.5v2.5h2.5v1.5h-4zm13 0h-4v-1.5h2.5v-2.5h1.5v4z"/>
+  </svg>
+);
+
+const MinimizeIcon = () => (
+  <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+    <path d="M5.5 1h-4v1.5h2.5v2.5h1.5v-4zm5 0v4h1.5v-2.5h2.5v-1.5h-4zm-5 13v-4h-1.5v2.5h-2.5v1.5h4zm5 0h4v-1.5h-2.5v-2.5h-1.5v4z"/>
+  </svg>
+);
+
+const ToggleableCardSwiper = () => {
+  const [isFullScreen, setIsFullScreen] = useState(false);
+
+  const toggleFullScreen = () => {
+    setIsFullScreen(!isFullScreen);
+  };
+
+  // Sample cards data
+  const cards = [
+    {
+      title: "Card One",
+      description: "This is the first card's content",
+      backgroundColor: "#ff7675"
+    },
+    {
+      title: "Card Two",
+      description: "This is the second card's content",
+      backgroundColor: "#74b9ff"
+    },
+    {
+      title: "Card Three",
+      description: "This is the third card's content",
+      backgroundColor: "#55efc4"
+    },
+    {
+      title: "Card Four",
+      description: "This is the fourth card's content",
+      backgroundColor: "#a29bfe"
+    },
+  ];
+
+  useEffect(() => {
+    const handleKeyPress = (e) => {
+      if (e.key === 'Escape' && isFullScreen) {
+        setIsFullScreen(false);
+      }
+    };
+  
+    document.addEventListener('keydown', handleKeyPress);
+    return () => document.removeEventListener('keydown', handleKeyPress);
+  }, [isFullScreen]);
+
   return (
-    <div style={styles.container}>
+    <div style={isFullScreen ? styles.fullScreenWrapper : styles.normalWrapper}>
+      <button 
+        onClick={toggleFullScreen} 
+        style={{
+          ...styles.toggleButton,
+          backgroundColor: isFullScreen ? 'rgba(255, 255, 255, 0.8)' : '#fff',
+        }}
+      >
+        {isFullScreen ? <MinimizeIcon /> : <FullscreenIcon />}
+        {/*isFullScreen ? 'Exit Fullscreen' : 'Enter Fullscreen'*/}
+      </button>
+
       <Swiper
         effect={'cards'}
         grabCursor={true}
         modules={[EffectCards]}
         className="mySwiper"
+        style={styles.container}
+        cardsEffect={{
+          slideShadows: false,
+          perSlideRotate: 4,
+          perSlideOffset: 8,
+        }}
       >
-        <SwiperSlide>
-          <div style={styles.card}>Card 1</div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div style={styles.card}>Card 2</div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div style={styles.card}>Card 3</div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div style={styles.card}>Card 4</div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div style={styles.card}>Card 5</div>
-        </SwiperSlide>
+        {cards.map((card, index) => (
+          <SwiperSlide key={index}>
+            <div 
+              style={{
+                ...styles.card,
+                backgroundColor: card.backgroundColor,
+                color: '#fff'
+              }}
+            >
+              <div style={styles.content}>
+                <h2 style={{ marginBottom: '1rem' }}>{card.title}</h2>
+                <p>{card.description}</p>
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );
 };
 
-export default CardSwiper;
+export default ToggleableCardSwiper;
