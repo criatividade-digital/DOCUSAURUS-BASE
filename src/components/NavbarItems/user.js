@@ -71,11 +71,11 @@ const User = () => {
           console.log(customClaims);
           if (customClaims.bookExpiryDates) {
             const { bookExpiryDates } = customClaims;
-            console.log(customClaims);
+            //console.log(customClaims);
             // Check if the bookCode deste livro gerado (arquivo config) exists and get the expiry date
             if (bookExpiryDates[siteConfig.customFields.bookCode]) {
               const excelExpiryDate = bookExpiryDates[siteConfig.customFields.bookCode];
-              const excelBuildDate = 1 + siteConfig.customFields.lastBuild;
+              const excelBuildDate = siteConfig.customFields.lastBuild; //considera um dia a menos o build para evitar o problema do build no servidor virar o dia antes por estar em um fuso mais adiantado que o horario do browser no brasil
               const excelBrowserDate = 1 + Math.floor((new Date() - new Date(1899, 11, 31)) / (24 * 60 * 60 * 1000));
 
               // Convert Excel serial date to a valid date 
@@ -83,7 +83,7 @@ const User = () => {
               const expiryDateObj = new Date(excelEpoch.getTime() + (excelExpiryDate - 1) * 86400000);
 
               // Check browser date
-              console.log('excelBrowserDate:', excelBrowserDate, 'excelBuildDate:', excelBuildDate , 'excelExpiryDate:', excelExpiryDate);
+              //console.log('excelBrowserDate:', excelBrowserDate, 'excelBuildDate:', excelBuildDate , 'excelExpiryDate:', excelExpiryDate);
               if (excelBrowserDate < (excelBuildDate)) { // Margin of one day
                 cancelaLoginReason = 'browserdate'; // Set reason for cancellation
               }
