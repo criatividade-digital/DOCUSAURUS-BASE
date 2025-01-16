@@ -39,7 +39,7 @@ const getTextStyles = (isFullScreen) => {
       },
       description: {
         ...baseStyles.description,
-        fontSize: 'clamp(0.875rem, 3vw, 1rem)',
+        fontSize: 'clamp(0.975rem, 3.1vw, 1.1rem)', //fontSize: 'clamp(0.875rem, 3vw, 1rem)',
       },
     };
   }
@@ -48,14 +48,14 @@ const getTextStyles = (isFullScreen) => {
   return {
     title: {
       ...baseStyles.title,
-      fontSize: 'clamp(1.5rem, 5vw, 3rem)',
+      fontSize: 'clamp(2.3rem, 6.1vw, 3.7rem)', //fontSize: 'clamp(1.5rem, 5vw, 3rem)',
       '@media (max-width: 768px)': {
         fontSize: 'clamp(1.25rem, 4vw, 2rem)',
       },
     },
     description: {
       ...baseStyles.description,
-      fontSize: 'clamp(1rem, 3vw, 1.5rem)',
+      fontSize: 'clamp(1.5rem, 5vw, 3rem)', //fontSize: 'clamp(1rem, 3vw, 1.5rem)',
       '@media (max-width: 768px)': {
         fontSize: 'clamp(0.875rem, 2.5vw, 1.25rem)',
       },
