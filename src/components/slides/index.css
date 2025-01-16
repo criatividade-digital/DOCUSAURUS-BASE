@@ -26,6 +26,12 @@
   margin: 0 auto;   /* Center the image horizontally */
 }
 
+/*.full-screen-wrapper .card {
+  position: relative;
+  left: 20px;
+  right: 20px;
+}*/
+
 /* Container styles */
 .swiper-container {
   width: 100%;
@@ -43,6 +49,17 @@
   align-items: center;
   justify-content: center;
   padding: 20px;
+}
+
+.full-screen-wrapper .card {
+  border-radius: 0px;
+}
+
+.full-screen-wrapper ul {
+  padding: 5vw;
+}
+.full-screen-wrapper ol {
+  padding: 5vw;
 }
 
 /* Toggle button styles */

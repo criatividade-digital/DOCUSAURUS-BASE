@@ -30,6 +30,9 @@ const getTextStyles = (isFullScreen) => {
     }
   };
 
+  // Fullscreen mode styles
+  document.body.style.overflow = isFullScreen ? 'hidden' : 'auto';
+
   // Normal mode (non-fullscreen) styles
   if (!isFullScreen) {
     return {

@@ -10,7 +10,7 @@ import IconToolsChatGPT from '@site/src/components/icons/IconToolsChatGPT'; //de
 import IconRetratarChatGPT from '@site/src/components/icons/IconRetratarChatGPT'; //dentro do markdown estou usando o img para carregar este ícone -> este não usa mask mas usei a mesma estratégia caso ele venha a dar algum outro problema no futuro
 import ReactDOMServer from 'react-dom/server'
 import '../apresentacao.css';
-import myImage from '@site/static/img/docs/curso/lapttop_chatgpt.png';
+import myImage from '@site/static/img/docs/curso/estilo-kawaii.png';
 
 
 # Imagens
@@ -22,7 +22,12 @@ export const cardsData = [
   {
     title: "<i>Imagens</i>",
     description: "O ChatGPT possui a <i>habilidade</i> de <b>analisar</b> e <b>gerar</b> imagens ",
-    backgroundColor: "#55efc4"
+    backgroundColor: "rgb(77, 226, 132)"
+  },
+  {
+    title: "ANÁLISE DE IMAGEM",
+    description: "",
+    backgroundColor:"rgba(47, 149, 227, 1)"
   },
   {
     title: "Gralhas?",
@@ -30,19 +35,19 @@ export const cardsData = [
     backgroundColor: "#74b9ff"
   },
   {
-    title: "Analisando imagens",
+    title: "Como fazer?",
     description: `<p>Anexar a imagem clicando no botão ${paperClip} e digitar o seu <i>prompt</i>.</p><p>Veja <a href="#promptImagem">este exemplo</a>.</p>`,
-    backgroundColor:"rgba(47, 149, 227, 0.96)"
+    backgroundColor:"rgba(47, 149, 227, 1)"
   },
   {
     title: "⚠️ Tipo de fonte!",
     description: "Teste se o ChatGPT reconhece as fontes tipográficas utilizadas pela sua organização, pois algumas podem não ser identificadas pela ferramenta."
     ,
-    backgroundColor:"rgb(16, 120, 224)"
+    backgroundColor:"#ff7675"
   },
   {
-    title: "Gerando imagens",
-    description: `Primeiro, clique em ${toolsChatGPT}, em seguida em ${retratarChatGPT}, e depois descreva a imagem desejada.`,
+    title: "GERAÇÃO DE IMAGEM",
+    description: "",
     backgroundColor: "rgb(247, 180, 72)"
   },
   {
@@ -51,13 +56,18 @@ export const cardsData = [
     backgroundColor: "rgb(228, 215, 28)"
   },
   {
-    title: "<i>Kawaii</i>",
-    description: `<img src=${myImage} />Veja <a href="#promptGerarImagem">este exemplo</a>`,
+    title: "Estilo <i>Kawaii</i>",
+    description: `<img src=${myImage} />Japonês &rarr; "fofo" ou "adorável"`,
     backgroundColor: "rgb(218, 228, 28)"
   },
   {
-    title: "⚠️ Sugestão!",
-    description: "Inclua o texto diretamente no <i>prompt</i> para garantir precisão e contexto, evitando problemas de acesso a <i>links</i> ou consultas a fontes variadas.",
+    title: "Como fazer?",
+    description: `<p>Primeiro, clique em ${toolsChatGPT}, em seguida em ${retratarChatGPT}, e depois descreva a imagem desejada.</p><p>Veja <a href="#promptGerarImagem">este exemplo</a></p>`,
+    backgroundColor: "rgb(247, 180, 72)"
+  },
+  {
+    title: "⚠️ Dica!",
+    description: "O processo de geração de imagens no ChatGPT ainda carece de precisão, envolvendo <b>tentativa e erro</b>. Após obter os <b>elementos principais</b>, recomendo finalizar o trabalho em uma <b>ferramenta de edição</b> de imagens.",
     backgroundColor: "#ff7675"
   },
 ];
@@ -94,6 +104,7 @@ O pedido para a geração da imagem é feito por meio de um *prompt*, que pode v
 
 Agora, você vai entender por que os textos deste curso são ilustrados com essas imagens "fofas". E lá vou eu aqui novamente... Antes de prosseguirmos, você sabe o que significa *kawaii*?
 
+<img src={useBaseUrl("/img/docs/curso/estilo-kawaii.png")} alt="Bem-vindo ao curso" title="Imagem de exemplo" class="float-right" />
 ### *Kawaii*: O Que é?
 *Kawaii* (かわいい) é uma palavra japonesa que significa "fofo" ou "adorável". Ela é usada para descrever qualquer coisa que seja charmosa, atraente e meiga, muitas vezes com um apelo infantil ou inocente. O conceito é amplamente difundido na cultura japonesa e influenciou várias áreas, como moda, design, entretenimento e comportamento social.
 <span id='promptGerarImagem'></span>
