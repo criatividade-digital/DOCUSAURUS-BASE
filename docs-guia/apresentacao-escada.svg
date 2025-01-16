@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 721.3 509.9">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #c773af;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-1, .cls-3, .cls-6, .cls-7 {
+        stroke-width: 2px;
+      }
+
+      .cls-8 {
+        fill: #c773af;
+      }
+
+      .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15 {
+        isolation: isolate;
+      }
+
+      .cls-8, .cls-9, .cls-10, .cls-12, .cls-13, .cls-14, .cls-15 {
+        font-family: Roboto-Regular, Roboto;
+        font-size: 20px;
+      }
+
+      .cls-9, .cls-16 {
+        fill: #76a398;
+      }
+
+      .cls-2 {
+        stroke: #f69589;
+      }
+
+      .cls-2, .cls-4, .cls-5 {
+        stroke-width: 3px;
+      }
+
+      .cls-3 {
+        stroke: #54b948;
+      }
+
+      .cls-10 {
+        fill: gold;
+      }
+
+      .cls-4 {
+        stroke: #435caa;
+      }
+
+      .cls-12 {
+        fill: #fbe700;
+      }
+
+      .cls-13 {
+        fill: #54b948;
+      }
+
+      .cls-14 {
+        fill: #f69589;
+      }
+
+      .cls-15 {
+        fill: #435caa;
+      }
+
+      .cls-17 {
+        display: none;
+      }
+
+      .cls-5 {
+        stroke: #fbed24;
+      }
+
+      .cls-6 {
+        stroke: #484848;
+      }
+
+      .cls-7 {
+        stroke: gold;
+      }
+    </style>
+  </defs>
+  <!-- Generator: Adobe Illustrator 28.6.0, SVG Export Plug-In . SVG Version: 1.2.0 Build 709)  -->
+  <g>
+    <g id="Layer_1">
+      <g id="items" class="cls-11">
+        <g id="blend">
+          <g id="g-root-tx_mestre_hte6bw1b7vlzb-fill">
+            <g id="tx_mestre_hte6bw1b7vlzb-fill">
+              <g class="cls-11">
+                <text class="cls-10" transform="translate(652.8 28.7)"><tspan x="0" y="0">Mestre</tspan></text>
+              </g>
+            </g>
+          </g>
+          <g id="g-root-tx_estrateg_m97ogc1b7vl72-fill">
+            <g id="tx_estrateg_m97ogc1b7vl72-fill">
+              <g class="cls-11">
+                <text class="cls-13" transform="translate(524.1 73.2)"><tspan x="0" y="0">Estrategista</tspan></text>
+              </g>
+            </g>
+          </g>
+          <g id="g-root-tx_criao_ddko7g1b7vmrk-fill">
+            <g id="tx_criao_ddko7g1b7vmrk-fill">
+              <g class="cls-11">
+                <text class="cls-8" transform="translate(434.6 144.3)"><tspan x="0" y="0">Criação</tspan></text>
+              </g>
+            </g>
+          </g>
+          <g id="g-root-tx_construo_2qmx81b7vl6p-fill">
+            <g id="tx_construo_2qmx81b7vl6p-fill">
+              <g class="cls-11">
+                <text class="cls-15" transform="translate(314 216.2)"><tspan x="0" y="0">Construção</tspan></text>
+              </g>
+            </g>
+          </g>
+          <g id="g-root-tx_explorao_1q87ong1b7vlsa-fill">
+            <g id="tx_explorao_1q87ong1b7vlsa-fill">
+              <g class="cls-11">
+                <text class="cls-14" transform="translate(206.3 289)"><tspan x="0" y="0">Exploração</tspan></text>
+              </g>
+            </g>
+          </g>
+          <g id="g-root-tx_iniciao_1lse6j01b7vmkj-fill">
+            <g id="tx_iniciao_1lse6j01b7vmkj-fill">
+              <g class="cls-11">
+                <text class="cls-9" transform="translate(114.6 365.6)"><tspan x="0" y="0">Iniciação</tspan></text>
+              </g>
+            </g>
+          </g>
+          <g id="g-root-tx_curioso_1cwr6a41b7vnd8-fill">
+            <g id="tx_curioso_1cwr6a41b7vnd8-fill">
+              <g class="cls-11">
+                <text class="cls-12" transform="translate(8.9 447.2)"><tspan x="0" y="0">Curioso</tspan></text>
+              </g>
+            </g>
+          </g>
+          <g id="g-root--1.line_sy_1lvidn01b7om4q-stroke">
+            <g id="_x2D_1.line_x5F_sy_x5F_1lvidn01b7om4q-stroke">
+              <path class="cls-6" d="M77.8,503v-24h36v-24h36v-24h36v-24h36v-24h36v-24h36v-24h36v-24h36v-24h36v-24h36v-24h36v-24h36v-24h36v-24h36v-24h36v-24h36v-24h60"/>
+            </g>
+          </g>
+          <g id="g-root-trop_1q7l4ek1b7suf6-stroke">
+            <g id="trop_1q7l4ek1b7suf6-stroke">
+              <path class="cls-7" d="M702.6,64.9c3.1-1.2,5.2-4.2,5.2-7.5v-5c0-1.1-.9-2-2-2h-4.1M667,64.9c-3.1-1.2-5.2-4.2-5.2-7.5v-5c0-1.1.9-2,2-2h4.1M702.8,40.4c0-.5-.2-1.1-.6-1.4-.4-.4-.9-.6-1.4-.6h-32c-.5,0-1.1.2-1.4.6-.4.4-.6.9-.6,1.4.7,28.4,15.9,20.3,15.9,30.9-.1,6.2-2.7,8.5-7.1,8.9-1,.1-1.8,1-1.8,2h0c0,1.2.9,2.1,2,2.1h18c1.1,0,2-.9,2-2h0c0-1.1-.8-2-1.8-2.1-4.5-.4-7.3-2.7-7.3-8.9,0-10.7,15.3-2.6,16-30.9ZM684.3,42.8c0-.2.3-.4.5-.4s.4.2.5.4l1.5,5.6h6.3c.2,0,.4.1.5.4,0,.2,0,.4-.2.6l-4.6,3.4,2.4,6.5c0,.2,0,.4-.2.6-.2.1-.4.1-.6,0l-5.7-4-5.7,4c-.2.1-.4.1-.6,0-.2-.1-.2-.4-.2-.6l2.4-6.5-4.6-3.4c-.2-.1-.3-.3-.2-.6s.3-.4.5-.4h6.3l1.5-5.6Z"/>
+            </g>
+          </g>
+          <g id="g-root-knig_dkfszw1b7g6bu-stroke">
+            <g id="knig_dkfszw1b7g6bu-stroke">
+              <path class="cls-3" d="M566.8,124h30s2,0,2,2v2s0,2-2,2h-30s-2,0-2-2v-2s0-2,2-2M596.8,124c0-2.2-1.8-4-4-4h-22c-2.2,0-4,1.8-4,4h30ZM577.8,84.4c9.9,1.9,17.1,10.5,17.1,20.6v11M570.8,120h22c-1.3-2.6-2-5.5-2-8.5v-6.5c0-8.8-6.7-16.1-15.5-16.9-1-2.2-3.1-3.8-5.5-4.1-.6,0-1,.4-1,1v4.5c-2.5,1.7-4,4.5-4,7.5v9c0,1.1.9,2,2,2h2c1.2,0,2.2-.8,2.6-1.9l.8-2.9c.2-.7.9-1.2,1.6-1.2,1.7,0,3-1.3,3-3,0,3.7-1,7.3-3,10.4-2,3.2-3,6.8-3,10.6Z"/>
+            </g>
+          </g>
+          <g id="g-root-pain_mdl0241b7bxmu-stroke">
+            <g id="pain_mdl0241b7bxmu-stroke">
+              <path class="cls-1" d="M479.8,175.5c2.3,4.5,5.6,3.6,7.6,7.5,1.4,2.7.4,6.1-2.4,7.5-2.7,1.4-6.1.4-7.5-2.4-.8-1.5-.9-6.8,2.3-12.7ZM496.8,200.4l-9.9-11.5M483.2,191.2l6.2,10.8M451,172h37.2M455.1,182h17.7M478.5,195.1c-.5,2.3-.7,4.6-.7,6.9h-16c0-8.2-2.9-16.1-8.4-22.1-2.3-2.6-3.2-6.2-2.2-9.5,1-3.3,3.6-6,6.9-6.9,1-.3,1.6-1.3,1.4-2.4-.2-1.2-.7-2.3-1.4-3.3-.3-.3-.4-.8-.2-1.2.2-.4.6-.6,1-.6M458.9,156h21.8c.4,0,.8.2,1,.6.2.4.1.8-.2,1.2-.7,1-1.2,2.1-1.4,3.3-.2,1,.4,2.1,1.4,2.4,2.8.8,5.1,2.7,6.3,5.3,1.2,2.6,1.3,5.6.2,8.3"/>
+            </g>
+          </g>
+          <g id="g-root-sign_v3lqj01b7hki0-stroke">
+            <g id="sign_v3lqj01b7hki0-stroke">
+              <path class="cls-4" d="M344.8,238h42s2,0,2,2v10s0,2-2,2h-42s-2,0-2-2v-10s0-2,2-2M346.8,252v22M384.8,252v22M349.8,231c0,1.7,1.3,3,3,3s3-1.3,3-3-1.3-3-3-3-3,1.3-3,3M375.8,231c0,1.7,1.3,3,3,3s3-1.3,3-3-1.3-3-3-3-3,1.3-3,3M352.8,234v4M378.8,234v4M343.4,251.4l13.4-13.4M366.8,238l-14,14M378.8,238l-14,14M388.2,238.6l-13.4,13.4"/>
+            </g>
+          </g>
+          <g id="g-root-game_v487m41b7vnk5-stroke">
+            <g id="game_v487m41b7vnk5-stroke">
+              <path class="cls-2" d="M234.8,316c0,8.8,7.2,16,16,16s16-7.2,16-16-7.2-16-16-16-16,7.2-16,16ZM262.1,327.3l18.7,18.7"/>
+            </g>
+          </g>
+          <g id="g-root-2_zp2aws18g13wh-stroke">
+            <g id="_x32__x5F_zp2aws18g13wh-stroke">
+              <path class="cls-5" d="M65.1,489.8l-12.1-12.1,6-6c.8-.8,1.1-1.9.7-3s-1.2-1.9-2.3-2.1l-28-6.9c-1-.3-2.1,0-2.9.8-.7.7-1,1.8-.8,2.9l6.9,28c.3,1.1,1.1,1.9,2.1,2.2,1.1.3,2.2,0,2.9-.8l6-6,12.1,12.1,9.1-8.9Z"/>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g id="Novos_icones">
+        <path id="chatgpt" class="cls-16" d="M175.1,393.3c1-2.9.6-6.1-.9-8.8-2.3-4.1-7-6.2-11.6-5.2-2-2.3-5-3.6-8.1-3.6-4.7,0-8.9,3-10.3,7.5-3,.6-5.6,2.5-7.1,5.2-2.4,4.1-1.8,9.2,1.3,12.7-1,2.9-.6,6.1.9,8.8,2.3,4.1,7,6.2,11.6,5.2,2,2.3,5,3.6,8.1,3.6,4.7,0,8.9-3,10.3-7.5,3-.6,5.6-2.5,7.1-5.2,2.4-4.1,1.8-9.2-1.3-12.7h0ZM159,415.9c-1.9,0-3.7-.7-5.1-1.9,0,0,.2,0,.3-.1l8.5-4.9c.4-.2.7-.7.7-1.2v-12l3.6,2.1s0,0,0,0v10c0,4.4-3.6,8-8,8h0ZM141.7,408.5c-.9-1.6-1.3-3.5-1-5.4,0,0,.2.1.3.2l8.5,4.9c.4.3,1,.3,1.4,0l10.4-6v4.2s0,0,0,.1l-8.6,5c-3.8,2.2-8.8.9-11-2.9h0ZM139.5,389.8c.9-1.6,2.4-2.9,4.2-3.5,0,0,0,.2,0,.3v9.9c0,.5.3,1,.7,1.2l10.4,6-3.6,2.1s0,0-.1,0l-8.6-5c-3.8-2.2-5.2-7.1-2.9-11h0ZM169.1,396.7l-10.4-6,3.6-2.1s0,0,.1,0l8.6,5c3.8,2.2,5.2,7.1,2.9,11-.9,1.6-2.4,2.9-4.2,3.5v-10.2c0-.5-.3-1-.7-1.2h0ZM172.7,391.3c0,0-.2-.1-.3-.2l-8.5-4.9c-.4-.3-1-.3-1.4,0l-10.4,6v-4.2s0,0,0-.1l8.6-5c3.8-2.2,8.8-.9,11,2.9.9,1.6,1.3,3.5,1,5.4h0ZM150.1,398.8l-3.6-2.1s0,0,0,0v-10c0-4.4,3.6-8,8-8,1.9,0,3.7.7,5.1,1.9,0,0-.2,0-.3.1l-8.5,4.9c-.4.2-.7.7-.7,1.2v12s0,0,0,0ZM152.1,394.5l4.6-2.7,4.6,2.7v5.4l-4.6,2.7-4.6-2.7v-5.4Z"/>
+      </g>
+    </g>
+    <g id="Icones_antigos" class="cls-17">
+      <g id="g-root-bott_qu0z9o1b7q0ox-stroke">
+        <g id="bott_qu0z9o1b7q0ox-stroke">
+          <path class="cls-6" d="M300.5,249.9h30M301.9,270.5c-.8.8-.5,1.4.6,1.4h24c1.1,0,1.4-.6.6-1.4l-11.2-11.2c-.8-.8-2-.8-2.8,0l-11.2,11.2ZM301.9,229.3c-.8-.8-.5-1.4.6-1.4h24c1.1,0,1.4.6.6,1.4l-12.6,12.6-12.6-12.6ZM296.5,262.9c-6.6,0-12-5.4-12-12s5.4-12,12-12M290.5,234.9l6,4-5,6"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

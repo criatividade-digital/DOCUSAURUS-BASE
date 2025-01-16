@@ -1,0 +1,23 @@
+.opGreen {
+  color: rgb(0, 0, 0);
+}
+.opGreen[aria-selected='true'] {
+  border-bottom-color: green;
+  background-color: green;
+  color: #fff;
+  border-radius: 8px; /* Optional styling */
+}
+
+.opOrange {
+  color: rgb(0, 0, 0);
+}
+.opOrange[aria-selected='true'] {
+  border-bottom-color: orange;
+  background-color: orange;
+  color: #fff;
+  border-radius: 8px; /* Optional styling */
+}
+
+.imageLeft {
+  float: 'left';
+}
