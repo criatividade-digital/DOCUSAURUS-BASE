@@ -13,7 +13,7 @@ export const cardsData = [
   {
     title: "<i>Prompt</i>",
     description: "<p><b>Menos detalhes:</b> mais liberdade na geração de texto pelo ChatGPT.<p/><p><b>Mais detalhes</b>: direciona a geração de texto pelo ChatGPT.</p> ",
-    backgroundColor: "#55efc4"
+    backgroundColor:"rgb(77, 226, 132)"
   },
   {
     title: "Exemplos",

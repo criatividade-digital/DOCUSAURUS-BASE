@@ -12,7 +12,7 @@ export const cardsData = [
   {
     title: "Bem-vindo!",
     description: "Nosso foco: otimizar processos e fluxos de trabalho usando o ChatGPT",
-    backgroundColor: "#ff7675"
+    backgroundColor:"rgba(244, 182, 47, 1.94)"
   },
   {
     title: "Você sabia que a forma como você se comunica com a tecnologia pode ser a chave para transformar tarefas que levam horas em minutos?",
