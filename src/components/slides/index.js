@@ -6,34 +6,15 @@ import { EffectCards } from 'swiper/modules';
 import PropTypes from 'prop-types'; 
 import './index.css';
 
-// Define the styles object
-const styles = {
-  normalWrapper: {
-    maxWidth: '300px',
-    height: '400px',
-    margin: '20px auto',
-    position: 'relative',
-  },
-  fullScreenWrapper: {
-    width: '100vw',
-    height: '100vh',
-    position: 'fixed',
-    top: 0,
-    left: 0,
-    backgroundColor: '#000',
-    zIndex: 1000,
-  }
-};
-
 const FullscreenIcon = () => (
-  <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-    <path d="M1.5 1h4v1.5h-2.5v2.5h-1.5v-4zm13 0v4h-1.5v-2.5h-2.5v-1.5h4zm-13 13v-4h1.5v2.5h2.5v1.5h-4zm13 0h-4v-1.5h2.5v-2.5h1.5v4z"/>
+  <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" opacity="0.3">
+    <path  d="M1.5 1h4v1.5h-2.5v2.5h-1.5v-4zm13 0v4h-1.5v-2.5h-2.5v-1.5h4zm-13 13v-4h1.5v2.5h2.5v1.5h-4zm13 0h-4v-1.5h2.5v-2.5h1.5v4z"/>
   </svg>
 );
 
 const MinimizeIcon = () => (
-  <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-    <path d="M5.5 1h-4v1.5h2.5v2.5h1.5v-4zm5 0v4h1.5v-2.5h2.5v-1.5h-4zm-5 13v-4h-1.5v2.5h-2.5v1.5h4zm5 0h4v-1.5h-2.5v-2.5h-1.5v4z"/>
+  <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" opacity="0.3">
+    <path  d="M5.5 1h-4v1.5h2.5v2.5h1.5v-4zm5 0v4h1.5v-2.5h2.5v-1.5h-4zm-5 13v-4h-1.5v2.5h-2.5v1.5h4zm5 0h4v-1.5h-2.5v-2.5h-1.5v4z"/>
   </svg>
 );
 
@@ -59,7 +40,7 @@ const getTextStyles = (isFullScreen) => {
       description: {
         ...baseStyles.description,
         fontSize: 'clamp(0.875rem, 3vw, 1rem)',
-      }
+      },
     };
   }
 
@@ -81,8 +62,6 @@ const getTextStyles = (isFullScreen) => {
     }
   };
 };
-
-// ... FullscreenIcon and MinimizeIcon components remain the same ...
 
 const ToggleableCardSwiper = ({ cards }) => {
   const [isFullScreen, setIsFullScreen] = useState(false);
@@ -110,7 +89,11 @@ const ToggleableCardSwiper = ({ cards }) => {
   useEffect(() => {
     const handleKeyPress = (e) => {
       if (e.key === 'Escape' && isFullScreen) {
-        setIsFullScreen(false);
+      setIsFullScreen(false);
+      } else if (e.key === 'ArrowRight') {
+      document.querySelector('.swiper-container').swiper.slideNext();
+      } else if (e.key === 'ArrowLeft') {
+      document.querySelector('.swiper-container').swiper.slidePrev();
       }
     };
   
@@ -118,15 +101,26 @@ const ToggleableCardSwiper = ({ cards }) => {
     return () => document.removeEventListener('keydown', handleKeyPress);
   }, [isFullScreen]);
 
+  //Se for clicado um link e o modo estiver fullscreen tem que sair dele e continuar o evento de clique
+  const handleLinkClick = (e) => {
+    // Check if clicked element is a link
+    if (e.target.tagName === 'A') {
+      // Exit fullscreen mode if active
+      if (isFullScreen) {
+        setIsFullScreen(false);
+      }
+    }
+  };
+
   const textStyles = getTextStyles(isFullScreen);
 
   return (
-    <div style={isFullScreen ? styles.fullScreenWrapper : styles.normalWrapper}>
+    <div class={isFullScreen ? "full-screen-wrapper" : "normal-wrapper"}> 
       <button 
         onClick={toggleFullScreen} 
         className="toggle-button"
         style={{
-          backgroundColor: isFullScreen ? 'rgba(255, 255, 255, 0.8)' : '#fff',
+          backgroundColor: 'rgba(255, 255, 255, 0.5)', //foi gerado originalmente-> isFullScreen ? 'rgba(255, 255, 255, 0.5)' : '#fff',
         }}
       >
         {isFullScreen ? <MinimizeIcon /> : <FullscreenIcon />}
@@ -161,7 +155,7 @@ const ToggleableCardSwiper = ({ cards }) => {
                 >
                   <div dangerouslySetInnerHTML={{ __html: card.title }} />
                 </h2>
-                <div 
+                <div onClick={handleLinkClick}
                   style={{
                     ...textStyles.description,
                     wordBreak: 'break-word'

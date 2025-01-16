@@ -18,6 +18,13 @@
   background-color: #000;
   z-index: 1000;
 }
+.full-screen-wrapper img {
+  max-width: clamp(300px, 50%, 500px);  /* Responsive width */
+  height: auto;     /* Maintain aspect ratio */
+  width: auto;      /* Maintain aspect ratio */
+  display: block;   /* Remove inline spacing */
+  margin: 0 auto;   /* Center the image horizontally */
+}
 
 /* Container styles */
 .swiper-container {

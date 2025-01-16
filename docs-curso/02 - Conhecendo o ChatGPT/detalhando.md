@@ -29,7 +29,6 @@ export const cardsData = [
     title: "Indo além do gerador",
     description: 
     `<div style="text-align: center;">
-      <p>O gerador mostra algumas das milhares de possibilidades...</p>
       <ul style="display: inline-block; text-align: left; margin: 0 auto;">
         <li>Abertura impactante:
           <ol>
@@ -38,10 +37,16 @@ export const cardsData = [
             <li>Conte uma micro-história pessoal ou profissional.</li>
           </ol>
         </li>
+        <a href="#varia%C3%A7%C3%B5es">Clique para ver mais variações...</a>
       </ul>
     </div>`
     ,
     backgroundColor: "#a29bfe"
+  },
+  {
+    title: "⚠️ Sugestão!",
+    description: "Incluir o texto diretamente no <i>prompt</i> para garantir precisão e contexto, evitando problemas de acesso a <i>links</i> ou consultas a fontes variadas.",
+    backgroundColor: "#ff7675"
   },
 ];
 

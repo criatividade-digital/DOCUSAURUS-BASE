@@ -2,11 +2,69 @@
 sidebar_position: 4
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import CueCards from '@site/src/components/slides/CueCards';
+import LigaHighlight from '@site/src/components/gsap/highlight'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPaperclip } from '@fortawesome/free-solid-svg-icons';
+import IconToolsChatGPT from '@site/src/components/icons/IconToolsChatGPT'; //dentro do markdown estou usando o img para carregar este ícone -> inclui isso para mitigar o erro: aparece sem os masks no texto da página (ícone fica bugado) mas acerta depois de abrir o slide
+import IconRetratarChatGPT from '@site/src/components/icons/IconRetratarChatGPT'; //dentro do markdown estou usando o img para carregar este ícone -> este não usa mask mas usei a mesma estratégia caso ele venha a dar algum outro problema no futuro
+import ReactDOMServer from 'react-dom/server'
 import '../apresentacao.css';
+import myImage from '@site/static/img/docs/curso/lapttop_chatgpt.png';
+
 
 # Imagens
-  <img src={useBaseUrl("/img/docs/curso/robo_desenhando.png")} alt="Bem-vindo ao curso" title="Imagem de exemplo" class="float-right" />
-O ChatGPT possui a "habilidade" de gerar e analisar imagens. Essa ferramenta geralmente identifica, pelo texto do *prompt*, se a solicitação envolve o uso de imagens. No entanto, você pode deixar essa intenção mais clara selecionando a opção "Ferramentas | Retratar" antes de enviar o comando.
+<LigaHighlight />
+export const paperClip =  ReactDOMServer.renderToString(<FontAwesomeIcon icon={faPaperclip} />);
+export const toolsChatGPT = ReactDOMServer.renderToString(<IconToolsChatGPT />);
+export const retratarChatGPT = ReactDOMServer.renderToString(<IconRetratarChatGPT />);
+export const cardsData = [
+  {
+    title: "<i>Imagens</i>",
+    description: "O ChatGPT possui a <i>habilidade</i> de <b>analisar</b> e <b>gerar</b> imagens ",
+    backgroundColor: "#55efc4"
+  },
+  {
+    title: "Gralhas?",
+    description: "Como se livrar das <i>gralhas</i> usando o recurso de análise de imagens?</p>",
+    backgroundColor: "#74b9ff"
+  },
+  {
+    title: "Analisando imagens",
+    description: `<p>Anexar a imagem clicando no botão ${paperClip} e digitar o seu <i>prompt</i>.</p><p>Veja <a href="#promptImagem">este exemplo</a>.</p>`,
+    backgroundColor:"rgba(47, 149, 227, 0.96)"
+  },
+  {
+    title: "⚠️ Tipo de fonte!",
+    description: "Teste se o ChatGPT reconhece as fontes tipográficas utilizadas pela sua organização, pois algumas podem não ser identificadas pela ferramenta."
+    ,
+    backgroundColor:"rgb(16, 120, 224)"
+  },
+  {
+    title: "Gerando imagens",
+    description: `Primeiro, clique em ${toolsChatGPT}, em seguida em ${retratarChatGPT}, e depois descreva a imagem desejada.`,
+    backgroundColor: "rgb(247, 180, 72)"
+  },
+  {
+    title: "<i>Kawaii</i> (かわいい)",
+    description: `Como direcionar o processo de geração de uma imagem?`,
+    backgroundColor: "rgb(228, 215, 28)"
+  },
+  {
+    title: "<i>Kawaii</i>",
+    description: `<img src=${myImage} />Veja <a href="#promptGerarImagem">este exemplo</a>`,
+    backgroundColor: "rgb(218, 228, 28)"
+  },
+  {
+    title: "⚠️ Sugestão!",
+    description: "Inclua o texto diretamente no <i>prompt</i> para garantir precisão e contexto, evitando problemas de acesso a <i>links</i> ou consultas a fontes variadas.",
+    backgroundColor: "#ff7675"
+  },
+];
+
+<CueCards cardsData={cardsData} />
+<img src={useBaseUrl("/img/docs/curso/robo_desenhando.png")} alt="Bem-vindo ao curso" title="Imagem de exemplo" class="float-right" />
+O ChatGPT tem a capacidade de analisar e gerar imagens, identificando pelo texto do *prompt* se a solicitação envolve esse recurso. Para garantir que o objetivo seja claro ao gerar uma imagem, selecione a opção <i>Ferramentas</i> <img src={useBaseUrl("/img/chatgpt-tools.svg")} /> | <i>Retratar</i> <img src={useBaseUrl("/img/chatgpt-retratar.svg")} /> antes de enviar o comando.
 
 ## Analisar imagens
 Um recurso interessante do ChatGPT é sua capacidade de identificar textos presentes em imagens. Esse recurso abre diversas possibilidades de uso. Vou dar um exemplo, mas antes: você sabe o que é uma "gralha"?
@@ -17,7 +75,8 @@ Se você pensou em um pássaro, acertou! Porém, no contexto editorial, "gralha"
 ### Solução?
 Quando o conteúdo a ser revisado está em formato de texto, já mostrei [aqui como o ChatGPT pode ajudar](./revisao). Mas e quando o material final é um arquivo de imagem? É aí que entra a capacidade do ChatGPT de identificar textos presentes nas imagens.
 
-Você pode enviar a imagem (botão anexar arquivos) para o ChatGPT e solicitar uma revisão nos textos contidos nela. Veja este *prompt*:
+<span id='promptImagem'></span>
+Você pode enviar a imagem (botão <FontAwesomeIcon icon={faPaperclip} /> ) para o ChatGPT e solicitar uma revisão nos textos contidos nela. Veja este *prompt*:
 ```
 Assuma o papel de um revisor experiente e revise os textos presentes na imagem anexada, priorizando os seguintes aspectos: ortografia correta, gramática precisa, pontuação adequada, uso adequado de conectivos e sintaxe correta.
 ```
@@ -37,7 +96,7 @@ Agora, você vai entender por que os textos deste curso são ilustrados com essa
 
 ### *Kawaii*: O Que é?
 *Kawaii* (かわいい) é uma palavra japonesa que significa "fofo" ou "adorável". Ela é usada para descrever qualquer coisa que seja charmosa, atraente e meiga, muitas vezes com um apelo infantil ou inocente. O conceito é amplamente difundido na cultura japonesa e influenciou várias áreas, como moda, design, entretenimento e comportamento social.
-
+<span id='promptGerarImagem'></span>
 Menciono o conceito de *kawaii* porque ele será útil para compreender um dos principais elementos no processo de direcionamento da geração de imagens: o estilo. Por meio do estilo, é possível orientar o resultado desejado com poucas palavras. Aqui estão dois exemplos de *prompts* que usei para criar imagens para este material:
 
 ```url link='https://chatgpt.com/share/677eed78-eb7c-8003-b2ed-451228551176'
