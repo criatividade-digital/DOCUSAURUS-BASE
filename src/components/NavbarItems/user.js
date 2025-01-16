@@ -91,7 +91,7 @@ const User = () => {
               // Check if expiryDateObj is a valid date
               if (!isNaN(expiryDateObj.getTime())) {
                 const formattedExpiryDate = expiryDateObj.toLocaleDateString();
-                //console.log('excelBrowserDate:', excelBrowserDate, 'excelExpiryDate:', excelExpiryDate);
+                console.log('excelBrowserDate:', excelBrowserDate, 'excelExpiryDate:', excelExpiryDate);
                 if (excelBrowserDate > excelExpiryDate) {
                   setExpiry(`🔴 `);
                   setTooltipContent(`Acesso expirou em: ${formattedExpiryDate}`);
