@@ -83,7 +83,7 @@ const User = () => {
               const expiryDateObj = new Date(excelEpoch.getTime() + (excelExpiryDate - 1) * 86400000);
 
               // Check browser date
-              //console.log('excelBrowserDate:', excelBrowserDate, 'excelBuildDate:', excelBuildDate , 'excelExpiryDate:', excelExpiryDate);
+              console.log('excelBrowserDate:', excelBrowserDate, 'excelBuildDate:', excelBuildDate , 'excelExpiryDate:', excelExpiryDate);
               if (excelBrowserDate < (excelBuildDate)) { // Margin of one day
                 cancelaLoginReason = 'browserdate'; // Set reason for cancellation
               }
@@ -91,7 +91,7 @@ const User = () => {
               // Check if expiryDateObj is a valid date
               if (!isNaN(expiryDateObj.getTime())) {
                 const formattedExpiryDate = expiryDateObj.toLocaleDateString();
-                console.log('excelBrowserDate:', excelBrowserDate, 'excelExpiryDate:', excelExpiryDate);
+                //console.log('excelBrowserDate:', excelBrowserDate, 'excelExpiryDate:', excelExpiryDate);
                 if (excelBrowserDate > excelExpiryDate) {
                   setExpiry(`🔴 `);
                   setTooltipContent(`Acesso expirou em: ${formattedExpiryDate}`);
