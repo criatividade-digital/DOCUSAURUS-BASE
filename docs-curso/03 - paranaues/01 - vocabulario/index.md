@@ -4,6 +4,7 @@ sidebar_position: 2
 import IconExternalLink from '@theme/Icon/ExternalLink'
 import IconCopy from '@theme/Icon/Copy'
 import LigaHighlight from '@site/src/components/gsap/highlight'
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Vocabulário
 <LigaHighlight />
@@ -82,6 +83,7 @@ O ChatGPT é uma ferramenta poderosa, mas seu uso indevido pode trazer consequê
 Nesta seção, você descobriu <span class="text-highlight">como usar o próprio ChatGPT para explorar novos conceitos</span>, como Prompt e LLM. Essa abordagem prática e interativa é uma excelente forma de aprendizado, mas é importante lembrar que, às vezes, o ChatGPT pode cometer erros ou fornecer informações desatualizadas. 
 
 <center>
-![Resumo capítulo Iniciação](./iniciacao-resumo-itens.svg)
+<img src={useBaseUrl("/img/docs/diagrama-vocabulario.svg")} alt="Resumo capítulo Iniciação" />
 </center>
+
 
