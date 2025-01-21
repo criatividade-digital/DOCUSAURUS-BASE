@@ -19,6 +19,12 @@ C:\ProgramData\miniconda3\python gerar-docs-curso-troca-texto.py ".\docs-curso\0
 C:\ProgramData\miniconda3\python gerar-docs-curso-troca-texto.py ".\docs-curso\03 - paranaues\01 - vocabulario\index.md" "<guia03>" "##excluir##" TAG
 C:\ProgramData\miniconda3\python gerar-docs-curso-troca-texto.py ".\docs-curso\03 - paranaues\01 - vocabulario\index.md" "<guia04>" "##excluir##" TAG
 
+rem **** Desmistificando o ChatGPT ****
+copy ".\docs-guia\exploracao\desmistificando.md" ".\docs-curso\03 - paranaues\04 - desafios\"
+rem Altera posição no sidebar
+C:\ProgramData\miniconda3\python gerar-docs-curso-troca-texto.py ".\docs-curso\03 - paranaues\04 - desafios\desmistificando.md" "sidebar_position: 2" "sidebar_position: 1"
+
+
 rem **** Estrutura do prompt ****
 md ".\docs-curso\03 - paranaues\02 - exploracao"
 rem Apaga o arquivo index.md no caso de uma recópia para não dar o erro de arquivo já existente
@@ -43,11 +49,6 @@ rem **** Por que ChatGPT ****
 copy ".\docs-guia\construcao\porqueChatGPT.md" ".\docs-curso\03 - paranaues\"
 rem Altera posição no sidebar
 C:\ProgramData\miniconda3\python gerar-docs-curso-troca-texto.py ".\docs-curso\03 - paranaues\porqueChatGPT.md" "sidebar_position: 3" "sidebar_position: 4"
-
-rem **** Desmistificando o ChatGPT ****
-copy ".\docs-guia\criacao\desmistificando.md" ".\docs-curso\03 - paranaues\04 - desafios\"
-rem Altera posição no sidebar
-C:\ProgramData\miniconda3\python gerar-docs-curso-troca-texto.py ".\docs-curso\03 - paranaues\04 - desafios\desmistificando.md" "sidebar_position: 2" "sidebar_position: 1"
 
 rem **** Alucinações ****
 copy ".\docs-guia\criacao\alucinacao.md" ".\docs-curso\03 - paranaues\04 - desafios\"

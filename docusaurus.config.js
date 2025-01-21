@@ -52,6 +52,10 @@ const config = {
     locales: ['pt'],
   },
 
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
   plugins: [
     [
       "docusaurus-plugin-dotenv",
