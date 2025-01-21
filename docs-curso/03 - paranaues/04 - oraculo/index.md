@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 5
 ---
 import IconExternalLink from '@theme/Icon/ExternalLink'
 import LigaHighlight from '@site/src/components/gsap/highlight'

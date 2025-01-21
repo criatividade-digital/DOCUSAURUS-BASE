@@ -20,30 +20,39 @@ C:\ProgramData\miniconda3\python gerar-docs-curso-troca-texto.py ".\docs-curso\0
 C:\ProgramData\miniconda3\python gerar-docs-curso-troca-texto.py ".\docs-curso\03 - paranaues\01 - vocabulario\index.md" "<guia04>" "##excluir##" TAG
 
 rem **** Desmistificando o ChatGPT ****
-copy ".\docs-guia\exploracao\desmistificando.md" ".\docs-curso\03 - paranaues\04 - desafios\"
+copy ".\docs-guia\exploracao\desmistificando*.*" ".\docs-curso\03 - paranaues\02 - desmistificando\
+ren ".\docs-curso\03 - paranaues\02 - desmistificando\desmistificando.md" "index.md"
 rem Altera posição no sidebar
-C:\ProgramData\miniconda3\python gerar-docs-curso-troca-texto.py ".\docs-curso\03 - paranaues\04 - desafios\desmistificando.md" "sidebar_position: 2" "sidebar_position: 1"
+C:\ProgramData\miniconda3\python gerar-docs-curso-troca-texto.py ".\docs-curso\03 - paranaues\02 - desmistificando\index.md" "sidebar_position: 1" "sidebar_position: 2"
+
+rem **** Criatividade ****
+copy ".\docs-guia\exploracao\criatividade.md" ".\docs-curso\03 - paranaues\
+rem Altera posição no sidebar
+C:\ProgramData\miniconda3\python gerar-docs-curso-troca-texto.py ".\docs-curso\03 - paranaues\criatividade.md" "sidebar_position: 2" "sidebar_position: 3"
 
 
 rem **** Estrutura do prompt ****
-md ".\docs-curso\03 - paranaues\02 - exploracao"
+md ".\docs-curso\03 - paranaues\03 - exploracao"
 rem Apaga o arquivo index.md no caso de uma recópia para não dar o erro de arquivo já existente
-del ".\docs-curso\03 - paranaues\02 - exploracao\index.md"
-copy ".\docs-guia\exploracao\*.*" ".\docs-curso\03 - paranaues\02 - exploracao"
-ren ".\docs-curso\03 - paranaues\02 - exploracao\exploracao.md" "index.md"
+del ".\docs-curso\03 - paranaues\03 - exploracao\index.md"
+copy ".\docs-guia\construcao\estrutura\*.*" ".\docs-curso\03 - paranaues\03 - exploracao"
+ren ".\docs-curso\03 - paranaues\03 - exploracao\exploracao.md" "index.md"
 rem Altera título do texto
-C:\ProgramData\miniconda3\python gerar-docs-curso-troca-texto.py ".\docs-curso\03 - paranaues\02 - exploracao\index.md" "# Exploração" "# Estrutura do prompt"
+C:\ProgramData\miniconda3\python gerar-docs-curso-troca-texto.py ".\docs-curso\03 - paranaues\03 - exploracao\index.md" "# Exploração" "# Estrutura do prompt"
 rem Apagua trecho no final do texto 
-C:\ProgramData\miniconda3\python gerar-docs-curso-troca-texto.py ".\docs-curso\03 - paranaues\02 - exploracao\index.md" "<guia01>" "##excluir##" TAG
+C:\ProgramData\miniconda3\python gerar-docs-curso-troca-texto.py ".\docs-curso\03 - paranaues\03 - exploracao\index.md" "<guia01>" "##excluir##" TAG
+rem Altera posição no sidebar
+C:\ProgramData\miniconda3\python gerar-docs-curso-troca-texto.py ".\docs-curso\03 - paranaues\03 - exploracao\index.md" "sidebar_position: 1" "sidebar_position: 5"
+
 
 rem **** Oráculo ****
-md ".\docs-curso\03 - paranaues\03 - oraculo"
+md ".\docs-curso\03 - paranaues\04 - oraculo"
 rem Apaga o arquivo index.md no caso de uma recópia para não dar o erro de arquivo já existente
-del ".\docs-curso\03 - paranaues\03 - oraculo\index.md"
-copy ".\docs-guia\construcao\oraculo\*.*" ".\docs-curso\03 - paranaues\03 - oraculo\"
-ren ".\docs-curso\03 - paranaues\03 - oraculo\oraculo.md" "index.md"
+del ".\docs-curso\03 - paranaues\04 - oraculo\index.md"
+copy ".\docs-guia\construcao\oraculo\*.*" ".\docs-curso\03 - paranaues\04 - oraculo\"
+ren ".\docs-curso\03 - paranaues\04 - oraculo\oraculo.md" "index.md"
 rem Altera posição no sidebar
-C:\ProgramData\miniconda3\python gerar-docs-curso-troca-texto.py ".\docs-curso\03 - paranaues\03 - oraculo\index.md" "sidebar_position: 2" "sidebar_position: 3"
+C:\ProgramData\miniconda3\python gerar-docs-curso-troca-texto.py ".\docs-curso\03 - paranaues\04 - oraculo\index.md" "sidebar_position: 2" "sidebar_position: 5"
 
 rem **** Por que ChatGPT ****
 copy ".\docs-guia\construcao\porqueChatGPT.md" ".\docs-curso\03 - paranaues\"

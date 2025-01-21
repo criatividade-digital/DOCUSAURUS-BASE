@@ -4,7 +4,7 @@ sidebar_position: 1
 import ClassificarPrompt from '@site/src/components/ClassificarPrompt'
 import IconPrompt from '@theme/Icon/Arrow';
 
-# Exploração
+# Estrutura do prompt
 Já aconteceu de você fazer uma pergunta a alguém e receber uma resposta que não correspondia exatamente ao que você desejava saber? Com o ChatGPT, o mesmo pode acontecer. A maneira como você formula sua pergunta impacta diretamente a qualidade da resposta que você receberá.
 
 Por isso, neste conteúdo, convido você a aprimorar junto comigo sua habilidade de estruturar *prompts* que gerem boas respostas.
