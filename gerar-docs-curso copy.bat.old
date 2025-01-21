@@ -1,0 +1,11 @@
+rem *** USAR O POWERSHELL *** 
+rem Script que copia e ajusta as páginas do guia que são reaproveitadas no curso
+md ".\docs-curso\03 - paranaues\02 - exploracao"
+copy ".\docs-guia\exploracao\*.*" ".\docs-curso\03 - paranaues\02 - exploracao"
+ren ".\docs-curso\03 - paranaues\02 - exploracao\exploracao.md" "index.md"
+
+rem Altera o conteúdo do arquivo usando PowerShell
+powershell -ExecutionPolicy Bypass -File ".\gerar-docs-curso-troca-texto.ps1" -filePath ".\docs-curso\03 - paranaues\02 - exploracao\index.md" -searchText "# Exploração" -replaceText "# Estrutura do prompt"
+
+
+

@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 676.17 406.06">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #92bd39;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+
+      .cls-7 {
+        fill: #484848;
+        font-family: Roboto-Regular, Roboto;
+        font-size: 15px;
+      }
+
+      .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12 {
+        isolation: isolate;
+      }
+
+      .cls-8 {
+        fill: #1eabda;
+      }
+
+      .cls-8, .cls-9, .cls-11, .cls-12 {
+        font-family: Roboto-Bold, Roboto;
+        font-size: 20px;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        stroke: #e0cb15;
+      }
+
+      .cls-13 {
+        fill: #e8f9ff;
+      }
+
+      .cls-13, .cls-14, .cls-15, .cls-16, .cls-17, .cls-18 {
+        fill-rule: evenodd;
+      }
+
+      .cls-9 {
+        fill: #92bd39;
+      }
+
+      .cls-3 {
+        stroke: #4e88e7;
+      }
+
+      .cls-14 {
+        fill: #e3fff2;
+      }
+
+      .cls-19 {
+        letter-spacing: -.06em;
+      }
+
+      .cls-20 {
+        letter-spacing: 0em;
+      }
+
+      .cls-21 {
+        letter-spacing: 0em;
+      }
+
+      .cls-22 {
+        letter-spacing: .02em;
+      }
+
+      .cls-23 {
+        letter-spacing: 0em;
+      }
+
+      .cls-11 {
+        fill: #e0cb15;
+      }
+
+      .cls-24 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-15 {
+        fill: #f4ffdc;
+      }
+
+      .cls-4 {
+        stroke: #1eabda;
+      }
+
+      .cls-5 {
+        stroke: #969696;
+      }
+
+      .cls-25 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-6 {
+        stroke: #3cc583;
+      }
+
+      .cls-26 {
+        letter-spacing: 0em;
+      }
+
+      .cls-27 {
+        letter-spacing: 0em;
+      }
+
+      .cls-28 {
+        letter-spacing: 0em;
+      }
+
+      .cls-29 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-30 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-16 {
+        fill: #fffbda;
+      }
+
+      .cls-12 {
+        fill: #3cc583;
+      }
+
+      .cls-17 {
+        fill: #edf4ff;
+      }
+
+      .cls-18 {
+        fill: #f5f5f5;
+      }
+
+      .cls-31 {
+        letter-spacing: -.02em;
+      }
+    </style>
+  </defs>
+  <g id="g-root-0.cu_sy_1q9ge6ffkta8a-fill" data-name="g-root-0.cu sy 1q9ge6ffkta8a-fill">
+    <g id="_0.cu_sy_1q9ge6ffkta8a-fill" data-name="0.cu_sy_1q9ge6ffkta8a-fill">
+      <path class="cls-17" d="M322.57,384.08l5.6,3.2,1.6-4.8,4.02,4,4.02-4,1.6,4.8,5.6-3.2,44.78-60.78-28,12h-56l-28-12,44.78,60.78ZM361.79,275.3h-56l-28,12,28,12h56l28-12-28-12ZM333.79,292.1c-11.05,0-20-2.15-20-4.8s8.95-4.8,20-4.8,20,2.15,20,4.8-8.95,4.8-20,4.8ZM361.79,203.3h-56l-28,12,28,12h56l28-12-28-12ZM333.79,220.1c-11.05,0-20-2.15-20-4.8s8.95-4.8,20-4.8,20,2.15,20,4.8-8.95,4.8-20,4.8ZM361.79,131.3h-56l-28,12,28,12h56l28-12-28-12ZM333.79,148.1c-11.05,0-20-2.15-20-4.8s8.95-4.8,20-4.8,20,2.15,20,4.8-8.95,4.8-20,4.8Z"/>
+    </g>
+  </g>
+  <g id="g-root-0.cu_1_sy_18isurrfkt9fn-fill" data-name="g-root-0.cu 1 sy 18isurrfkt9fn-fill">
+    <g id="_0.cu_1_sy_18isurrfkt9fn-fill" data-name="0.cu_1_sy_18isurrfkt9fn-fill">
+      <path class="cls-18" d="M322.57,384.08l5.6,3.2,1.6-4.8,4.02,4,4.02-4,1.6,4.8,5.6-3.2-11.22,15.22-11.22-15.22ZM333.79,292.1c11.05,0,20-2.15,20-4.8s-8.95-4.8-20-4.8-20,2.15-20,4.8,8.95,4.8,20,4.8ZM333.79,220.1c11.05,0,20-2.15,20-4.8s-8.95-4.8-20-4.8-20,2.15-20,4.8,8.95,4.8,20,4.8ZM333.79,148.1c11.05,0,20-2.15,20-4.8s-8.95-4.8-20-4.8-20,2.15-20,4.8,8.95,4.8,20,4.8ZM277.79,63.3l28,12h56l28-12v8l-28,12h-56l-28-12v-8ZM277.79,55.3l28,12h56l28-12v8l-28,12h-56l-28-12v-8ZM277.79,55.3l28,12h56l28-12v-16l-28,12h-56l-28-12v16Z"/>
+    </g>
+  </g>
+  <g id="g-root-4.cu_sy_zn5uivfkta8c-fill" data-name="g-root-4.cu sy zn5uivfkta8c-fill">
+    <g id="_4.cu_sy_zn5uivfkta8c-fill" data-name="4.cu_sy_zn5uivfkta8c-fill">
+      <path class="cls-16" d="M361.79,335.3l28-12v-36l-28,12v36Z"/>
+    </g>
+  </g>
+  <g id="g-root-4.cu_1_sy_v7cceffktb0l-fill" data-name="g-root-4.cu 1 sy v7cceffktb0l-fill">
+    <g id="_4.cu_1_sy_v7cceffktb0l-fill" data-name="4.cu_1_sy_v7cceffktb0l-fill">
+      <path class="cls-16" d="M361.79,299.3h-56v36h56v-36Z"/>
+    </g>
+  </g>
+  <g id="g-root-4.cu_2_sy_mcbt8nfkt8ni-fill" data-name="g-root-4.cu 2 sy mcbt8nfkt8ni-fill">
+    <g id="_4.cu_2_sy_mcbt8nfkt8ni-fill" data-name="4.cu_2_sy_mcbt8nfkt8ni-fill">
+      <path class="cls-16" d="M305.79,299.3l-28-12v36l28,12v-36Z"/>
+    </g>
+  </g>
+  <g id="g-root-3.cu_sy_90vavbfkta8f-fill" data-name="g-root-3.cu sy 90vavbfkta8f-fill">
+    <g id="_3.cu_sy_90vavbfkta8f-fill" data-name="3.cu_sy_90vavbfkta8f-fill">
+      <path class="cls-15" d="M361.79,263.3l28-12v-36l-28,12v36Z"/>
+    </g>
+  </g>
+  <g id="g-root-3.cu_1_sy_4l1sqvfktb0o-fill" data-name="g-root-3.cu 1 sy 4l1sqvfktb0o-fill">
+    <g id="_3.cu_1_sy_4l1sqvfktb0o-fill" data-name="3.cu_1_sy_4l1sqvfktb0o-fill">
+      <path class="cls-15" d="M361.79,227.3h-56v36h56v-36Z"/>
+    </g>
+  </g>
+  <g id="g-root-3.cu_2_sy_5urpjfkt8n5-fill" data-name="g-root-3.cu 2 sy 5urpjfkt8n5-fill">
+    <g id="_3.cu_2_sy_5urpjfkt8n5-fill" data-name="3.cu_2_sy_5urpjfkt8n5-fill">
+      <path class="cls-15" d="M305.79,227.3l-28-12v36l28,12v-36Z"/>
+    </g>
+  </g>
+  <g id="g-root-2.cu_sy_1qbbtfrfkt98q-fill" data-name="g-root-2.cu sy 1qbbtfrfkt98q-fill">
+    <g id="_2.cu_sy_1qbbtfrfkt98q-fill" data-name="2.cu_sy_1qbbtfrfkt98q-fill">
+      <path class="cls-14" d="M361.79,191.3l28-12v-36l-28,12v36Z"/>
+    </g>
+  </g>
+  <g id="g-root-2.cu_1_sy_1lvibbbfkta0z-fill" data-name="g-root-2.cu 1 sy 1lvibbbfkta0z-fill">
+    <g id="_2.cu_1_sy_1lvibbbfkta0z-fill" data-name="2.cu_1_sy_1lvibbbfkta0z-fill">
+      <path class="cls-14" d="M361.79,155.3h-56v36h56v-36Z"/>
+    </g>
+  </g>
+  <g id="g-root-2.cu_2_sy_18koa13fkt8g4-fill" data-name="g-root-2.cu 2 sy 18koa13fkt8g4-fill">
+    <g id="_2.cu_2_sy_18koa13fkt8g4-fill" data-name="2.cu_2_sy_18koa13fkt8g4-fill">
+      <path class="cls-14" d="M305.79,155.3l-28-12v36l28,12v-36Z"/>
+    </g>
+  </g>
+  <g id="g-root-1.cu_sy_zp19s7fkt98t-fill" data-name="g-root-1.cu sy zp19s7fkt98t-fill">
+    <g id="_1.cu_sy_zp19s7fkt98t-fill" data-name="1.cu_sy_zp19s7fkt98t-fill">
+      <path class="cls-13" d="M361.79,119.3l28-12v-36l-28,12v36Z"/>
+    </g>
+  </g>
+  <g id="g-root-1.cu_1_sy_v97rnrfkta12-fill" data-name="g-root-1.cu 1 sy v97rnrfkta12-fill">
+    <g id="_1.cu_1_sy_v97rnrfkta12-fill" data-name="1.cu_1_sy_v97rnrfkta12-fill">
+      <path class="cls-13" d="M361.79,83.3h-56v36h56v-36Z"/>
+    </g>
+  </g>
+  <g id="g-root-1.cu_2_sy_mdkrevfktatr-fill" data-name="g-root-1.cu 2 sy mdkrevfktatr-fill">
+    <g id="_1.cu_2_sy_mdkrevfktatr-fill" data-name="1.cu_2_sy_mdkrevfktatr-fill">
+      <path class="cls-13" d="M305.79,83.3l-28-12v36l28,12v-36Z"/>
+    </g>
+  </g>
+  <g id="g-root-1.cu_3_sy_hydqdjfkt8g8-fill" data-name="g-root-1.cu 3 sy hydqdjfkt8g8-fill">
+    <g id="_1.cu_3_sy_hydqdjfkt8g8-fill" data-name="1.cu_3_sy_hydqdjfkt8g8-fill">
+      <path class="cls-13" d="M305.79,51.3h56l28-12s.53-28-56-28-56,28-56,28l28,12Z"/>
+    </g>
+  </g>
+  <g id="g-root-tx_mecanism_hzmojrfktame-fill" data-name="g-root-tx mecanism hzmojrfktame-fill">
+    <g id="tx_mecanism_hzmojrfktame-fill" data-name="tx mecanism hzmojrfktame-fill">
+      <g class="cls-10">
+        <text class="cls-12" transform="translate(479.79 149.3)"><tspan x="0" y="0">Mecanismo de </tspan></text>
+        <text class="cls-12" transform="translate(479.79 173.3)"><tspan class="cls-24" x="0" y="0">F</tspan><tspan x="10.74" y="0">uncionamen</tspan><tspan class="cls-29" x="121.43" y="0">t</tspan><tspan x="127.89" y="0">o</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g id="g-root-tx_geratext_4mx807fkta15-fill" data-name="g-root-tx geratext 4mx807fkta15-fill">
+    <g id="tx_geratext_4mx807fkta15-fill" data-name="tx geratext 4mx807fkta15-fill">
+      <g class="cls-10">
+        <text class="cls-7" transform="translate(479.79 347.3)"><tspan x="0" y="0">Ge</tspan><tspan class="cls-31" x="18.16" y="0">r</tspan><tspan x="22.95" y="0">a tex</tspan><tspan class="cls-21" x="55.1" y="0">t</tspan><tspan x="59.85" y="0">o convincente, mas </tspan></text>
+        <text class="cls-7" transform="translate(479.79 365.3)"><tspan x="0" y="0">sem comp</tspan><tspan class="cls-23" x="70.51" y="0">r</tspan><tspan x="75.45" y="0">eensão</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g id="g-root-tx_comparao_zqa7yffktbf0-fill" data-name="g-root-tx comparao zqa7yffktbf0-fill">
+    <g id="tx_comparao_zqa7yffktbf0-fill" data-name="tx comparao zqa7yffktbf0-fill">
+      <g class="cls-10">
+        <text class="cls-9" transform="translate(13.76 221.3)"><tspan x="0" y="0">Compa</tspan><tspan class="cls-29" x="63.69" y="0">r</tspan><tspan x="70.69" y="0">ação com o </tspan></text>
+        <text class="cls-9" transform="translate(54.29 245.3)"><tspan class="cls-28" x="0" y="0">A</tspan><tspan x="13.35" y="0">u</tspan><tspan class="cls-29" x="24.54" y="0">t</tspan><tspan x="31.01" y="0">ocompletar</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g id="g-root-tx_usamodel_vb36x3fkt91h-fill" data-name="g-root-tx usamodel vb36x3fkt91h-fill">
+    <g id="tx_usamodel_vb36x3fkt91h-fill" data-name="tx usamodel vb36x3fkt91h-fill">
+      <g class="cls-10">
+        <text class="cls-7" transform="translate(479.79 203.3)"><tspan x="0" y="0">Usa modelos estatísticos </tspan></text>
+        <text class="cls-7" transform="translate(479.79 221.3)"><tspan x="0" y="0">pa</tspan><tspan class="cls-31" x="16.57" y="0">r</tspan><tspan x="21.36" y="0">a p</tspan><tspan class="cls-23" x="41.65" y="0">r</tspan><tspan class="cls-20" x="46.58" y="0">ev</tspan><tspan x="61.6" y="0">er tex</tspan><tspan class="cls-21" x="98.62" y="0">t</tspan><tspan x="103.37" y="0">o</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g id="g-root-tx_semelhan_1d1qqbrfkt9u3-fill" data-name="g-root-tx semelhan 1d1qqbrfkt9u3-fill">
+    <g id="tx_semelhan_1d1qqbrfkt9u3-fill" data-name="tx semelhan 1d1qqbrfkt9u3-fill">
+      <g class="cls-10">
+        <text class="cls-7" transform="translate(88.17 278.3)"><tspan x="0" y="0">Semelhante ao </tspan></text>
+        <text class="cls-7" transform="translate(19.06 296.3)"><tspan x="0" y="0">au</tspan><tspan class="cls-21" x="16.43" y="0">t</tspan><tspan x="21.18" y="0">ocompleta</tspan><tspan class="cls-19" x="92.35" y="0">r</tspan><tspan x="96.53" y="0">, mas mais </tspan></text>
+        <text class="cls-7" transform="translate(123.1 314.3)"><tspan class="cls-27" x="0" y="0">av</tspan><tspan x="15.21" y="0">ançado</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g id="g-root-tx_definio_8z553fkt9ts-fill" data-name="g-root-tx definio 8z553fkt9ts-fill">
+    <g id="tx_definio_8z553fkt9ts-fill" data-name="tx definio 8z553fkt9ts-fill">
+      <g class="cls-10">
+        <text class="cls-8" transform="translate(101.05 51.3)"><tspan x="0" y="0">ChatGP</tspan><tspan class="cls-30" x="68.28" y="0">T</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g id="g-root-tx_concluso_1qckrlzfktbey-fill" data-name="g-root-tx concluso 1qckrlzfktbey-fill">
+    <g id="tx_concluso_1qckrlzfktbey-fill" data-name="tx concluso 1qckrlzfktbey-fill">
+      <g class="cls-10">
+        <text class="cls-11" transform="translate(479.79 317.3)"><tspan x="0" y="0">Impo</tspan><tspan class="cls-22" x="45.71" y="0">r</tspan><tspan x="53.5" y="0">tante</tspan></text>
+      </g>
+    </g>
+  </g>
+  <text class="cls-7" transform="translate(41.06 82.82)"><tspan x="0" y="0">Uma </tspan><tspan class="cls-25" x="34.75" y="0">f</tspan><tspan x="39.78" y="0">er</tspan><tspan class="cls-31" x="52.8" y="0">r</tspan><tspan x="57.58" y="0">amenta de </tspan><tspan class="cls-26" x="132" y="0">I</tspan><tspan x="136.22" y="0">A </tspan></text>
+  <text class="cls-7" transform="translate(31.17 100.82)"><tspan x="0" y="0">t</tspan><tspan class="cls-23" x="4.9" y="0">r</tspan><tspan x="9.84" y="0">einada em uma </tspan><tspan class="cls-27" x="116.29" y="0">v</tspan><tspan x="123.44" y="0">asta </tspan></text>
+  <text class="cls-7" transform="translate(13.87 118.82)"><tspan x="0" y="0">quantidade de tex</tspan><tspan class="cls-21" x="118.91" y="0">t</tspan><tspan x="123.66" y="0">os pa</tspan><tspan class="cls-31" x="160.24" y="0">r</tspan><tspan x="165.02" y="0">a </tspan></text>
+  <text class="cls-7" transform="translate(45.98 136.82)"><tspan class="cls-23" x="0" y="0">r</tspan><tspan x="4.94" y="0">esponder pe</tspan><tspan class="cls-23" x="87.42" y="0">r</tspan><tspan x="92.36" y="0">guntas, </tspan></text>
+  <text class="cls-7" transform="translate(31.58 154.82)"><tspan x="0" y="0">fornecer informações e </tspan></text>
+  <text class="cls-7" transform="translate(8.72 172.82)"><tspan x="0" y="0">manter con</tspan><tspan class="cls-20" x="75.9" y="0">v</tspan><tspan x="83.07" y="0">ersas natu</tspan><tspan class="cls-31" x="153.04" y="0">r</tspan><tspan x="157.82" y="0">ais</tspan></text>
+  <g id="g-root-0.cu_sy_1q9ge6ffkta8a-stroke" data-name="g-root-0.cu sy 1q9ge6ffkta8a-stroke">
+    <g id="_0.cu_sy_1q9ge6ffkta8a-stroke" data-name="0.cu_sy_1q9ge6ffkta8a-stroke">
+      <path class="cls-3" d="M322.57,384.08l5.6,3.2,1.6-4.8,4.02,4,4.02-4,1.6,4.8,5.6-3.2,44.78-60.78-28,12h-56l-28-12,44.78,60.78ZM361.79,275.3h-56l-28,12,28,12h56l28-12-28-12ZM333.79,292.1c-11.05,0-20-2.15-20-4.8s8.95-4.8,20-4.8,20,2.15,20,4.8-8.95,4.8-20,4.8ZM361.79,203.3h-56l-28,12,28,12h56l28-12-28-12ZM333.79,220.1c-11.05,0-20-2.15-20-4.8s8.95-4.8,20-4.8,20,2.15,20,4.8-8.95,4.8-20,4.8ZM361.79,131.3h-56l-28,12,28,12h56l28-12-28-12ZM333.79,148.1c-11.05,0-20-2.15-20-4.8s8.95-4.8,20-4.8,20,2.15,20,4.8-8.95,4.8-20,4.8Z"/>
+    </g>
+  </g>
+  <g id="g-root-0.cu_1_sy_18isurrfkt9fn-stroke" data-name="g-root-0.cu 1 sy 18isurrfkt9fn-stroke">
+    <g id="_0.cu_1_sy_18isurrfkt9fn-stroke" data-name="0.cu_1_sy_18isurrfkt9fn-stroke">
+      <path class="cls-5" d="M322.57,384.08l5.6,3.2,1.6-4.8,4.02,4,4.02-4,1.6,4.8,5.6-3.2-11.22,15.22-11.22-15.22ZM333.79,292.1c11.05,0,20-2.15,20-4.8s-8.95-4.8-20-4.8-20,2.15-20,4.8,8.95,4.8,20,4.8ZM333.79,220.1c11.05,0,20-2.15,20-4.8s-8.95-4.8-20-4.8-20,2.15-20,4.8,8.95,4.8,20,4.8ZM333.79,148.1c11.05,0,20-2.15,20-4.8s-8.95-4.8-20-4.8-20,2.15-20,4.8,8.95,4.8,20,4.8ZM277.79,63.3l28,12h56l28-12v8l-28,12h-56l-28-12v-8ZM277.79,55.3l28,12h56l28-12v8l-28,12h-56l-28-12v-8ZM277.79,55.3l28,12h56l28-12v-16l-28,12h-56l-28-12v16Z"/>
+    </g>
+  </g>
+  <g id="g-root-4.cu_sy_zn5uivfkta8c-stroke" data-name="g-root-4.cu sy zn5uivfkta8c-stroke">
+    <g id="_4.cu_sy_zn5uivfkta8c-stroke" data-name="4.cu_sy_zn5uivfkta8c-stroke">
+      <path class="cls-2" d="M361.79,335.3l28-12v-36l-28,12v36Z"/>
+    </g>
+  </g>
+  <g id="g-root-4.cu_1_sy_v7cceffktb0l-stroke" data-name="g-root-4.cu 1 sy v7cceffktb0l-stroke">
+    <g id="_4.cu_1_sy_v7cceffktb0l-stroke" data-name="4.cu_1_sy_v7cceffktb0l-stroke">
+      <path class="cls-2" d="M361.79,299.3h-56v36h56v-36Z"/>
+    </g>
+  </g>
+  <g id="g-root-4.cu_2_sy_mcbt8nfkt8ni-stroke" data-name="g-root-4.cu 2 sy mcbt8nfkt8ni-stroke">
+    <g id="_4.cu_2_sy_mcbt8nfkt8ni-stroke" data-name="4.cu_2_sy_mcbt8nfkt8ni-stroke">
+      <path class="cls-2" d="M305.79,299.3l-28-12v36l28,12v-36Z"/>
+    </g>
+  </g>
+  <g id="g-root-3.cu_sy_90vavbfkta8f-stroke" data-name="g-root-3.cu sy 90vavbfkta8f-stroke">
+    <g id="_3.cu_sy_90vavbfkta8f-stroke" data-name="3.cu_sy_90vavbfkta8f-stroke">
+      <path class="cls-1" d="M361.79,263.3l28-12v-36l-28,12v36Z"/>
+    </g>
+  </g>
+  <g id="g-root-3.cu_1_sy_4l1sqvfktb0o-stroke" data-name="g-root-3.cu 1 sy 4l1sqvfktb0o-stroke">
+    <g id="_3.cu_1_sy_4l1sqvfktb0o-stroke" data-name="3.cu_1_sy_4l1sqvfktb0o-stroke">
+      <path class="cls-1" d="M361.79,227.3h-56v36h56v-36Z"/>
+    </g>
+  </g>
+  <g id="g-root-3.cu_2_sy_5urpjfkt8n5-stroke" data-name="g-root-3.cu 2 sy 5urpjfkt8n5-stroke">
+    <g id="_3.cu_2_sy_5urpjfkt8n5-stroke" data-name="3.cu_2_sy_5urpjfkt8n5-stroke">
+      <path class="cls-1" d="M305.79,227.3l-28-12v36l28,12v-36Z"/>
+    </g>
+  </g>
+  <g id="g-root-2.cu_sy_1qbbtfrfkt98q-stroke" data-name="g-root-2.cu sy 1qbbtfrfkt98q-stroke">
+    <g id="_2.cu_sy_1qbbtfrfkt98q-stroke" data-name="2.cu_sy_1qbbtfrfkt98q-stroke">
+      <path class="cls-6" d="M361.79,191.3l28-12v-36l-28,12v36Z"/>
+    </g>
+  </g>
+  <g id="g-root-2.cu_1_sy_1lvibbbfkta0z-stroke" data-name="g-root-2.cu 1 sy 1lvibbbfkta0z-stroke">
+    <g id="_2.cu_1_sy_1lvibbbfkta0z-stroke" data-name="2.cu_1_sy_1lvibbbfkta0z-stroke">
+      <path class="cls-6" d="M361.79,155.3h-56v36h56v-36Z"/>
+    </g>
+  </g>
+  <g id="g-root-2.cu_2_sy_18koa13fkt8g4-stroke" data-name="g-root-2.cu 2 sy 18koa13fkt8g4-stroke">
+    <g id="_2.cu_2_sy_18koa13fkt8g4-stroke" data-name="2.cu_2_sy_18koa13fkt8g4-stroke">
+      <path class="cls-6" d="M305.79,155.3l-28-12v36l28,12v-36Z"/>
+    </g>
+  </g>
+  <g id="g-root-1.cu_sy_zp19s7fkt98t-stroke" data-name="g-root-1.cu sy zp19s7fkt98t-stroke">
+    <g id="_1.cu_sy_zp19s7fkt98t-stroke" data-name="1.cu_sy_zp19s7fkt98t-stroke">
+      <path class="cls-4" d="M361.79,119.3l28-12v-36l-28,12v36Z"/>
+    </g>
+  </g>
+  <g id="g-root-1.cu_1_sy_v97rnrfkta12-stroke" data-name="g-root-1.cu 1 sy v97rnrfkta12-stroke">
+    <g id="_1.cu_1_sy_v97rnrfkta12-stroke" data-name="1.cu_1_sy_v97rnrfkta12-stroke">
+      <path class="cls-4" d="M361.79,83.3h-56v36h56v-36Z"/>
+    </g>
+  </g>
+  <g id="g-root-1.cu_2_sy_mdkrevfktatr-stroke" data-name="g-root-1.cu 2 sy mdkrevfktatr-stroke">
+    <g id="_1.cu_2_sy_mdkrevfktatr-stroke" data-name="1.cu_2_sy_mdkrevfktatr-stroke">
+      <path class="cls-4" d="M305.79,83.3l-28-12v36l28,12v-36Z"/>
+    </g>
+  </g>
+  <g id="g-root-1.cu_3_sy_hydqdjfkt8g8-stroke" data-name="g-root-1.cu 3 sy hydqdjfkt8g8-stroke">
+    <g id="_1.cu_3_sy_hydqdjfkt8g8-stroke" data-name="1.cu_3_sy_hydqdjfkt8g8-stroke">
+      <path class="cls-4" d="M305.79,51.3h56l28-12s.53-28-56-28-56,28-56,28l28,12Z"/>
+    </g>
+  </g>
+  <g id="g-root-real_91hv47fknmys-stroke" data-name="g-root-real 91hv47fknmys-stroke">
+    <g id="real_91hv47fknmys-stroke" data-name="real 91hv47fknmys-stroke">
+      <path class="cls-6" d="M455.29,170.8c3.87,0,7-3.13,7-7s-3.13-7-7-7-7,3.13-7,7,3.13,7,7,7ZM464.29,183.8c0-5-4-9-9-9-1.8,0-3.6.6-5,1.4-6.8-2.2-10.4-7.8-10.6-7.8-1-1.6-3.2-2.2-4.8-1.2s-2.2,3.2-1.2,4.8c.2.4,4.4,6.8,12.6,10.2,0,.4-.2,1-.2,1.4M434.72,146.2h7.4v-4.4h5M450.12,144.8c1.66,0,3-1.34,3-3s-1.34-3-3-3-3,1.34-3,3,1.34,3,3,3ZM442.12,146.2v3M423.29,160.75v5.55M423.29,172.3c1.66,0,3-1.34,3-3s-1.34-3-3-3-3,1.34-3,3,1.34,3,3,3ZM434.72,160.97c0,.71-.47,1.42-.95,1.9-.71.47-1.42.47-2.14.47l-10.68-3.32c-.95-.24-1.66-1.19-1.66-2.37v-13.06c0-.95.71-1.9,1.66-2.37l10.68-3.32c.71-.24,1.42,0,2.14.47.71.47.95,1.19.95,1.9v19.7Z"/>
+    </g>
+  </g>
+  <g id="g-root-1_91hryffl7chv-stroke" data-name="g-root-1 91hryffl7chv-stroke">
+    <g id="_1_91hryffl7chv-stroke" data-name="1_91hryffl7chv-stroke">
+      <path class="cls-1" d="M213.44,232.68v15.17c0,1.1.89,1.99,1.99,2h1v3.98c0,1.1.89,1.99,1.99,1.99h2.98c1.1,0,1.99-.89,1.99-1.99v-3.99h7.96v3.98c0,1.1.9,1.99,2,1.99h2.98c1.1,0,1.99-.89,1.99-1.99v-3.98h1c1.1,0,2-.9,2-2v-21.87c0-4.39-3.56-7.96-7.96-7.96h-10.97M225.38,226.96h15.91M213.44,237.9h27.85M247.57,236.91v-5.97M224.38,244.33h5.97M216.43,249.84h6.96M231.34,249.84h6.96M204,227.32l4.41-14.7c.49-1.11,1.59-1.83,2.8-1.83s2.31.72,2.8,1.83l4.4,14.7M206.89,221.31h8.65"/>
+    </g>
+  </g>
+  <g id="g-root-5_1cuvljbfkqi2x-stroke" data-name="g-root-5 1cuvljbfkqi2x-stroke">
+    <g id="_5_1cuvljbfkqi2x-stroke" data-name="5_1cuvljbfkqi2x-stroke">
+      <path class="cls-4" d="M245.7,66.28h-28.29c-1.74,0-3.14,1.41-3.14,3.14v18.86c0,1.74,1.41,3.14,3.14,3.14h5.65s-.22,7.86-.22,7.86l9.2-7.86h13.65c1.74,0,3.14-1.41,3.14-3.14v-18.86c0-1.73-1.4-3.14-3.14-3.14ZM225.53,85.59l5.91-13,5.91,13M226.86,82.71h9.17M224.73,104.32h-22M213.73,107.82c.28,0,.5.22.5.5h0c0,.13-.05.26-.15.35-.09.09-.22.15-.35.15h0c-.13,0-.26-.05-.35-.15-.09-.09-.15-.22-.15-.35h0c0-.28.22-.5.5-.5M213.73,107.82h0M224.73,105.32v3c0,2.21-1.79,4-4,4h-14c-2.21,0-4-1.79-4-4v-28c0-2.21,1.79-4,4-4h3"/>
+    </g>
+  </g>
+  <g id="g-root-word_1qeg6vbfktafd-stroke" data-name="g-root-word 1qeg6vbfktafd-stroke">
+    <g id="word_1qeg6vbfktafd-stroke" data-name="word 1qeg6vbfktafd-stroke">
+      <path class="cls-2" d="M430.79,317.3v6c0,1.1.9,2,2,2h30c1.1,0,2-.9,2-2v-36c0-1.1-.9-2-2-2h-30c-1.1,0-2,.9-2,2v6M442.79,305.3h22M442.79,295.3h22M442.79,315.3h22M420.79,293.3h20s2,0,2,2v20s0,2-2,2h-20s-2,0-2-2v-20s0-2,2-2M423.79,299.3l3,12,4-12,4,12,3-12"/>
+    </g>
+  </g>
+</svg>
